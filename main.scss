@@ -1,0 +1,30 @@
+//Abstract    
+@import "sass/abstract/_mixins";
+@import "sass/abstract/_variables";
+
+
+//Base
+@import "sass/base/_reset";   
+
+
+//Components
+@import "sass/components/_buttons";                
+
+
+//Layout
+@import "sass/layout/_footer";     
+@import "sass/layout/_header";      
+@import "sass/layout/_home";
+
+//Pages
+@import "sass/pages/_about";     
+@import "sass/pages/_shop";  
+
+
+//Themes
+@import "sass/themes/_admin";       
+@import "sass/themes/_dashboard";     
+
+//Vendors
+@import "sass/vendors/_bootstrap";    
+@import "sass/vendors/_fontawesome"; 
