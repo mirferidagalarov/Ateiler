@@ -1,0 +1,60 @@
+.swiper-area {
+    .swiper {
+.swiper-pagination-bullet-active{
+    background-color: #222;
+}
+
+        width: 100%;
+
+        .slider-achil {
+            padding: 4rem 0;
+            background-image: url(https://atelier.swiftideas.com/wp-content/uploads/2014/11/slider_bkg_shoes2_small.jpg);
+            background-position: center center;
+            background-size: cover;
+
+            .slider-title {
+                font-size: 24px;
+
+                @media (min-width:768px) {
+                    font-size: 40px;
+                }
+            }
+
+
+            .learn-btn {
+                a {
+                    font-size: 14px;
+                    background: none;
+                    border: 2px solid #e3e3e3;
+                    padding: 11px 34px;
+                    color: #222;
+                    border-color: #222;
+                    transition: all 0.5s ease-out;
+
+                    &:hover {
+                        background-color: #222;
+                        color: #fff;
+                    }
+
+                    @media (min-width:768px) {
+                        font-size: 20px;
+                    }
+                }
+            }
+
+            .add-to-cart-btn {
+                a {
+                    font-size: 14px;
+                    background-color: #111;
+                    border-color: #111;
+                    color: #fff;
+                    padding: 11px 34px;
+
+                    @media (min-width:768px) {
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
