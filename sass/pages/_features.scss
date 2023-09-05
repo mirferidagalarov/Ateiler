@@ -1,47 +1,146 @@
-#slider-section {
+// #slider-section 
 
-    .slider-div {
-        background-color: rgb(25, 25, 25);
+.section-div {
+    background-color: rgb(25, 25, 25);
+.banner-text {
+    padding: 85px 0;
 
-        .banner-text {
-            padding: 85px 0;
+    h1 {
+        font-size: 37px;
+        width: 45%;
+        font-family: 'Dosis', sans-serif;
+    }
+}
 
-            h1 {
-                font-size: 37px;
-                width: 45%;
-            }
+.banner-slider {
+    position: relative;
+
+    .swiper-pagination {
+        bottom: 30px;
+        position: absolute;
+
+        .active-button {
+            background-color: white;
+            padding: 10px;
+            border-radius: 50%;
         }
+    }
 
-        .banner-slider {
-            position: relative;
+    .navigation {
+        background-color: white;
+        position: absolute;
+        bottom: 30px;
+        right: 40px;
+        z-index: 10000;
 
-            .swiper-pagination {
-                bottom: 30px;
-                position: absolute;
+        .swiper-prev,
+        .swiper-next {
 
-                .active-button {
-                    background-color: white;
-                    padding: 10px;
-                    border-radius: 50%;
-                }
-            }
-
-            .navigation {
-                background-color: white;
-                position: absolute;
-                bottom: 30px;
-                right: 40px;
-                z-index: 10000;
-
-                .swiper-prev,
-                .swiper-next {
-
-                    font-size: 20px;
-
-                }
-            }
+            font-size: 20px;
 
         }
     }
 
+}
+   
+}
+
+
+
+
+ // layout section
+   .section-div1{
+    background-color: #222222;
+     .content-text {
+        padding: 50px 0;
+
+        h1 {
+            font-size: 40px;
+            width: 43%;
+            font-family: 'Dosis', sans-serif;
+        }
+
+        p {
+            color: #999999;
+            font-size: 16px;
+            width: 47%;
+        }
+    }
+    .cards{
+        padding-bottom: 130px;
+.img-wrap {
+        margin-bottom:30px;
+        &:hover {
+            img {
+                background-color: #444444;
+                opacity: 0.3;
+                transition: 0.5s ease;
+            }
+        }
+
+    }
+
+    h6 {
+        font-size: 22px;
+        font-family: 'Dosis', sans-serif;
+
+    }
+
+    a {
+        font-family: 'Karla', sans-serif;
+
+        &:hover {
+            text-decoration: underline !important;
+            transition: 0.8s ease;
+            
+        }
+    }
+    }
+
+     
+   }
+
+
+
+#features-section {
+    padding-bottom: 100px;
+
+    .heading-text {
+        padding-bottom: 80px;
+
+        h1 {
+            color: #444444;
+            font-size: 40px;
+            width: 43%;
+            font-family: 'Dosis', sans-serif;
+        }
+    }
+
+}
+
+#features-section2 {
+    background-color: #F7F7F7;
+    padding: 140px 0;
+}
+
+#features-section3 {
+    padding: 85px 0 100px 0;
+}
+
+// cards
+.card-section {
+    .card-item {
+        h3 {
+            color: #222222;
+            font-size: 23px;
+            font-family: 'Dosis', sans-serif;
+        }
+
+        p {
+            font-size: 18px;
+            width: 83%;
+            color: #444444;
+            font-family: 'Karla', sans-serif;
+        }
+    }
 }

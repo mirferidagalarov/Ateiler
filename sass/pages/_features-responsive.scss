@@ -1,27 +1,63 @@
 // slider-section
-@media( width<= 375px){
-    #slider-section{
+@media(width<=375px) {
+    .section-div {
         .banner-text {
             padding: 50px 0;
+
             h1 {
                 font-size: 27px;
                 width: 55%;
             }
         }
     }
+
+
+    #features-section {
+        .heading-text {
+            padding: 40px 0;
+
+            h1 {
+                font-size: 30px;
+            }
+        }
+    }
+
+    // cards
+    .card-section {
+        .card-item {
+            h3 {
+                font-size: 19px;
+            }
+
+            p {
+                font-size: 16px;
+            }
+        }
+    }
+
+    .btn {
+        padding: 12px 20px !important;
+        font-size: 12px !important;
+    }
 }
 
-@media(width<=768px){
-    .banner-slider {
-        .swiper-pagination {
-            bottom: 0 !important;
+@media(width<=768px) {
+    #slider-section {
+        .banner-slider {
+            .swiper-pagination {
+                bottom: 0 !important;
+            }
+
+            .navigation {
+                bottom: 0 !important;
+                right: 35px !important;
+
+                .swiper-prev,
+                .swiper-next {
+                    font-size: 18px;
+                }
+            }
         }
-       .navigation{
-        bottom: 0 !important;
-        right: 35px !important;
-        .swiper-prev, .swiper-next{
-            font-size: 18px;
-        }
-       }
     }
+
 }
