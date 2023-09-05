@@ -1,0 +1,27 @@
+// slider-section
+@media( width<= 375px){
+    #slider-section{
+        .banner-text {
+            padding: 50px 0;
+            h1 {
+                font-size: 27px;
+                width: 55%;
+            }
+        }
+    }
+}
+
+@media(width<=768px){
+    .banner-slider {
+        .swiper-pagination {
+            bottom: 0 !important;
+        }
+       .navigation{
+        bottom: 0 !important;
+        right: 35px !important;
+        .swiper-prev, .swiper-next{
+            font-size: 18px;
+        }
+       }
+    }
+}

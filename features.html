@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+</head>
+
+<body>
+    <div class="container-fluid p-0 m-0">
+        <!-- slider section -->
+        <section id="slider-section">
+            <div class="slider-div">
+                <div class="container">
+                    <div class="banner-text d-flex justify-content-center text-center">
+                        <h1 class="text-white fw-normal text-center">This is Atelier, an e-commerce theme like no other.
+                        </h1>
+                    </div>
+                    <div class="banner-slider bannerSwiper ">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img class="img-fluid w-100" src="sass/assets/img/features-hero-1-dark.jpg" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img class="img-fluid w-100" src="sass/assets/img/features-hero-2-dark.jpg" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img class="img-fluid w-100" src="sass/assets/img/features-hero-3-dark.jpg" />
+                            </div>
+                        </div>
+                        <div class="swiper-pagination">
+                        </div>
+
+                        <div class="navigation bg-white d-flex justify-content-center  py-lg-2 px-lg-3 py-1 px-2">
+                            <div class="swiper-prev me-lg-3 me-2"><i class="fa-solid fa-chevron-left text-black"></i>
+                            </div>
+                            <div class="swiper-next ms-lg-3 ms-2"><i class="fa-solid fa-chevron-right text-black"></i>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+            <img class=" img-fluid w-100" src="sass/assets/img/wave.png" alt="">
+
+        </section>
+
+        <!-- features section -->
+        <section id="features-section">
+            
+
+        </section>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".bannerSwiper", {
+            spaceBetween: 30,
+            effect: "fade",
+            navigation: {
+                nextEl: ".swiper-next",
+                prevEl: ".swiper-prev",
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            autoplay: {
+                delay: 6000
+            },
+            loop: true
+        });
+    </script>
+</body>
+
+</html>

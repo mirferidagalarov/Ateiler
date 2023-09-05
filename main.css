@@ -18,6 +18,61 @@ a {
   align-items: center;
 }
 
+#slider-section .slider-div {
+  background-color: rgb(25, 25, 25);
+}
+#slider-section .slider-div .banner-text {
+  padding: 85px 0;
+}
+#slider-section .slider-div .banner-text h1, #slider-section .slider-div .banner-text .h1 {
+  font-size: 37px;
+  width: 45%;
+}
+#slider-section .slider-div .banner-slider {
+  position: relative;
+}
+#slider-section .slider-div .banner-slider .swiper-pagination {
+  bottom: 30px;
+  position: absolute;
+}
+#slider-section .slider-div .banner-slider .swiper-pagination .active-button {
+  background-color: white;
+  padding: 10px;
+  border-radius: 50%;
+}
+#slider-section .slider-div .banner-slider .navigation {
+  background-color: white;
+  position: absolute;
+  bottom: 30px;
+  right: 40px;
+  z-index: 10000;
+}
+#slider-section .slider-div .banner-slider .navigation .swiper-prev,
+#slider-section .slider-div .banner-slider .navigation .swiper-next {
+  font-size: 20px;
+}
+
+@media (width <= 375px) {
+  #slider-section .banner-text {
+    padding: 50px 0;
+  }
+  #slider-section .banner-text h1, #slider-section .banner-text .h1 {
+    font-size: 27px;
+    width: 55%;
+  }
+}
+@media (width <= 768px) {
+  .banner-slider .swiper-pagination {
+    bottom: 0 !important;
+  }
+  .banner-slider .navigation {
+    bottom: 0 !important;
+    right: 35px !important;
+  }
+  .banner-slider .navigation .swiper-prev, .banner-slider .navigation .swiper-next {
+    font-size: 18px;
+  }
+}
 /*!
  * Bootstrap  v5.3.1 (https://getbootstrap.com/)
  * Copyright 2011-2023 The Bootstrap Authors

@@ -1,0 +1,47 @@
+#slider-section {
+
+    .slider-div {
+        background-color: rgb(25, 25, 25);
+
+        .banner-text {
+            padding: 85px 0;
+
+            h1 {
+                font-size: 37px;
+                width: 45%;
+            }
+        }
+
+        .banner-slider {
+            position: relative;
+
+            .swiper-pagination {
+                bottom: 30px;
+                position: absolute;
+
+                .active-button {
+                    background-color: white;
+                    padding: 10px;
+                    border-radius: 50%;
+                }
+            }
+
+            .navigation {
+                background-color: white;
+                position: absolute;
+                bottom: 30px;
+                right: 40px;
+                z-index: 10000;
+
+                .swiper-prev,
+                .swiper-next {
+
+                    font-size: 20px;
+
+                }
+            }
+
+        }
+    }
+
+}
