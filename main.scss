@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300;400&family=Karla&family=Lora:ital,wght@1,500&family=Nunito+Sans:opsz,wght@6..12,200&family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&display=swap');
+
 //Abstract    
 @import "sass/abstract/_mixins";
 @import "sass/abstract/_variables";
@@ -19,6 +21,8 @@
 //Pages
 @import "sass/pages/_about";     
 @import "sass/pages/_shop";  
+@import "sass/pages/_features";
+@import "sass/pages/_features-responsive";
 
 
 //Themes
