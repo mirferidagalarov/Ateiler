@@ -39,6 +39,7 @@ a {
 }
 .btn-hover:hover {
   color: white !important;
+  background-color: #222222 !important;
 }
 
 .containers {
