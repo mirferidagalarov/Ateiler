@@ -4,44 +4,139 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="main.css" />
   </head>
   <body>
-    
-    <header class="container-fluid">
-     <div class="containers">
-      <div class="col-2 d-flex">
-        <div class="baricon">
-         <a href="#"><i class="fa-solid fa-bars fa-xl"></i></a>
+    <div class="container-fluid p-0 m-0">
+      <header>
+        <div class="containers">
+          <div class="col-2 d-flex">
+            <div class="baricon">
+              <a href="#"><i class="fa-solid fa-bars fa-xl"></i></a>
+            </div>
+            <div class="magnifyingicon">
+              <a href="#"><i class="fa-solid fa-magnifying-glass fa-xl"></i></a>
+            </div>
+          </div>
+          <div class="col-8">
+            <ul class="d-flex gap-5">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Shop Styles</a></li>
+              <li>
+                <a href="#">Features</a>
+              </li>
+              <li>
+                <img
+                  src="./sass/assets/img/atelier-logo-alt2-dark.png"
+                  alt=""
+                />
+              </li>
+              <li><a href="#">Pages</a></li>
+              <li><a href="#">Elements</a></li>
+              <li><a href="#">Demos</a></li>
+            </ul>
+          </div>
+          <div class="col-2 d-flex">
+            <div class="shopicon">
+              <a href="#"><i class="fa-solid fa-cart-shopping fa-xl"></i></a>
+              <a href="#"><i class="fa-regular fa-newspaper fa-xl"></i></a>
+            </div>
+            <div class="usericon">
+              <a href="#"><i class="fa-regular fa-user fa-xl"></i></a>
+            </div>
+          </div>
         </div>
-        <div class="magnifyingicon">
-         <a href="#"><i class="fa-solid fa-magnifying-glass fa-xl"></i></a>
-        </div>
-       </div>
-       <div class="col-8">
-         <ul class="d-flex gap-5">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Shop Styles</a></li>
-          <li>
-            <a href="#">Features</a>
-          </li>
-          <li> <img src="./sass/assets/img/atelier-logo-alt2-dark.png" alt=""></li>
-          <li><a href="#">Pages</a></li>
-          <li><a href="#">Elements</a></li>
-          <li><a href="#">Demos</a></li>
-         </ul>
-       </div>
-       <div class="col-2 d-flex">
-         <div class="shopicon">
-         <a href="#"><i class="fa-solid fa-cart-shopping fa-xl"></i></a>
-        <a href="#"><i class="fa-regular fa-newspaper fa-xl"></i></a>
-         </div>
-         <div class="usericon">
-          <a href="#"><i class="fa-regular fa-user fa-xl"></i></a>
-         </div>
-       </div>
-     </div>
-    </header>
+      </header>
 
+      <div class="swiper-area">
+        <div class="swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+
+            <div class="swiper-slide">
+              <div class="slider slider-achil">
+                <div class="container d-flex flex-column gap-3">
+                  <p class="slider-title">
+                    New Achilles Mid
+                    <br />
+                    is now available.
+                  </p>
+                  <p class="learn-btn">
+                    <a href="#">
+                      <span>Learn More</span>
+                      <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                  </p>
+                  <p class="add-to-cart-btn">
+                    <a href="#">
+                      <i class="fa-solid fa-cart-plus"></i>
+                      <span>Add To Cart</span>
+                    </a>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="slider slider-achil">
+                <div class="container d-flex flex-column gap-3">
+                  <p class="slider-title">
+                    New Achilles Mid
+                    <br />
+                    is now available.
+                  </p>
+                  <p class="learn-btn">
+                    <a href="#">
+                      <span>Learn More</span>
+                      <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                  </p>
+                  <p class="add-to-cart-btn">
+                    <a href="#">
+                      <i class="fa-solid fa-cart-plus"></i>
+                      <span>Add To Cart</span>
+                    </a>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="slider slider-achil">
+                <div class="container d-flex flex-column gap-3">
+                  <p class="slider-title">
+                    New Achilles Mid
+                    <br />
+                    is now available.
+                  </p>
+                  <p class="learn-btn">
+                    <a href="#">
+                      <span>Learn More</span>
+                      <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                  </p>
+                  <p class="add-to-cart-btn">
+                    <a href="#">
+                      <i class="fa-solid fa-cart-plus"></i>
+                      <span>Add To Cart</span>
+                    </a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination d-md-none"></div>
+
+          <div class="swiper-button-prev text-dark d-none d-md-block"></div>
+          <div class="swiper-button-next text-dark d-none d-md-block"></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="sass/assets/js/swiper.js"></script>
   </body>
 </html>
