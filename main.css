@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@300;400&family=Karla&family=Lora:ital,wght@1,500&family=Nunito+Sans:opsz,wght@6..12,200&family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -9,7 +10,36 @@ ul {
 }
 
 a {
-  text-decoration: none;
+  text-decoration: none !important;
+}
+
+.btn-ordinary {
+  color: #444444;
+  border-radius: 50px !important;
+  padding: 15px 30px !important;
+  font-family: "Karla", sans-serif;
+  font-size: 15px !important;
+  font-weight: 600 !important;
+  font-family: "Karla", sans-serif;
+}
+.btn-ordinary:hover {
+  background-color: #111111 !important;
+  transition: 0.5s ease;
+}
+
+.btn-hover {
+  border: 3px solid #222222 !important;
+  color: #444444;
+  font-weight: 700 !important;
+  padding: 20px 50px !important;
+  border-radius: 50px !important;
+  font-size: 15px !important;
+  margin-top: 100px;
+  font-family: "Karla", sans-serif;
+}
+.btn-hover:hover {
+  color: white !important;
+  background-color: #222222 !important;
 }
 
 .containers {
@@ -18,6 +48,152 @@ a {
   align-items: center;
 }
 
+.section-div {
+  background-color: rgb(25, 25, 25);
+}
+.section-div .banner-text {
+  padding: 85px 0;
+}
+.section-div .banner-text h1, .section-div .banner-text .h1 {
+  font-size: 37px;
+  width: 45%;
+  font-family: "Dosis", sans-serif;
+}
+.section-div .banner-slider {
+  position: relative;
+}
+.section-div .banner-slider .swiper-pagination {
+  bottom: 30px;
+  position: absolute;
+}
+.section-div .banner-slider .swiper-pagination .active-button {
+  background-color: white;
+  padding: 10px;
+  border-radius: 50%;
+}
+.section-div .banner-slider .navigation {
+  background-color: white;
+  position: absolute;
+  bottom: 30px;
+  right: 40px;
+  z-index: 10000;
+}
+.section-div .banner-slider .navigation .swiper-prev,
+.section-div .banner-slider .navigation .swiper-next {
+  font-size: 20px;
+}
+
+.section-div1 {
+  background-color: #222222;
+}
+.section-div1 .content-text {
+  padding: 50px 0;
+}
+.section-div1 .content-text h1, .section-div1 .content-text .h1 {
+  font-size: 40px;
+  width: 43%;
+  font-family: "Dosis", sans-serif;
+}
+.section-div1 .content-text p {
+  color: #999999;
+  font-size: 16px;
+  width: 47%;
+}
+.section-div1 .cards {
+  padding-bottom: 130px;
+}
+.section-div1 .cards .img-wrap {
+  margin-bottom: 30px;
+}
+.section-div1 .cards .img-wrap:hover img {
+  background-color: #444444;
+  opacity: 0.3;
+  transition: 0.5s ease;
+}
+.section-div1 .cards h6, .section-div1 .cards .h6 {
+  font-size: 22px;
+  font-family: "Dosis", sans-serif;
+}
+.section-div1 .cards a {
+  font-family: "Karla", sans-serif;
+}
+.section-div1 .cards a:hover {
+  text-decoration: underline !important;
+  transition: 0.8s ease;
+}
+
+#features-section {
+  padding-bottom: 100px;
+}
+#features-section .heading-text {
+  padding-bottom: 80px;
+}
+#features-section .heading-text h1, #features-section .heading-text .h1 {
+  color: #444444;
+  font-size: 40px;
+  width: 43%;
+  font-family: "Dosis", sans-serif;
+}
+
+#features-section2 {
+  background-color: #F7F7F7;
+  padding: 140px 0;
+}
+
+#features-section3 {
+  padding: 85px 0 100px 0;
+}
+
+.card-section .card-item h3, .card-section .card-item .h3 {
+  color: #222222;
+  font-size: 23px;
+  font-family: "Dosis", sans-serif;
+}
+.card-section .card-item p {
+  font-size: 18px;
+  width: 83%;
+  color: #444444;
+  font-family: "Karla", sans-serif;
+}
+
+@media (width <= 375px) {
+  .section-div .banner-text {
+    padding: 50px 0;
+  }
+  .section-div .banner-text h1, .section-div .banner-text .h1 {
+    font-size: 27px;
+    width: 55%;
+  }
+  #features-section .heading-text {
+    padding: 40px 0;
+  }
+  #features-section .heading-text h1, #features-section .heading-text .h1 {
+    font-size: 30px;
+  }
+  .card-section .card-item h3, .card-section .card-item .h3 {
+    font-size: 19px;
+  }
+  .card-section .card-item p {
+    font-size: 16px;
+  }
+  .btn {
+    padding: 12px 20px !important;
+    font-size: 12px !important;
+  }
+}
+@media (width <= 768px) {
+  #slider-section .banner-slider .swiper-pagination {
+    bottom: 0 !important;
+  }
+  #slider-section .banner-slider .navigation {
+    bottom: 0 !important;
+    right: 35px !important;
+  }
+  #slider-section .banner-slider .navigation .swiper-prev,
+  #slider-section .banner-slider .navigation .swiper-next {
+    font-size: 18px;
+  }
+}
 /*!
  * Bootstrap  v5.3.1 (https://getbootstrap.com/)
  * Copyright 2011-2023 The Bootstrap Authors
