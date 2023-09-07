@@ -68,10 +68,87 @@ ul {
 
 }
 
+footer {
+  background-color: #252525;
+  padding: 2rem 4rem 6rem 4rem;
+}
+
+.onecol {
+  color: #999999;
+  font-size: 14px;
+}
+
 .containers {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 1rem;
+}
+
+.navimg {
+  margin: 0 auto;
+}
+.navimg ul li a {
+  color: #333333;
+}
+.navimg ul li a:hover {
+  color: #ffba00;
+}
+
+.baricon a i {
+  color: #222222;
+}
+.baricon a i:hover {
+  color: #ffba00;
+}
+
+.magnifyingicon a i {
+  color: #222222;
+}
+.magnifyingicon a i:before {
+  border-left: 1px solid lightgrey;
+  padding: 30px;
+}
+.magnifyingicon a i:hover {
+  color: #ffba00;
+}
+
+.newspapericon a i::before {
+  border-right: 1px solid lightgrey;
+  padding: 30px;
+}
+.newspapericon a i:hover {
+  color: #ffba00;
+}
+
+.infohead {
+  text-align: center;
+  background-color: #72D8CD;
+  padding: 1rem;
+}
+.infohead i {
+  color: #397265;
+}
+.infohead span {
+  color: #397265;
+  font-size: 14px;
+}
+.infohead span strong {
+  font-size: 14px;
+}
+
+.usericon a i {
+  color: #252525;
+}
+.usericon a i:hover {
+  color: #ffba00;
+}
+
+.shopicon a i {
+  color: #333333;
+}
+.shopicon a i:hover {
+  color: #ffba00;
 }
 
 
