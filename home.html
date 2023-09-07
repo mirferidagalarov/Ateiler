@@ -13,43 +13,63 @@
   <body>
     <div class="container-fluid p-0 m-0">
       <header>
-        <div class="containers">
-          <div class="col-2 d-flex">
-            <div class="baricon">
-              <a href="#"><i class="fa-solid fa-bars fa-xl"></i></a>
+       <div class="containers row mx-0 w-100">
+            <div class="col-2 d-flex">
+              <div class="baricon me-4">
+                <a href="#"><i class="fa-solid fa-bars fa-lg"></i></a>
+              </div>
+             
+              <div class="d-none d-lg-flex magnifyingicon">
+                <a href="#"><i class="fa-solid fa-magnifying-glass fa-lg"></i></a>
+              </div>
             </div>
-            <div class="magnifyingicon">
-              <a href="#"><i class="fa-solid fa-magnifying-glass fa-xl"></i></a>
+            <div class="navimg col-8 d-flex justify-content-center align-items-center">
+              <ul class="d-none d-lg-flex d-flex justify-content-center align-items-center gap-4">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Shop Styles</a></li>
+                <li class="me-4">
+                  <a href="#">Features</a>
+                </li>       
+              </ul>
+              <div>
+              <a href="#"><img  src="./sass/assets/img/atelier-logo-alt2-dark.png" alt="">
+              </a>
+              </div>
+            
+              <ul class="d-none d-lg-flex d-flex justify-content-center align-items-center gap-4">
+                <li><a href="#">Pages</a></li>
+                <li><a href="#">Elements</a></li>
+                <li><a href="#">Demos</a></li>
+              </ul>
             </div>
-          </div>
-          <div class="col-8">
-            <ul class="d-flex gap-5">
-              <li><a href="#">Home</a></li>
-              <li><a href="#">Shop Styles</a></li>
-              <li>
-                <a href="#">Features</a>
-              </li>
-              <li>
-                <img
-                  src="./sass/assets/img/atelier-logo-alt2-dark.png"
-                  alt=""
-                />
-              </li>
-              <li><a href="#">Pages</a></li>
-              <li><a href="#">Elements</a></li>
-              <li><a href="#">Demos</a></li>
-            </ul>
-          </div>
-          <div class="col-2 d-flex">
-            <div class="shopicon">
-              <a href="#"><i class="fa-solid fa-cart-shopping fa-xl"></i></a>
-              <a href="#"><i class="fa-regular fa-newspaper fa-xl"></i></a>
+            <div class="col-2 d-flex justify-content-evenly">
+              <div class="shopicon d-flex">
+                <a href="#"><i class="fa-solid fa-cart-shopping fa-xl"></i></a>
+               <div class="d-none d-lg-flex newspapericon">
+                <a href="#"><i class="fa-regular fa-newspaper fa-xl"></i></a>
+               </div>
+              </div>
+              <div class="usericon d-none d-lg-flex">
+                <a href="#"><i class="fa-regular fa-user fa-xl"></i></a>
+              </div>
             </div>
-            <div class="usericon">
-              <a href="#"><i class="fa-regular fa-user fa-xl"></i></a>
-            </div>
-          </div>
+       </div>
+           
+       <div class="infohead row w-100 m-0 justify-content-evenly">
+        <div class="col-12 col-md-3">
+          <i class="fa-solid fa-truck"></i>
+          <span><strong>Free Shipping</strong> on all orders over $100.</span>
         </div>
+        <div class="col-12 col-md-3">
+          <i class="fa-solid fa-check"></i>
+          <span><strong> Worldwide Delivery</strong> and same day dispatch. </span>
+        </div>
+        <div class="col-12 col-md-3">
+            <span><strong>Receive Gifts</strong> when you subscribe.</span>
+        </div>
+       </div>
+
+       
       </header>
 
       <div class="swiper-area">
@@ -134,9 +154,28 @@
           <div class="swiper-button-next text-dark d-none d-md-block"></div>
         </div>
       </div>
+
+      <footer>
+        <div class="container">
+          <div class="row">
+            <div class="col-4 onecol">
+             <h3>
+              About Atelier
+             </h3>
+             <p>Lorem ipsum dolor sit amet isse potenti. Vesquam ante aliquet lacusemper elit. Cras neque nulla, convallis non commodo et, euismod nonsese.</p>
+             <p>©2023 Atelier · Made with  by Swift Ideas.</p>
+            </div>
+            <div class="col-4"></div>
+            <div class="col-4"></div>
+        </div>
+
+         </div>
+      </footer>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="sass/assets/js/swiper.js"></script>
   </body>
 </html>
+
+
