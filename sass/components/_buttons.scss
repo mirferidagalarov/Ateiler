@@ -45,4 +45,30 @@
         color: $secondary-black;
         background-color: $bg-white;
     }
+}.btn-ordinary{
+    color: #444444;
+    border-radius: 50px !important;
+    padding: 15px 30px !important;
+    font-family: 'Karla', sans-serif;
+    font-size: 15px !important;
+    font-weight: 600 !important;
+    font-family: 'Karla', sans-serif;
+    &:hover{
+        background-color: #111111 !important;
+        transition: 0.5s ease;
+    }
+}
+.btn-hover{
+    border: 3px solid #222222 !important;
+    color: #444444;
+    font-weight: 700 !important;
+    padding: 20px 50px !important;
+    border-radius: 50px !important;
+    font-size: 15px !important;
+    margin-top:100px;
+    font-family: 'Karla', sans-serif;
+    &:hover{
+        color: white !important;
+        background-color: #222222 !important;
+    }
 }
