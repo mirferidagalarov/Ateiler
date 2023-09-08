@@ -1,7 +1,7 @@
 .swiper-area {
     .swiper {
         .swiper-pagination-bullet-active {
-            background-color: #222;
+            background-color: $secondary-black;
         }
 
         width: 100%;
@@ -21,39 +21,277 @@
             }
 
 
-            .learn-btn {
-                a {
-                    font-size: 14px;
-                    background: none;
-                    border: 2px solid #e3e3e3;
-                    padding: 11px 34px;
-                    color: #222;
-                    border-color: #222;
-                    transition: all 0.5s ease-out;
+
+        }
+    }
+}
+
+.shop-content-area {
+    margin-top: 1.5rem;
+
+    .shop-content {
+        position: relative;
+
+        a {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            color: $secondary-black;
+            font-size: 12px;
+            font-weight: 600;
+            padding: 15px 35px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #fff;
+            transition: all 0.5s;
+            text-align: center;
+
+            span {
+                transform: translateX(12px);
+                transition: all 0.4s;
+            }
+
+
+            i {
+                font-size: 18px;
+                transform: scale(0.5);
+                opacity: 0;
+                transition: all 0.4s;
+            }
+
+            &:hover {
+                background-color: $bg-white;
+
+                span {
+                    transform: translateX(0);
+                }
+
+                i {
+                    transform: scale(1);
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
+
+.trending-area {
+    margin-top: 1.5rem;
+    background-color: $bg-white;
+    padding-top: 2rem;
+    text-align: center;
+    padding-bottom: 1rem;
+
+    .area-title {
+
+        .section-title {
+            color: $secondary-black;
+            font-size: 18px;
+            border-bottom: 2px solid $secondary-black;
+            padding-bottom: 3px;
+            margin-bottom: 1rem;
+        }
+
+        .section-little {
+            font-size: 14px;
+            color: $secondary-black;
+            display: none;
+        }
+    }
+
+    .trending {
+        overflow: hidden;
+        box-shadow: 1px 1px 1px rgba(0, 0, 0, .1);
+        transition: all 0.4s;
+
+        .trending-imgs {
+            position: relative;
+            background-color: #f7f7f9;
+
+            .trending-img {
+                cursor: pointer;
+                position: absolute;
+                top: 0;
+                left: 15%;
+                height: 100%;
+                width: 70%;
+                opacity: 0;
+                transform: translateX(160%) scale(0.7);
+                transition: all 0.4s;
+            }
+
+
+
+
+            .img-move-left {
+                transform: translateX(-80%) scale(0.7);
+            }
+
+            .img-move-right {
+                transform: translateX(80%) scale(0.7);
+            }
+
+            &:hover {
+                .img-move-left {
+                    opacity: 0.3;
 
                     &:hover {
-                        background-color: #222;
-                        color: #fff;
+                        opacity: 1;
+                        transform: translateX(-81%) scale(0.8);
                     }
+                }
 
-                    @media (min-width:768px) {
-                        font-size: 20px;
+                .img-move-right {
+                    opacity: 0.3;
+
+                    &:hover {
+                        opacity: 1;
+                        transform: translateX(79%) scale(0.8);
                     }
+                }
+
+            }
+
+            @media (max-width: 992px) {
+                .trending-img {
+                    opacity: 0.3;
                 }
             }
 
-            .add-to-cart-btn {
-                a {
-                    font-size: 14px;
-                    background-color: #111;
-                    border-color: #111;
-                    color: #fff;
-                    padding: 11px 34px;
+            .selected {
+                z-index: 5;
+                position: relative;
+                opacity: 1;
+                transform: translateX(0) scale(1);
+            }
+        }
 
-                    @media (min-width:768px) {
-                        font-size: 20px;
+        .trending-pagination {
+            position: absolute;
+            left: 50%;
+            bottom: 2%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 5px;
+            z-index: 200;
+
+            .pagination-dot {
+                width: 6px;
+                height: 6px;
+                border-radius: 50%;
+                background-color: rgba(0, 0, 0, 0.4);
+            }
+
+            .selected {
+                background-color: rgba(0, 0, 0, 0.8);
+            }
+        }
+
+        .trending-details {
+            background-color: #fff;
+            padding: 30px;
+
+            .row {
+                gap: 0.6rem;
+
+                .col-12 {
+                    display: flex;
+                    justify-content: space-between;
+
+                    .details-name {
+                        font-size: 18px;
+                        color: $secondary-black;
+                        font-weight: 600;
+                    }
+
+                    .price {
+                        font-size: 16px;
+                        color: $gray-black;
+                        font-weight: 600;
+                    }
+
+                    .details-info {
+                        font-size: 14px;
+                        color: $secondary-black;
                     }
                 }
+            }
+        }
+
+        &:hover {
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            transform: translateY(-4px);
+        }
+    }
+
+}
+
+
+.wavy-area {
+    background-color: rgb(34, 34, 34);
+    background-image: url(https://atelier.swiftideas.com/wp-content/uploads/2014/05/waves.jpg);
+    background-size: cover;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    // background-position: center;
+    padding: 100px 0;
+
+    .wavy-inner-area {
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+
+        p {
+            font-size: 16px;
+            color: #fff;
+            text-align: center;
+
+            @media (min-width: 768px) {
+                font-size: 24px;
+            }
+
+            @media (min-width: 1024px) {
+                font-size: 30px;
+            }
+        }
+    }
+}
+
+.brief-area{
+    background-color: rgb(34, 34, 34);
+    padding: 2rem 0;
+
+    .brief{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+
+        i{
+            font-size: 60px;
+            color: #fff;
+            transition: all 0.3s;
+        }
+
+        .brief-title{
+            font-size: 18px;
+            color: #fff;
+            font-weight: 600;
+        }
+
+        .brief-little{
+            font-size: 14px;
+            color: #fff;
+            text-align: center;
+        }
+
+        &:hover{
+            i{
+                color: rgb(68, 68, 68);
             }
         }
     }

@@ -13,130 +13,381 @@
   <body>
     <div class="container-fluid p-0 m-0">
       <header>
-        <div class="containers">
-          <div class="col-2 d-flex">
-            <div class="baricon">
-              <a href="#"><i class="fa-solid fa-bars fa-xl"></i></a>
+       <div class="containers row mx-0 w-100">
+            <div class="col-2 d-flex">
+              <div class="baricon me-4">
+                <a href="#"><i class="fa-solid fa-bars fa-lg"></i></a>
+              </div>
+             
+              <div class="d-none d-lg-flex magnifyingicon">
+                <a href="#"><i class="fa-solid fa-magnifying-glass fa-lg"></i></a>
+              </div>
             </div>
-            <div class="magnifyingicon">
-              <a href="#"><i class="fa-solid fa-magnifying-glass fa-xl"></i></a>
+            <div class="navimg col-8 d-flex justify-content-center align-items-center gap-4">
+              <ul class="d-none d-lg-flex d-flex justify-content-between align-items-center gap-4">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Shop Styles</a></li>
+                <li>
+                  <a href="#">Features</a>
+                </li>       
+              </ul>
+              <div>
+              <a href="#"><img  src="./sass/assets/img/atelier-logo-alt2-dark.png" alt="">
+              </a>
+              </div>
+            
+              <ul class="d-none d-lg-flex d-flex align-items-center gap-4">
+                <li><a href="#">Pages</a></li>
+                <li><a href="#">Elements</a></li>
+                <li><a href="#">Demos</a></li>
+              </ul>
+            </div>
+            <div class="col-2 d-flex justify-content-evenly">
+              <div class="shopicon d-flex">
+                <a href="#"><i class="fa-solid fa-cart-shopping fa-xl"></i></a>
+               <div class="d-none d-lg-flex newspapericon">
+                <a href="#"><i class="fa-regular fa-newspaper fa-xl"></i></a>
+               </div>
+              </div>
+              <div class="usericon d-none d-lg-flex">
+                <a href="#"><i class="fa-regular fa-user fa-xl"></i></a>
+              </div>
+            </div>
+       </div>
+           
+       <div class="infohead row w-100 m-0 justify-content-evenly">
+        <div class="col-12 col-md-3">
+          <i class="fa-solid fa-truck"></i>
+          <span><strong>Free Shipping</strong> on all orders over $100.</span>
+        </div>
+        <div class="col-12 col-md-3">
+          <i class="fa-solid fa-check"></i>
+          <span><strong> Worldwide Delivery</strong> and same day dispatch. </span>
+        </div>
+        <div class="col-12 col-md-3">
+            <span><strong>Receive Gifts</strong> when you subscribe.</span>
+        </div>
+       </div>
+
+       
+      </header>
+
+    <div class="swiper-area">
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="slider slider-achil">
+              <div class="container d-flex flex-column gap-3">
+                <p class="slider-title">
+                  New Achilles Mid
+                  <br />
+                  is now available.
+                </p>
+                <p class="learn-btn">
+                  <a href="#">
+                    <span>Learn More</span>
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </a>
+                </p>
+                <p class="add-to-cart-btn">
+                  <a href="#">
+                    <i class="fa-solid fa-cart-plus"></i>
+                    <span>Add To Cart</span>
+                  </a>
+                </p>
+              </div>
             </div>
           </div>
-          <div class="col-8">
-            <ul class="d-flex gap-5">
-              <li><a href="#">Home</a></li>
-              <li><a href="#">Shop Styles</a></li>
-              <li>
-                <a href="#">Features</a>
-              </li>
-              <li>
-                <img
-                  src="./sass/assets/img/atelier-logo-alt2-dark.png"
-                  alt=""
-                />
-              </li>
-              <li><a href="#">Pages</a></li>
-              <li><a href="#">Elements</a></li>
-              <li><a href="#">Demos</a></li>
-            </ul>
-          </div>
-          <div class="col-2 d-flex">
-            <div class="shopicon">
-              <a href="#"><i class="fa-solid fa-cart-shopping fa-xl"></i></a>
-              <a href="#"><i class="fa-regular fa-newspaper fa-xl"></i></a>
+          <div class="swiper-slide">
+            <div class="slider slider-achil">
+              <div class="container d-flex flex-column gap-3">
+                <p class="slider-title">
+                  New Achilles Mid
+                  <br />
+                  is now available.
+                </p>
+                <p class="learn-btn">
+                  <a href="#">
+                    <span>Learn More</span>
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </a>
+                </p>
+                <p class="add-to-cart-btn">
+                  <a href="#">
+                    <i class="fa-solid fa-cart-plus"></i>
+                    <span>Add To Cart</span>
+                  </a>
+                </p>
+              </div>
             </div>
-            <div class="usericon">
-              <a href="#"><i class="fa-regular fa-user fa-xl"></i></a>
+          </div>
+          <div class="swiper-slide">
+            <div class="slider slider-achil">
+              <div class="container d-flex flex-column gap-3">
+                <p class="slider-title">
+                  New Achilles Mid
+                  <br />
+                  is now available.
+                </p>
+                <p class="learn-btn">
+                  <a href="#">
+                    <span>Learn More</span>
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </a>
+                </p>
+                <p class="add-to-cart-btn">
+                  <a href="#">
+                    <i class="fa-solid fa-cart-plus"></i>
+                    <span>Add To Cart</span>
+                  </a>
+                </p>
+              </div>
             </div>
           </div>
         </div>
-      </header>
+        <div class="swiper-pagination d-md-none"></div>
 
-      <div class="swiper-area">
-        <div class="swiper">
-          <!-- Additional required wrapper -->
-          <div class="swiper-wrapper">
-            <!-- Slides -->
+        <div class="swiper-button-prev text-dark d-none d-md-block"></div>
+        <div class="swiper-button-next text-dark d-none d-md-block"></div>
+      </div>
+    </div>
 
-            <div class="swiper-slide">
-              <div class="slider slider-achil">
-                <div class="container d-flex flex-column gap-3">
-                  <p class="slider-title">
-                    New Achilles Mid
-                    <br />
-                    is now available.
-                  </p>
-                  <p class="learn-btn">
-                    <a href="#">
-                      <span>Learn More</span>
-                      <i class="fa-solid fa-arrow-right"></i>
-                    </a>
-                  </p>
-                  <p class="add-to-cart-btn">
-                    <a href="#">
-                      <i class="fa-solid fa-cart-plus"></i>
-                      <span>Add To Cart</span>
-                    </a>
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="slider slider-achil">
-                <div class="container d-flex flex-column gap-3">
-                  <p class="slider-title">
-                    New Achilles Mid
-                    <br />
-                    is now available.
-                  </p>
-                  <p class="learn-btn">
-                    <a href="#">
-                      <span>Learn More</span>
-                      <i class="fa-solid fa-arrow-right"></i>
-                    </a>
-                  </p>
-                  <p class="add-to-cart-btn">
-                    <a href="#">
-                      <i class="fa-solid fa-cart-plus"></i>
-                      <span>Add To Cart</span>
-                    </a>
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="slider slider-achil">
-                <div class="container d-flex flex-column gap-3">
-                  <p class="slider-title">
-                    New Achilles Mid
-                    <br />
-                    is now available.
-                  </p>
-                  <p class="learn-btn">
-                    <a href="#">
-                      <span>Learn More</span>
-                      <i class="fa-solid fa-arrow-right"></i>
-                    </a>
-                  </p>
-                  <p class="add-to-cart-btn">
-                    <a href="#">
-                      <i class="fa-solid fa-cart-plus"></i>
-                      <span>Add To Cart</span>
-                    </a>
-                  </p>
-                </div>
-              </div>
+    <div class="shop-content-area">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-3">
+            <div class="shop-content">
+              <img src="sass/assets/img/shopcontentbg1.jpg" class="img-fluid" />
+              <a href="#">
+                <span>SHOP OUTERWEAR</span>
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
             </div>
           </div>
-          <div class="swiper-pagination d-md-none"></div>
-
-          <div class="swiper-button-prev text-dark d-none d-md-block"></div>
-          <div class="swiper-button-next text-dark d-none d-md-block"></div>
+          <div class="col-12 col-md-3">
+            <div class="shop-content">
+              <img src="sass/assets/img/shopcontentbg2.jpg" class="img-fluid" />
+              <a href="#">
+                <span>SHOP ACCESSORIES</span>
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+          <div class="col-12 col-md-3">
+            <div class="shop-content">
+              <img src="sass/assets/img/shopcontentbg3.jpg" class="img-fluid" />
+              <a href="#">
+                <span>SHOP SHIRTING</span>
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+          <div class="col-12 col-md-3">
+            <div class="shop-content">
+              <img src="sass/assets/img/shopcontentbg4.jpg" class="img-fluid" />
+              <a href="#">
+                <span>SHOP FOOTWEAR</span>
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
 
+    <div class="trending-area">
+      <div class="container">
+        <div class="area-title d-flex align-items-center justify-content-center justify-content-sm-between">
+          <span class="section-title">TRENDING THIS WEEK</span>
+          <a href="#" class="section-little d-sm-block">VIEW ALL PRODUCTS</a>
+        </div>
+        <div class="row">
+          <div class="col-12 col-sm-6 col-lg-4 mb-4">
+            <div class="trending">
+              <div class="trending-imgs">
+                <div class="trending-img selected">
+                  <img src="sass/assets/img/trending11.jpg" class="img-fluid" />
+                </div>
+                <div class="trending-img img-move-right">
+                  <img src="sass/assets/img/trending12.jpg" class="img-fluid" />
+                </div>
+                <div class="trending-img">
+                  <img src="sass/assets/img/trending13.jpg" class="img-fluid" />
+                </div>
+                <div class="trending-pagination">
+                  <div class="pagination-dot selected"></div>
+                  <div class="pagination-dot"></div>
+                  <div class="pagination-dot"></div>
+                </div>
+              </div>
+              <div class="trending-details">
+                <div class="row">
+                  <div class="col-12">
+                    <a href="#" class="details-name">Achilles Low</a>
+                    <span class="price">$265</span>
+                  </div>
+                  <div class="col-12">
+                    <span class="details-info"> Footwear </span>
+                    <div class="details-stars">
+                      <i class="fa-solid fa-star checked"></i>
+                      <i class="fa-solid fa-star checked"></i>
+                      <i class="fa-solid fa-star checked"></i>
+                      <i class="fa-solid fa-star checked"></i>
+                      <i class="fa-solid fa-star checked"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-4 mb-4">
+            <div class="trending">
+              <div class="trending-imgs">
+                <div class="trending-img selected">
+                  <img src="sass/assets/img/trending21.jpg" class="img-fluid" />
+                </div>
+                <div class="trending-img img-move-right">
+                  <img src="sass/assets/img/trending22.jpg" class="img-fluid" />
+                </div>
+                <div class="trending-img">
+                  <img src="sass/assets/img/trending23.jpg" class="img-fluid" />
+                </div>
+                <div class="trending-pagination">
+                  <div class="pagination-dot selected"></div>
+                  <div class="pagination-dot"></div>
+                  <div class="pagination-dot"></div>
+                </div>
+              </div>
+              <div class="trending-details">
+                <div class="row">
+                  <div class="col-12">
+                    <a href="#" class="details-name">Plain Backpack</a>
+                    <span class="price">$360</span>
+                  </div>
+                  <div class="col-12">
+                    <span class="details-info"> Footwear </span>
+                    <div class="details-stars">
+                      <i class="fa-solid fa-star checked"></i>
+                      <i class="fa-solid fa-star checked"></i>
+                      <i class="fa-solid fa-star checked"></i>
+                      <i class="fa-solid fa-star checked"></i>
+                      <i class="fa-solid fa-star checked"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-4">
+            <div class="trending">
+              <div class="trending-imgs">
+                <div class="trending-img selected">
+                  <img src="sass/assets/img/trending31.jpg" class="img-fluid" />
+                </div>
+                <div class="trending-img img-move-right">
+                  <img src="sass/assets/img/trending32.jpg" class="img-fluid" />
+                </div>
+                <div class="trending-pagination">
+                  <div class="pagination-dot selected"></div>
+                  <div class="pagination-dot"></div>
+                </div>
+              </div>
+              <div class="trending-details">
+                <div class="row">
+                  <div class="col-12">
+                    <a href="#" class="details-name">Knitted Hat</a>
+                    <span class="price">$60</span>
+                  </div>
+                  <div class="col-12">
+                    <span class="details-info"> Footwear </span>
+                    <div class="details-stars">
+                      <i class="fa-solid fa-star checked"></i>
+                      <i class="fa-solid fa-star checked"></i>
+                      <i class="fa-solid fa-star checked"></i>
+                      <i class="fa-solid fa-star checked"></i>
+                      <i class="fa-solid fa-star checked"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="wavy-area d-flex align-items-center justify-content-center">
+      <div class="wavy-inner-area">
+        <img src="sass/assets/img/atelier-logo-stamp-small-light-fill.png" class="img-fluid">
+        <p class="wavy-txt">Welcome to the very best in globally sourced
+          premium goods. We offer free shipping, free
+          returns and a secure shopping experience.</p>
+        <button class="shop-btn rounded-pill">Start Shopping</button>
+      </div>
+    </div>
+
+    <div class="brief-area">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-4 mb-5 mb-md-0">
+            <div class="brief">
+              <i class="fa-regular fa-paper-plane"></i>
+              <p class="brief-title">Fast delivery</p>
+              <p class="brief-little">Lorem ipsum dolor sit amet isse
+                potenti. Vesquam ante aliquet
+                lacusemper elit. Cras neque nulla,
+                convallis non commodo et.
+                euismod nonsese.</p>
+            </div>
+          </div>
+          <div class="col-12 col-md-4 mb-5 mb-md-0">
+            <div class="brief">
+              <i class="fa-solid fa-cart-shopping"></i>
+              <p class="brief-title">Secure Checkout</p>
+              <p class="brief-little">Lorem ipsum dolor sit amet isse
+                potenti. Vesquam ante aliquet
+                lacusemper elit. Cras neque nulla,
+                convallis non commodo et.
+                euismod nonsese.</p>
+            </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <div class="brief">
+              <i class="fa-solid fa-box-open"></i>
+              <p class="brief-title">Free Returns</p>
+              <p class="brief-little">Lorem ipsum dolor sit amet isse
+                potenti. Vesquam ante aliquet
+                lacusemper elit. Cras neque nulla,
+                convallis non commodo et.
+                euismod nonsese.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="container">
+          <div class="row">
+            <div class="col-4 onecol">
+             <h3>
+              About Atelier
+             </h3>
+             <p>Lorem ipsum dolor sit amet isse potenti. Vesquam ante aliquet lacusemper elit. Cras neque nulla, convallis non commodo et, euismod nonsese.</p>
+             <p>©2023 Atelier · Made with  by Swift Ideas.</p>
+            </div>
+            <div class="col-4"></div>
+            <div class="col-4"></div>
+        </div>
+
+         </div>
+      </footer>
+    </div>
+
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="sass/assets/js/swiper.js"></script>
-  </body>
+    <script src="sass/assets/js/app.js"></script>
+</body>
+
 </html>
+
+
