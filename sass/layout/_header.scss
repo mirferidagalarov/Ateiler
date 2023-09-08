@@ -2,11 +2,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
-     padding: 1rem;
+    
     }
 
   .navimg{
-  
+
   margin: 0 auto;
      ul{
       
@@ -18,7 +18,6 @@
            &:hover
                       {
                         color: #ffba00;
-                        
                         }
           
           }
@@ -55,7 +54,7 @@
          &:before
                 {
                     border-left: 1px solid lightgrey;
-                    padding: 30px;
+                    padding: 22px;
                      
                   }
         color: #222222;
@@ -79,7 +78,7 @@
               &::before
                 {
                     border-right: 1px solid lightgrey;
-                    padding: 30px;
+                    padding: 20px;
                      
                   }
                      &:hover
@@ -147,11 +146,7 @@
                   i{
                     
                     color: #333333;
-                    &:hover
-                      {
-                        color: #ffba00;
-                        
-                        }
+                    
                     
                     }
                   
@@ -159,3 +154,36 @@
                   }
                 
                 }
+
+
+
+  .homehover{
+    cursor: pointer;
+      position: relative;
+      padding: 1.5rem;
+      
+      
+      
+      .homehoverin{
+          display: none;
+          position: absolute;
+          background-color: red;
+          z-index: 10;
+          padding: 5rem;
+          top:100%;
+        }
+          &:hover
+        {
+          
+          .hover-link{
+
+                        color: #ffba00;
+                        
+            }
+         .homehoverin{
+          
+           display: block;
+          }
+          
+          }
+    }                
