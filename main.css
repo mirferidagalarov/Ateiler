@@ -130,56 +130,6 @@ footer {
   padding: 1rem;
 }
 
-.swiper-area .swiper {
-  width: 100%;
-}
-.swiper-area .swiper .swiper-pagination-bullet-active {
-  background-color: #222;
-}
-.swiper-area .swiper .slider-achil {
-  padding: 4rem 0;
-  background-image: url(https://atelier.swiftideas.com/wp-content/uploads/2014/11/slider_bkg_shoes2_small.jpg);
-  background-position: center center;
-  background-size: cover;
-}
-.swiper-area .swiper .slider-achil .slider-title {
-  font-size: 24px;
-}
-@media (min-width: 768px) {
-  .swiper-area .swiper .slider-achil .slider-title {
-    font-size: 40px;
-  }
-}
-.swiper-area .swiper .slider-achil .learn-btn a {
-  font-size: 14px;
-  background: none;
-  border: 2px solid #e3e3e3;
-  padding: 11px 34px;
-  color: #222;
-  border-color: #222;
-  transition: all 0.5s ease-out;
-}
-.swiper-area .swiper .slider-achil .learn-btn a:hover {
-  background-color: #222;
-  color: #fff;
-}
-@media (min-width: 768px) {
-  .swiper-area .swiper .slider-achil .learn-btn a {
-    font-size: 20px;
-  }
-}
-.swiper-area .swiper .slider-achil .add-to-cart-btn a {
-  font-size: 14px;
-  background-color: #111;
-  border-color: #111;
-  color: #fff;
-  padding: 11px 34px;
-}
-@media (min-width: 768px) {
-  .swiper-area .swiper .slider-achil .add-to-cart-btn a {
-    font-size: 20px;
-  }
-}
 .navimg {
   margin: 0 auto;
 }
@@ -714,7 +664,6 @@ footer {
   .card-section .card-item .paragraph2 {
     font-size: 13px;
   }
-}
 }
 /*!
  * Bootstrap  v5.3.1 (https://getbootstrap.com/)
