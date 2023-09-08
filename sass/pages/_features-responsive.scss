@@ -22,6 +22,7 @@
         }
     }
 
+
     // cards
     .card-section {
         .card-item {
@@ -32,13 +33,49 @@
             p {
                 font-size: 16px;
             }
+           
         }
     }
 
-    .btn {
+    .btn-ordinary,
+    .btn-hover {
         padding: 12px 20px !important;
         font-size: 12px !important;
     }
+
+    .section-div1 {
+        .content-text {
+            h1 {
+                font-size: 30px;
+                width: 65%;
+            }
+
+            p {
+                font-size: 14px;
+                width: 60%;
+            }
+        }
+
+        .cards {
+            padding-bottom: 80px;
+
+            .card-item {
+                padding-bottom: 40px;
+
+                .img-wrap {
+                    margin-bottom: 15px;
+
+                }
+
+                h6 {
+                    font-size: 20px;
+                    font-family: 'Dosis', sans-serif;
+
+                }
+            }
+        }
+    }
+
 }
 
 @media(width<=768px) {
@@ -60,4 +97,28 @@
         }
     }
 
+    .card-section {
+        .card-item {
+            h3 {
+                font-size: 19px;
+            }
+
+            p {
+                font-size: 16px;
+            }
+            .paragraph1 {
+                font-size: 15px;
+                
+            }
+        
+            .paragraph2 {
+                font-size: 13px;
+                
+        
+            }
+        
+           
+        }
+    }
+    
 }
