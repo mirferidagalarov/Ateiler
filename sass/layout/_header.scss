@@ -1,98 +1,99 @@
-.containers {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 1rem;
-}
+.containers{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    }
 
-.navimg {
+  .navimg{
 
   margin: 0 auto;
-
-  ul {
-
-    li {
-
-      a {
-
-        color: #333333;
-
-        &:hover {
-          color: #ffba00;
-
+     ul{
+      
+      li{
+        
+        a{
+          
+          color: #333333;
+           &:hover
+                      {
+                        color: #ffba00;
+                        }
+          
+          }
+        
         }
-
+      
       }
+    
+    }
+        
+        .baricon{
+            
+           a{
+            i{
+              
+              color: #222222;
+              
+                     &:hover
+                      {
+                        color: #ffba00;
+                        
+                        }
+              
+              }
+            
+            }
+             
+            }
 
+  .magnifyingicon{
+    
+    a{
+      i{
+         &:before
+                {
+                    border-left: 1px solid lightgrey;
+                    padding: 22px;
+                     
+                  }
+        color: #222222;
+        
+          &:hover
+                      {
+                        color: #ffba00;
+                        
+                        }
+        
+        }
+      
+      }
+    
     }
 
-  }
-
-}
-
-.baricon {
-
-  a {
-    i {
-
-      color: #222222;
-
-      &:hover {
-        color: #ffba00;
-
-      }
-
-    }
-
-  }
-
-}
-
-.magnifyingicon {
-
-  a {
-    i {
-      &:before {
-        border-left: 1px solid lightgrey;
-        padding: 30px;
-
-      }
-
-      color: #222222;
-
-      &:hover {
-        color: #ffba00;
-
-      }
-
-    }
-
-  }
-
-}
-
-.newspapericon {
-  a {
-    i {
-
-      &::before {
-        border-right: 1px solid lightgrey;
-        padding: 30px;
-
-      }
-
-      &:hover {
-        color: #ffba00;
-
-      }
-
-    }
-
-  }
-
-
-
-}
+ .newspapericon{
+              a{
+            i{
+              
+              &::before
+                {
+                    border-right: 1px solid lightgrey;
+                    padding: 20px;
+                     
+                  }
+                     &:hover
+                      {
+                        color: #ffba00;
+                        
+                        }
+              
+              }
+            
+            }
+             
+                
+                
+                }
 
 
 
@@ -140,21 +141,50 @@
 }
 
 
-.shopicon {
+              .shopicon{
+                
+                a{
+                  i{
+                    
+                    color: #333333;
+                    
+                    
+                    }
+                  
+                  
+                  }
+                
+                }
 
-  a {
-    i {
-
-      color: #333333;
-
-      &:hover {
-        color: #ffba00;
-
-      }
-
-    }
 
 
-  }
+  .homehover{
+    cursor: pointer;
+      position: relative;
+      padding: 1.5rem;
+      
+      
+      
+      .homehoverin{
+          display: none;
+          position: absolute;
+          background-color: red;
+          z-index: 10;
+          padding: 5rem;
+          top:100%;
+        }
+          &:hover
+        {
+          
+          .hover-link{
 
-}
+                        color: #ffba00;
+                        
+            }
+         .homehoverin{
+          
+           display: block;
+          }
+          
+          }
+    }                
