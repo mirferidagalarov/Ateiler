@@ -373,6 +373,9 @@ footer {
   font-size: 14px;
   color: #222;
 }
+.trending-area .trending .trending-details .checked {
+  color: #eabe12;
+}
 .trending-area .trending:hover {
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
   transform: translateY(-4px);
@@ -436,6 +439,62 @@ footer {
 }
 .brief-area .brief:hover i {
   color: rgb(68, 68, 68);
+}
+
+.feature-area {
+  margin-top: 1.5rem;
+  padding-top: 2rem;
+  text-align: center;
+  padding-bottom: 1rem;
+}
+.feature-area .area-title .section-title {
+  color: #222;
+  font-size: 18px;
+  border-bottom: 2px solid #222;
+  padding-bottom: 3px;
+  margin-bottom: 1rem;
+}
+.feature-area .area-title .section-little {
+  font-size: 14px;
+  color: #222;
+  display: none;
+}
+.feature-area .row .col-12 .feature {
+  position: relative;
+}
+.feature-area .row .col-12 .feature .feature-actions {
+  position: absolute;
+  bottom: 4%;
+  left: 4%;
+  background-color: #fff;
+}
+.feature-area .row .col-12 .feature .feature-actions span {
+  color: #444;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 0.8rem;
+  display: inline-block;
+}
+.feature-area .row .col-12 .feature .feature-actions a {
+  color: #333;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 0.8rem 1.2rem;
+  display: inline-block;
+  position: relative;
+  transition: all 0.4s;
+}
+.feature-area .row .col-12 .feature .feature-actions a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -1%;
+  height: 100%;
+  width: 1px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.feature-area .row .col-12 .feature .feature-actions a:hover {
+  color: #eabe12;
 }
 
 .section-div {
