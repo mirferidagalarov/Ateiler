@@ -1,732 +1,5 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Dosis:wght@300;400&family=Karla&family=Lora:ital,wght@1,500&family=Nunito+Sans:opsz,wght@6..12,200&family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&display=swap");
-<<<<<<< HEAD
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  font-family: "Nunito Sans", sans-serif;
-}
-
-html {
-  height: 100%;
-  max-height: 100vh;
-  max-width: 100vw;
-}
-
-body {
-  height: 100%;
-  width: 100%;
-}
-
-p {
-  margin: 0;
-  padding: 0;
-}
-
-button {
-  border: none;
-  outline: none;
-}
-
-a {
-  text-decoration: none !important;
-}
-
-ul {
-  list-style-type: none;
-  padding: 0 !important;
-  margin: 0 !important;
-}
-
-.learn-btn a {
-  font-size: 14px;
-  background: none;
-  border: 2px solid #e3e3e3;
-  padding: 11px 34px;
-  color: #222;
-  border-color: #222;
-  transition: all 0.5s ease-out;
-}
-.learn-btn a:hover {
-  background-color: #222;
-  color: #fff;
-}
-@media (min-width: 768px) {
-  .learn-btn a {
-    font-size: 20px;
-  }
-}
-
-.add-to-cart-btn a {
-  font-size: 14px;
-  background-color: #111;
-  border-color: #111;
-  color: #fff;
-  padding: 11px 34px;
-}
-@media (min-width: 768px) {
-  .add-to-cart-btn a {
-    font-size: 20px;
-  }
-}
-
-.shop-btn {
-  background: none;
-  border: 2px solid #e4e4e4;
-  padding: 15px 25px;
-  transition: all 0.5s;
-  color: #fff;
-  min-width: -moz-max-content;
-  min-width: max-content;
-}
-.shop-btn:hover {
-  color: #222;
-  background-color: #e4e4e4;
-}
-
-.btn-ordinary {
-  color: #444444;
-  border-radius: 50px !important;
-  padding: 15px 30px !important;
-  font-family: "Karla", sans-serif;
-  font-size: 15px !important;
-  font-weight: 600 !important;
-  font-family: "Karla", sans-serif;
-}
-.btn-ordinary:hover {
-  background-color: #111111 !important;
-  transition: 0.5s ease;
-}
-
-.btn-hover {
-  border: 3px solid #222222 !important;
-  color: #444444;
-  font-weight: 700 !important;
-  padding: 20px 50px !important;
-  border-radius: 50px !important;
-  font-size: 15px !important;
-  margin-top: 100px;
-  font-family: "Karla", sans-serif;
-}
-.btn-hover:hover {
-  color: white !important;
-  background-color: #222222 !important;
-}
-
-footer {
-  background-color: #252525;
-  padding: 2rem 4rem 6rem 4rem;
-}
-
-.onecol {
-  color: #999999;
-  font-size: 14px;
-}
-
-.containers {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 1rem;
-}
-
-.navimg {
-  margin: 0 auto;
-}
-.navimg ul li a {
-  color: #333333;
-}
-.navimg ul li a:hover {
-  color: #ffba00;
-}
-
-.baricon a i {
-  color: #222222;
-}
-.baricon a i:hover {
-  color: #ffba00;
-}
-
-.magnifyingicon a i {
-  color: #222222;
-}
-.magnifyingicon a i:before {
-  border-left: 1px solid lightgrey;
-  padding: 30px;
-}
-.magnifyingicon a i:hover {
-  color: #ffba00;
-}
-
-.newspapericon a i::before {
-  border-right: 1px solid lightgrey;
-  padding: 30px;
-}
-.newspapericon a i:hover {
-  color: #ffba00;
-}
-
-.infohead {
-  text-align: center;
-  background-color: #72D8CD;
-  padding: 1rem;
-}
-.infohead i {
-  color: #397265;
-}
-.infohead span {
-  color: #397265;
-  font-size: 14px;
-}
-.infohead span strong {
-  font-size: 14px;
-}
-
-.usericon a i {
-  color: #252525;
-}
-.usericon a i:hover {
-  color: #ffba00;
-}
-
-.shopicon a i {
-  color: #333333;
-}
-.shopicon a i:hover {
-  color: #ffba00;
-}
-
-.swiper-area .swiper {
-  width: 100%;
-}
-.swiper-area .swiper .swiper-pagination-bullet-active {
-  background-color: #222;
-}
-.swiper-area .swiper .slider-achil {
-  padding: 4rem 0;
-  background-image: url(https://atelier.swiftideas.com/wp-content/uploads/2014/11/slider_bkg_shoes2_small.jpg);
-  background-position: center center;
-  background-size: cover;
-}
-.swiper-area .swiper .slider-achil .slider-title {
-  font-size: 24px;
-}
-@media (min-width: 768px) {
-  .swiper-area .swiper .slider-achil .slider-title {
-    font-size: 40px;
-  }
-}
-
-.shop-content-area {
-  margin-top: 1.5rem;
-}
-.shop-content-area .shop-content {
-  position: relative;
-}
-.shop-content-area .shop-content a {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  color: #222;
-  font-size: 12px;
-  font-weight: 600;
-  padding: 15px 35px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: #fff;
-  transition: all 0.5s;
-  text-align: center;
-}
-.shop-content-area .shop-content a span {
-  transform: translateX(12px);
-  transition: all 0.4s;
-}
-.shop-content-area .shop-content a i {
-  font-size: 18px;
-  transform: scale(0.5);
-  opacity: 0;
-  transition: all 0.4s;
-}
-.shop-content-area .shop-content a:hover {
-  background-color: #e4e4e4;
-}
-.shop-content-area .shop-content a:hover span {
-  transform: translateX(0);
-}
-.shop-content-area .shop-content a:hover i {
-  transform: scale(1);
-  opacity: 1;
-}
-
-.trending-area {
-  margin-top: 1.5rem;
-  background-color: #e4e4e4;
-  padding-top: 2rem;
-  text-align: center;
-  padding-bottom: 1rem;
-}
-.trending-area .area-title .section-title {
-  color: #222;
-  font-size: 18px;
-  border-bottom: 2px solid #222;
-  padding-bottom: 3px;
-  margin-bottom: 1rem;
-}
-.trending-area .area-title .section-little {
-  font-size: 14px;
-  color: #222;
-  display: none;
-}
-.trending-area .trending {
-  overflow: hidden;
-  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
-  transition: all 0.4s;
-}
-.trending-area .trending .trending-imgs {
-  position: relative;
-  background-color: #f7f7f9;
-}
-.trending-area .trending .trending-imgs .trending-img {
-  cursor: pointer;
-  position: absolute;
-  top: 0;
-  left: 15%;
-  height: 100%;
-  width: 70%;
-  opacity: 0;
-  transform: translateX(160%) scale(0.7);
-  transition: all 0.4s;
-}
-.trending-area .trending .trending-imgs .img-move-left {
-  transform: translateX(-80%) scale(0.7);
-}
-.trending-area .trending .trending-imgs .img-move-right {
-  transform: translateX(80%) scale(0.7);
-}
-.trending-area .trending .trending-imgs:hover .img-move-left {
-  opacity: 0.3;
-}
-.trending-area .trending .trending-imgs:hover .img-move-left:hover {
-  opacity: 1;
-  transform: translateX(-81%) scale(0.8);
-}
-.trending-area .trending .trending-imgs:hover .img-move-right {
-  opacity: 0.3;
-}
-.trending-area .trending .trending-imgs:hover .img-move-right:hover {
-  opacity: 1;
-  transform: translateX(79%) scale(0.8);
-}
-@media (max-width: 992px) {
-  .trending-area .trending .trending-imgs .trending-img {
-    opacity: 0.3;
-  }
-}
-.trending-area .trending .trending-imgs .selected {
-  z-index: 5;
-  position: relative;
-  opacity: 1;
-  transform: translateX(0) scale(1);
-}
-.trending-area .trending .trending-pagination {
-  position: absolute;
-  left: 50%;
-  bottom: 2%;
-  transform: translateX(-50%);
-  display: flex;
-  gap: 5px;
-  z-index: 200;
-}
-.trending-area .trending .trending-pagination .pagination-dot {
-  width: 6px;
-  height: 6px;
-  border-radius: 50%;
-  background-color: rgba(0, 0, 0, 0.4);
-}
-.trending-area .trending .trending-pagination .selected {
-  background-color: rgba(0, 0, 0, 0.8);
-}
-.trending-area .trending .trending-details {
-  background-color: #fff;
-  padding: 30px;
-}
-.trending-area .trending .trending-details .row {
-  gap: 0.6rem;
-}
-.trending-area .trending .trending-details .row .col-12 {
-  display: flex;
-  justify-content: space-between;
-}
-.trending-area .trending .trending-details .row .col-12 .details-name {
-  font-size: 18px;
-  color: #222;
-  font-weight: 600;
-}
-.trending-area .trending .trending-details .row .col-12 .price {
-  font-size: 16px;
-  color: #444;
-  font-weight: 600;
-}
-.trending-area .trending .trending-details .row .col-12 .details-info {
-  font-size: 14px;
-  color: #222;
-}
-.trending-area .trending .trending-details .checked {
-  color: #eabe12;
-}
-.trending-area .trending:hover {
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
-  transform: translateY(-4px);
-}
-
-.wavy-area {
-  background-color: rgb(34, 34, 34);
-  background-image: url(https://atelier.swiftideas.com/wp-content/uploads/2014/05/waves.jpg);
-  background-size: cover;
-  background-attachment: scroll;
-  background-repeat: no-repeat;
-  padding: 100px 0;
-}
-.wavy-area .wavy-inner-area {
-  width: 40%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1rem;
-}
-.wavy-area .wavy-inner-area p {
-  font-size: 16px;
-  color: #fff;
-  text-align: center;
-}
-@media (min-width: 768px) {
-  .wavy-area .wavy-inner-area p {
-    font-size: 24px;
-  }
-}
-@media (min-width: 1024px) {
-  .wavy-area .wavy-inner-area p {
-    font-size: 30px;
-  }
-}
-
-.brief-area {
-  background-color: rgb(34, 34, 34);
-  padding: 2rem 0;
-}
-.brief-area .brief {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1rem;
-}
-.brief-area .brief i {
-  font-size: 60px;
-  color: #fff;
-  transition: all 0.3s;
-}
-.brief-area .brief .brief-title {
-  font-size: 18px;
-  color: #fff;
-  font-weight: 600;
-}
-.brief-area .brief .brief-little {
-  font-size: 14px;
-  color: #fff;
-  text-align: center;
-}
-.brief-area .brief:hover i {
-  color: rgb(68, 68, 68);
-}
-
-.feature-area {
-  margin-top: 1.5rem;
-  padding-top: 2rem;
-  text-align: center;
-  padding-bottom: 1rem;
-}
-.feature-area .area-title .section-title {
-  color: #222;
-  font-size: 18px;
-  border-bottom: 2px solid #222;
-  padding-bottom: 3px;
-  margin-bottom: 1rem;
-}
-.feature-area .area-title .section-little {
-  font-size: 14px;
-  color: #222;
-  display: none;
-}
-.feature-area .row .col-12 .feature {
-  position: relative;
-}
-.feature-area .row .col-12 .feature .feature-actions {
-  position: absolute;
-  bottom: 4%;
-  left: 4%;
-  background-color: #fff;
-}
-.feature-area .row .col-12 .feature .feature-actions span {
-  color: #444;
-  font-size: 18px;
-  font-weight: 600;
-  padding: 0.8rem;
-  display: inline-block;
-}
-.feature-area .row .col-12 .feature .feature-actions a {
-  color: #333;
-  font-size: 18px;
-  font-weight: 600;
-  padding: 0.8rem 1.2rem;
-  display: inline-block;
-  position: relative;
-  transition: all 0.4s;
-}
-.feature-area .row .col-12 .feature .feature-actions a::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: -1%;
-  height: 100%;
-  width: 1px;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-}
-.feature-area .row .col-12 .feature .feature-actions a:hover {
-  color: #eabe12;
-}
-
-.section-div {
-  background-color: rgb(25, 25, 25);
-}
-.section-div .banner-text {
-  padding: 85px 0;
-}
-.section-div .banner-text h1, .section-div .banner-text .h1 {
-  font-size: 37px;
-  width: 45%;
-  font-family: "Dosis", sans-serif;
-}
-.section-div .banner-slider {
-  position: relative;
-}
-.section-div .banner-slider .swiper-pagination {
-  bottom: 30px;
-  position: absolute;
-}
-.section-div .banner-slider .swiper-pagination-bullet-active {
-  background-color: white;
-}
-.section-div .banner-slider .navigation {
-  background-color: white;
-  position: absolute;
-  bottom: 30px;
-  right: 40px;
-  z-index: 10000;
-}
-.section-div .banner-slider .navigation .swiper-prev,
-.section-div .banner-slider .navigation .swiper-next {
-  font-size: 20px;
-}
-
-.section-div1 {
-  background-color: #222222;
-}
-.section-div1 .content-text {
-  padding: 50px 0;
-}
-.section-div1 .content-text h1, .section-div1 .content-text .h1 {
-  font-size: 40px;
-  width: 47%;
-  font-family: "Dosis", sans-serif;
-}
-.section-div1 .content-text p {
-  color: #999999;
-  font-size: 16px;
-  width: 53%;
-}
-.section-div1 .cards {
-  padding-bottom: 130px;
-}
-.section-div1 .cards .img-wrap {
-  margin-bottom: 30px;
-}
-.section-div1 .cards .img-wrap:hover img {
-  background-color: #444444;
-  opacity: 0.3;
-  transition: 0.5s ease;
-}
-.section-div1 .cards h6, .section-div1 .cards .h6 {
-  font-size: 22px;
-  font-family: "Dosis", sans-serif;
-}
-.section-div1 .cards a {
-  font-family: "Karla", sans-serif;
-}
-.section-div1 .cards a:hover {
-  text-decoration: underline !important;
-  transition: 0.8s ease;
-}
-
-#features-section {
-  padding-bottom: 100px;
-}
-#features-section .heading-text {
-  padding-bottom: 80px;
-}
-#features-section .heading-text h1, #features-section .heading-text .h1 {
-  color: #444444;
-  font-size: 40px;
-  width: 47%;
-  font-family: "Dosis", sans-serif;
-}
-#features-section .heading-text1 {
-  padding: 80px 0 30px 0;
-}
-#features-section .heading-text1 h1, #features-section .heading-text1 .h1 {
-  color: #444444;
-  font-size: 36px;
-  width: 47%;
-  font-family: "Dosis", sans-serif;
-}
-#features-section .heading-text1 p {
-  color: #222222;
-  width: 50%;
-  font-size: 16px;
-  line-height: 30px;
-  font-family: "Karla", sans-serif;
-}
-
-#features-section2 {
-  background-color: #F7F7F7;
-  padding: 140px 0;
-}
-
-#features-section3 {
-  padding: 85px 0 100px 0;
-}
-
-.card-section .card-item .card-img {
-  cursor: pointer;
-}
-.card-section .card-item .card-img:hover .shadow-box {
-  top: 0;
-  left: 0;
-  background-color: #444444;
-  opacity: 0.6;
-  z-index: 10000;
-  transition: 0.8s ease;
-}
-.card-section .card-item h3, .card-section .card-item .h3 {
-  color: #222222;
-  font-size: 23px;
-  font-family: "Dosis", sans-serif;
-}
-.card-section .card-item h4, .card-section .card-item .h4 {
-  font-size: 16px;
-  color: #222222;
-  font-family: "Karla", sans-serif;
-}
-.card-section .card-item h5, .card-section .card-item .h5 {
-  font-size: 25px;
-  color: #444444;
-  font-family: "Dosis", sans-serif;
-}
-.card-section .card-item p {
-  font-size: 18px;
-  width: 83%;
-  color: #444444;
-  font-family: "Karla", sans-serif;
-}
-.card-section .card-item .paragraph1 {
-  font-size: 16.5px;
-  color: #222222;
-  width: 100%;
-  font-family: "Karla", sans-serif;
-}
-.card-section .card-item .paragraph2 {
-  font-size: 14.5px;
-  color: #444444;
-  width: 100%;
-  font-family: "Karla", sans-serif;
-}
-
-@media (width <= 375px) {
-  .section-div .banner-text {
-    padding: 50px 0;
-  }
-  .section-div .banner-text h1, .section-div .banner-text .h1 {
-    font-size: 27px;
-    width: 55%;
-  }
-  #features-section .heading-text {
-    padding: 40px 0;
-  }
-  #features-section .heading-text h1, #features-section .heading-text .h1 {
-    font-size: 30px;
-  }
-  .card-section .card-item h3, .card-section .card-item .h3 {
-    font-size: 19px;
-  }
-  .card-section .card-item p {
-    font-size: 16px;
-  }
-  .btn-ordinary,
-  .btn-hover {
-    padding: 12px 20px !important;
-    font-size: 12px !important;
-  }
-  .section-div1 .content-text h1, .section-div1 .content-text .h1 {
-    font-size: 30px;
-    width: 65%;
-  }
-  .section-div1 .content-text p {
-    font-size: 14px;
-    width: 60%;
-  }
-  .section-div1 .cards {
-    padding-bottom: 80px;
-  }
-  .section-div1 .cards .card-item {
-    padding-bottom: 40px;
-  }
-  .section-div1 .cards .card-item .img-wrap {
-    margin-bottom: 15px;
-  }
-  .section-div1 .cards .card-item h6, .section-div1 .cards .card-item .h6 {
-    font-size: 20px;
-    font-family: "Dosis", sans-serif;
-  }
-}
-@media (width <= 768px) {
-  #slider-section .banner-slider .swiper-pagination {
-    bottom: 0 !important;
-  }
-  #slider-section .banner-slider .navigation {
-    bottom: 0 !important;
-    right: 35px !important;
-  }
-  #slider-section .banner-slider .navigation .swiper-prev,
-  #slider-section .banner-slider .navigation .swiper-next {
-    font-size: 18px;
-  }
-  .card-section .card-item h3, .card-section .card-item .h3 {
-    font-size: 19px;
-  }
-  .card-section .card-item p {
-    font-size: 16px;
-  }
-  .card-section .card-item .paragraph1 {
-    font-size: 15px;
-  }
-  .card-section .card-item .paragraph2 {
-    font-size: 13px;
-  }
-}
-=======
->>>>>>> origin/development
 /*!
  * Bootstrap  v5.3.1 (https://getbootstrap.com/)
  * Copyright 2011-2023 The Bootstrap Authors
@@ -23248,6 +22521,9 @@ footer .threecol p span input {
 .navimg {
   margin: 0 auto;
 }
+.navimg div {
+  padding: 1rem;
+}
 .navimg ul li a {
   color: #333333;
 }
@@ -23339,6 +22615,9 @@ footer .threecol p span input {
   background-image: url(https://atelier.swiftideas.com/wp-content/uploads/2014/11/slider_bkg_shoes2_small.jpg);
   background-position: center center;
   background-size: cover;
+}
+.swiper-area .swiper .slider-achil a {
+  display: inline-block;
 }
 .swiper-area .swiper .slider-achil .slider-title {
   font-size: 24px;
@@ -23437,6 +22716,9 @@ footer .threecol p span input {
 .trending-area .trending .trending-imgs .img-move-right {
   transform: translateX(80%) scale(0.7);
 }
+.trending-area .trending .trending-imgs .img-hide-left {
+  transform: translateX(-160%) scale(0.7);
+}
 .trending-area .trending .trending-imgs:hover .img-move-left {
   opacity: 0.3;
 }
@@ -23472,6 +22754,7 @@ footer .threecol p span input {
   z-index: 200;
 }
 .trending-area .trending .trending-pagination .pagination-dot {
+  cursor: pointer;
   width: 6px;
   height: 6px;
   border-radius: 50%;
@@ -23505,20 +22788,32 @@ footer .threecol p span input {
   font-size: 14px;
   color: #222;
 }
+.trending-area .trending .trending-details .checked {
+  color: #eabe12;
+}
 .trending-area .trending:hover {
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
   transform: translateY(-4px);
 }
 
 .wavy-area {
-  background-color: rgb(34, 34, 34);
   background-image: url(https://atelier.swiftideas.com/wp-content/uploads/2014/05/waves.jpg);
   background-size: cover;
   background-attachment: scroll;
   background-repeat: no-repeat;
-  padding: 100px 0;
+  padding: 120px 0;
+  position: relative;
+}
+.wavy-area .opac {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(34, 34, 34, 0.5);
 }
 .wavy-area .wavy-inner-area {
+  z-index: 100;
   width: 40%;
   display: flex;
   flex-direction: column;
@@ -23570,6 +22865,173 @@ footer .threecol p span input {
   color: rgb(68, 68, 68);
 }
 
+.feature-area {
+  margin-top: 1.5rem;
+  padding-top: 2rem;
+  text-align: center;
+  padding-bottom: 1rem;
+}
+.feature-area .area-title .section-title {
+  color: #222;
+  font-size: 18px;
+  border-bottom: 2px solid #222;
+  padding-bottom: 3px;
+  margin-bottom: 1rem;
+}
+.feature-area .area-title .section-little {
+  font-size: 14px;
+  color: #222;
+  display: none;
+}
+.feature-area .row {
+  row-gap: 1.5rem;
+  padding-bottom: 2.5rem;
+  border-bottom: 2px solid #f2f2f2;
+}
+.feature-area .row .col-12 .feature {
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden;
+}
+.feature-area .row .col-12 .feature img {
+  transition: all 0.4s;
+}
+.feature-area .row .col-12 .feature .feature-actions {
+  position: absolute;
+  bottom: 4%;
+  left: 4%;
+  background-color: #fff;
+  z-index: 100;
+}
+.feature-area .row .col-12 .feature .feature-actions span {
+  color: #444;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 0.8rem;
+  display: inline-block;
+}
+.feature-area .row .col-12 .feature .feature-actions a {
+  color: #333;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 0.8rem 1.2rem;
+  display: inline-block;
+  position: relative;
+  transition: all 0.4s;
+}
+.feature-area .row .col-12 .feature .feature-actions a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -1%;
+  height: 100%;
+  width: 1px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.feature-area .row .col-12 .feature .feature-actions a:hover {
+  color: #eabe12;
+}
+.feature-area .row .col-12 .feature .opac-caption {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(34, 34, 34, 0.7);
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  padding: 20px;
+  opacity: 0;
+  transition: all 0.4s;
+}
+.feature-area .row .col-12 .feature .opac-caption .caption-title {
+  font-weight: bold;
+  text-align: left;
+  color: #fff;
+  transform: translateX(-50%);
+  transition: all 0.4s;
+}
+.feature-area .row .col-12 .feature .opac-caption .caption-little {
+  font-size: 14px;
+  text-align: left;
+  color: #fff;
+  margin-left: 1rem;
+}
+.feature-area .row .col-12 .feature:hover .opac-caption {
+  opacity: 1;
+}
+.feature-area .row .col-12 .feature:hover .opac-caption .caption-title {
+  transform: translateX(0);
+}
+
+.news-area {
+  padding-bottom: 5rem;
+}
+.news-area .area-title {
+  padding-bottom: 1rem;
+}
+.news-area .area-title span {
+  color: #222;
+  font-size: 18px;
+  font-weight: bold;
+  padding-bottom: 3px;
+  border-bottom: 3px solid #222;
+}
+.news-area .area-title .news-icons {
+  font-size: 28px;
+  color: #333;
+}
+.news-area .area-title .news-icons i {
+  cursor: pointer;
+}
+.news-area .area-title .news-icons i:hover {
+  color: #eabe12;
+}
+.news-area .row {
+  overflow: hidden;
+}
+.news-area .row .col-12 .news .img-wrap {
+  position: relative;
+}
+.news-area .row .col-12 .news .img-wrap img {
+  margin-bottom: 25px;
+}
+.news-area .row .col-12 .news .img-wrap div {
+  padding: 7px 16px 9px 16px;
+  background-color: #fff;
+  position: absolute;
+  top: 4%;
+  right: 4%;
+}
+.news-area .row .col-12 .news .img-wrap div .month {
+  font-size: 14px;
+  color: rgb(37, 37, 37);
+}
+.news-area .row .col-12 .news .img-wrap div .day {
+  font-size: 18px;
+  color: rgb(37, 37, 37);
+}
+.news-area .row .col-12 .news .news-text-area a {
+  color: #333;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+.news-area .row .col-12 .news .news-text-area .author {
+  font-size: 14px;
+  color: #444;
+  padding-bottom: 8px;
+}
+.news-area .row .col-12 .news .news-text-area .news-text {
+  font-size: 14px;
+  color: #444;
+  padding-bottom: 8px;
+}
+.news-area .row .news-wrap {
+  transition: all 0.4s;
+}
+
 .section-div {
   background-color: rgb(25, 25, 25);
 }
@@ -23588,10 +23050,8 @@ footer .threecol p span input {
   bottom: 30px;
   position: absolute;
 }
-.section-div .banner-slider .swiper-pagination .active-button {
+.section-div .banner-slider .swiper-pagination-bullet-active {
   background-color: white;
-  padding: 10px;
-  border-radius: 50%;
 }
 .section-div .banner-slider .navigation {
   background-color: white;
@@ -23613,13 +23073,13 @@ footer .threecol p span input {
 }
 .section-div1 .content-text h1, .section-div1 .content-text .h1 {
   font-size: 40px;
-  width: 43%;
+  width: 47%;
   font-family: "Dosis", sans-serif;
 }
 .section-div1 .content-text p {
   color: #999999;
   font-size: 16px;
-  width: 47%;
+  width: 53%;
 }
 .section-div1 .cards {
   padding-bottom: 130px;
@@ -23653,8 +23113,24 @@ footer .threecol p span input {
 #features-section .heading-text h1, #features-section .heading-text .h1 {
   color: #444444;
   font-size: 40px;
-  width: 43%;
+  width: 47%;
   font-family: "Dosis", sans-serif;
+}
+#features-section .heading-text1 {
+  padding: 80px 0 30px 0;
+}
+#features-section .heading-text1 h1, #features-section .heading-text1 .h1 {
+  color: #444444;
+  font-size: 36px;
+  width: 47%;
+  font-family: "Dosis", sans-serif;
+}
+#features-section .heading-text1 p {
+  color: #222222;
+  width: 50%;
+  font-size: 16px;
+  line-height: 30px;
+  font-family: "Karla", sans-serif;
 }
 
 #features-section2 {
@@ -23666,15 +23142,48 @@ footer .threecol p span input {
   padding: 85px 0 100px 0;
 }
 
+.card-section .card-item .card-img {
+  cursor: pointer;
+}
+.card-section .card-item .card-img:hover .shadow-box {
+  top: 0;
+  left: 0;
+  background-color: #444444;
+  opacity: 0.6;
+  z-index: 10000;
+  transition: 0.8s ease;
+}
 .card-section .card-item h3, .card-section .card-item .h3 {
   color: #222222;
   font-size: 23px;
+  font-family: "Dosis", sans-serif;
+}
+.card-section .card-item h4, .card-section .card-item .h4 {
+  font-size: 16px;
+  color: #222222;
+  font-family: "Karla", sans-serif;
+}
+.card-section .card-item h5, .card-section .card-item .h5 {
+  font-size: 25px;
+  color: #444444;
   font-family: "Dosis", sans-serif;
 }
 .card-section .card-item p {
   font-size: 18px;
   width: 83%;
   color: #444444;
+  font-family: "Karla", sans-serif;
+}
+.card-section .card-item .paragraph1 {
+  font-size: 16.5px;
+  color: #222222;
+  width: 100%;
+  font-family: "Karla", sans-serif;
+}
+.card-section .card-item .paragraph2 {
+  font-size: 14.5px;
+  color: #444444;
+  width: 100%;
   font-family: "Karla", sans-serif;
 }
 
@@ -23698,9 +23207,31 @@ footer .threecol p span input {
   .card-section .card-item p {
     font-size: 16px;
   }
-  .btn {
+  .btn-ordinary,
+  .btn-hover {
     padding: 12px 20px !important;
     font-size: 12px !important;
+  }
+  .section-div1 .content-text h1, .section-div1 .content-text .h1 {
+    font-size: 30px;
+    width: 65%;
+  }
+  .section-div1 .content-text p {
+    font-size: 14px;
+    width: 60%;
+  }
+  .section-div1 .cards {
+    padding-bottom: 80px;
+  }
+  .section-div1 .cards .card-item {
+    padding-bottom: 40px;
+  }
+  .section-div1 .cards .card-item .img-wrap {
+    margin-bottom: 15px;
+  }
+  .section-div1 .cards .card-item h6, .section-div1 .cards .card-item .h6 {
+    font-size: 20px;
+    font-family: "Dosis", sans-serif;
   }
 }
 @media (width <= 768px) {
@@ -23714,5 +23245,17 @@ footer .threecol p span input {
   #slider-section .banner-slider .navigation .swiper-prev,
   #slider-section .banner-slider .navigation .swiper-next {
     font-size: 18px;
+  }
+  .card-section .card-item h3, .card-section .card-item .h3 {
+    font-size: 19px;
+  }
+  .card-section .card-item p {
+    font-size: 16px;
+  }
+  .card-section .card-item .paragraph1 {
+    font-size: 15px;
+  }
+  .card-section .card-item .paragraph2 {
+    font-size: 13px;
   }
 }/*# sourceMappingURL=main.css.map */

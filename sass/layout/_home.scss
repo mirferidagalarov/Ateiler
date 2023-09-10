@@ -12,6 +12,10 @@
             background-position: center center;
             background-size: cover;
 
+            a {
+                display: inline-block;
+            }
+
             .slider-title {
                 font-size: 24px;
 
@@ -122,15 +126,16 @@
                 transition: all 0.4s;
             }
 
-
-
-
             .img-move-left {
                 transform: translateX(-80%) scale(0.7);
             }
 
             .img-move-right {
                 transform: translateX(80%) scale(0.7);
+            }
+
+            .img-hide-left {
+                transform: translateX(-160%) scale(0.7);
             }
 
             &:hover {
@@ -178,6 +183,7 @@
             z-index: 200;
 
             .pagination-dot {
+                cursor: pointer;
                 width: 6px;
                 height: 6px;
                 border-radius: 50%;
@@ -232,17 +238,25 @@
 
 }
 
-
 .wavy-area {
-    background-color: rgb(34, 34, 34);
     background-image: url(https://atelier.swiftideas.com/wp-content/uploads/2014/05/waves.jpg);
     background-size: cover;
     background-attachment: scroll;
     background-repeat: no-repeat;
-    // background-position: center;
-    padding: 100px 0;
+    padding: 120px 0;
+    position: relative;
+
+    .opac {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: rgba(34, 34, 34, 0.5);
+    }
 
     .wavy-inner-area {
+        z-index: 100;
         width: 40%;
         display: flex;
         flex-direction: column;
@@ -325,15 +339,26 @@
     }
 
     .row {
+        row-gap: 1.5rem;
+        padding-bottom: 2.5rem;
+        border-bottom: 2px solid #f2f2f2;
+
         .col-12 {
             .feature {
+                box-shadow: 1px 1px 1px rgba(0, 0, 0, .1);
                 position: relative;
+                overflow: hidden;
+
+                img {
+                    transition: all 0.4s;
+                }
 
                 .feature-actions {
                     position: absolute;
                     bottom: 4%;
                     left: 4%;
                     background-color: #fff;
+                    z-index: 100;
 
                     span {
                         color: #444;
@@ -342,7 +367,8 @@
                         padding: 0.8rem;
                         display: inline-block;
                     }
-                    a{
+
+                    a {
                         color: #333;
                         font-size: 18px;
                         font-weight: 600;
@@ -351,7 +377,7 @@
                         position: relative;
                         transition: all 0.4s;
 
-                        &::before{
+                        &::before {
                             content: '';
                             position: absolute;
                             top: 0;
@@ -361,12 +387,135 @@
                             border: 1px solid rgba(0, 0, 0, 0.1);
                         }
 
-                        &:hover{
+                        &:hover {
                             color: #eabe12;
                         }
                     }
                 }
+
+                .opac-caption {
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    background-color: rgba(34, 34, 34, 0.7);
+                    display: flex;
+                    flex-direction: column;
+                    gap: 0.3rem;
+                    padding: 20px;
+                    opacity: 0;
+                    transition: all 0.4s;
+
+                    .caption-title {
+                        font-weight: bold;
+                        text-align: left;
+                        color: #fff;
+                        transform: translateX(-50%);
+                        transition: all 0.4s;
+                    }
+
+                    .caption-little {
+                        font-size: 14px;
+                        text-align: left;
+                        color: #fff;
+                        margin-left: 1rem;
+                    }
+                }
+
+                &:hover {
+                    .opac-caption {
+                        opacity: 1;
+
+                        .caption-title {
+                            transform: translateX(0);
+                        }
+                    }
+                }
             }
+        }
+    }
+}
+
+.news-area{
+    padding-bottom: 5rem;
+
+    .area-title{
+        padding-bottom: 1rem;
+        span{
+            color: $secondary-black;
+            font-size: 18px;
+            font-weight: bold;
+            padding-bottom: 3px;
+            border-bottom: 3px solid $secondary-black;
+        }
+
+        .news-icons{
+            font-size: 28px;
+            color: #333;
+
+            i{
+                cursor: pointer;
+
+                &:hover{
+                    color: #eabe12;
+                }
+            }
+        }
+    }
+
+    .row{
+        overflow: hidden;
+        
+        .col-12{
+            
+            .news{
+                .img-wrap{
+                    position: relative;
+                    img{
+                        margin-bottom: 25px;
+                    }
+                    div{
+                        padding: 7px 16px 9px 16px;
+                        background-color: #fff;
+                        position: absolute;
+                        top: 4%;
+                        right: 4%;
+
+                        .month{
+                            font-size: 14px;
+                            color: rgb(37, 37, 37);
+                        }
+                        .day{
+                            font-size: 18px;
+                            color: rgb(37, 37, 37);
+                        }
+                    }
+                }
+
+                .news-text-area{
+                    a{
+                        color: #333;
+                        font-size: 20px;
+                        font-weight: bold;
+                        margin-bottom: 4px;
+                    }
+                    .author{
+                        font-size: 14px;
+                        color: #444;
+                        padding-bottom: 8px;
+                    }
+                    .news-text{
+                        font-size: 14px;
+                        color: #444;
+                        padding-bottom: 8px;
+                    }
+                }
+            }
+        }
+
+        .news-wrap{
+            transition: all 0.4s;
         }
     }
 }
