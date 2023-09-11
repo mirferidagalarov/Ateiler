@@ -22610,8 +22610,93 @@ footer .threecol p span input {
 .swiper-area .swiper .swiper-pagination-bullet-active {
   background-color: #222;
 }
-.swiper-area .swiper .slider-achil {
+.swiper-area .swiper .slider-ateiler {
+  padding: 11.2rem 0;
+  background-image: url(https://atelier.swiftideas.com/wp-content/uploads/2015/04/slider_bkg_look.jpg);
+  background-position: center center;
+  background-size: cover;
+  height: 100%;
+  position: relative;
+}
+.swiper-area .swiper .slider-ateiler .slider-opac {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.1);
+  z-index: 200;
+}
+.swiper-area .swiper .slider-ateiler .slider-text {
+  font-size: 24px;
+  color: #fff;
+}
+.swiper-area .swiper .slider-ateiler .slider-text p {
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+  font-size: 20px;
+  font-weight: 600;
+}
+@media (min-width: 768px) {
+  .swiper-area .swiper .slider-ateiler .slider-text p {
+    font-size: 50px;
+  }
+}
+.swiper-area .swiper .slider-ateiler .learn-more-btn {
+  position: relative;
+  margin-top: 20px;
+}
+.swiper-area .swiper .slider-ateiler .learn-more-btn a {
+  min-width: -moz-max-content;
+  min-width: max-content;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: #222;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 15px 35px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  transition: all 0.5s;
+  text-align: center;
+}
+.swiper-area .swiper .slider-ateiler .learn-more-btn a span {
+  transform: translateX(12px);
+  transition: all 0.4s;
+}
+.swiper-area .swiper .slider-ateiler .learn-more-btn a i {
+  font-size: 18px;
+  transform: scale(0.5);
+  opacity: 0;
+  transition: all 0.4s;
+}
+.swiper-area .swiper .slider-ateiler .learn-more-btn a:hover {
+  background-color: #e4e4e4;
+}
+.swiper-area .swiper .slider-ateiler .learn-more-btn a:hover span {
+  transform: translateX(0);
+}
+.swiper-area .swiper .slider-ateiler .learn-more-btn a:hover i {
+  transform: scale(1);
+  opacity: 1;
+}
+.swiper-area .swiper .slider-workshop {
   padding: 4rem 0;
+  background-image: url(https://atelier.swiftideas.com/wp-content/uploads/2014/09/about-compass-lrg.jpg);
+  background-position: center center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.swiper-area .swiper .slider-workshop img {
+  width: 20%;
+}
+.swiper-area .swiper .slider-achil {
+  padding: 9rem 0;
   background-image: url(https://atelier.swiftideas.com/wp-content/uploads/2014/11/slider_bkg_shoes2_small.jpg);
   background-position: center center;
   background-size: cover;
@@ -22984,6 +23069,7 @@ footer .threecol p span input {
 }
 .news-area .area-title .news-icons i {
   cursor: pointer;
+  transition: all 0.4s linear;
 }
 .news-area .area-title .news-icons i:hover {
   color: #eabe12;
@@ -22993,24 +23079,44 @@ footer .threecol p span input {
 }
 .news-area .row .col-12 .news .img-wrap {
   position: relative;
-}
-.news-area .row .col-12 .news .img-wrap img {
   margin-bottom: 25px;
 }
-.news-area .row .col-12 .news .img-wrap div {
+.news-area .row .col-12 .news .img-wrap .news-opac {
+  z-index: 101;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  opacity: 0;
+  transition: all 0.5s linear;
+}
+.news-area .row .col-12 .news .img-wrap .news-opac i {
+  color: #fff;
+  font-size: 32px;
+}
+.news-area .row .col-12 .news .img-wrap .date {
+  z-index: 102;
   padding: 7px 16px 9px 16px;
   background-color: #fff;
   position: absolute;
   top: 4%;
   right: 4%;
 }
-.news-area .row .col-12 .news .img-wrap div .month {
+.news-area .row .col-12 .news .img-wrap .date .month {
   font-size: 14px;
   color: rgb(37, 37, 37);
 }
-.news-area .row .col-12 .news .img-wrap div .day {
+.news-area .row .col-12 .news .img-wrap .date .day {
   font-size: 18px;
   color: rgb(37, 37, 37);
+}
+.news-area .row .col-12 .news .img-wrap:hover .news-opac {
+  opacity: 1;
 }
 .news-area .row .col-12 .news .news-text-area a {
   color: #333;
@@ -23030,6 +23136,35 @@ footer .threecol p span input {
 }
 .news-area .row .news-wrap {
   transition: all 0.4s;
+}
+
+.banner-area .banner {
+  position: relative;
+}
+.banner-area .banner .banner-opac {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  opacity: 0;
+  transition: all 0.5s;
+}
+.banner-area .banner h2, .banner-area .banner .h2 {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  margin: 0;
+  padding: 1rem 0;
+  width: 100%;
+  color: #fff;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 600;
+}
+.banner-area .banner:hover .banner-opac {
+  opacity: 1;
 }
 
 .section-div {

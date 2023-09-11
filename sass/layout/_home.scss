@@ -6,8 +6,108 @@
 
         width: 100%;
 
-        .slider-achil {
+        .slider-ateiler {
+            padding: 11.2rem 0;
+            background-image: url(https://atelier.swiftideas.com/wp-content/uploads/2015/04/slider_bkg_look.jpg);
+            background-position: center center;
+            background-size: cover;
+            height: 100%;
+            position: relative;
+
+            .slider-opac{
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                background-color: rgba(0, 0, 0, 0.1);
+                z-index: 200;
+            }
+
+            .slider-text {
+                font-size: 24px;
+                color: #fff;
+
+                p {
+                    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+                    font-size: 20px;
+                    font-weight: 600;
+
+                    @media (min-width: 768px) {
+                        font-size: 50px;
+                    }
+                }
+            }
+
+            .learn-more-btn {
+                position: relative;
+                margin-top: 20px;
+
+                a {
+                    min-width: max-content;
+                    display: flex;
+                    align-items: center;
+                    gap: 1rem;
+                    color: $secondary-black;
+                    font-size: 12px;
+                    font-weight: 600;
+                    padding: 15px 35px;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    background-color: #fff;
+                    transition: all 0.5s;
+                    text-align: center;
+
+                    span {
+                        transform: translateX(12px);
+                        transition: all 0.4s;
+                    }
+
+
+                    i {
+                        font-size: 18px;
+                        transform: scale(0.5);
+                        opacity: 0;
+                        transition: all 0.4s;
+                    }
+
+                    &:hover {
+                        background-color: $bg-white;
+
+                        span {
+                            transform: translateX(0);
+                        }
+
+                        i {
+                            transform: scale(1);
+                            opacity: 1;
+                        }
+                    }
+                }
+            }
+        }
+
+        .slider-workshop {
             padding: 4rem 0;
+            background-image: url(https://atelier.swiftideas.com/wp-content/uploads/2014/09/about-compass-lrg.jpg);
+            background-position: center center;
+            background-size: cover;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            img {
+                width: 20%;
+            }
+
+
+        }
+
+        .slider-achil {
+            padding: 9rem 0;
             background-image: url(https://atelier.swiftideas.com/wp-content/uploads/2014/11/slider_bkg_shoes2_small.jpg);
             background-position: center center;
             background-size: cover;
@@ -437,12 +537,13 @@
     }
 }
 
-.news-area{
+.news-area {
     padding-bottom: 5rem;
 
-    .area-title{
+    .area-title {
         padding-bottom: 1rem;
-        span{
+
+        span {
             color: $secondary-black;
             font-size: 18px;
             font-weight: bold;
@@ -450,62 +551,92 @@
             border-bottom: 3px solid $secondary-black;
         }
 
-        .news-icons{
+        .news-icons {
             font-size: 28px;
             color: #333;
 
-            i{
+            i {
                 cursor: pointer;
+                transition: all 0.4s linear;
 
-                &:hover{
+                &:hover {
                     color: #eabe12;
                 }
             }
         }
     }
 
-    .row{
+    .row {
         overflow: hidden;
-        
-        .col-12{
-            
-            .news{
-                .img-wrap{
+
+        .col-12 {
+
+            .news {
+                .img-wrap {
                     position: relative;
-                    img{
-                        margin-bottom: 25px;
+                    margin-bottom: 25px;
+
+                    .news-opac {
+                        z-index: 101;
+                        width: 100%;
+                        height: 100%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        background-color: rgba(0, 0, 0, 0.4);
+                        opacity: 0;
+                        transition: all 0.5s linear;
+
+                        i {
+                            color: #fff;
+                            font-size: 32px;
+                        }
                     }
-                    div{
+
+                    .date {
+                        z-index: 102;
                         padding: 7px 16px 9px 16px;
                         background-color: #fff;
                         position: absolute;
                         top: 4%;
                         right: 4%;
 
-                        .month{
+                        .month {
                             font-size: 14px;
                             color: rgb(37, 37, 37);
                         }
-                        .day{
+
+                        .day {
                             font-size: 18px;
                             color: rgb(37, 37, 37);
                         }
                     }
+
+                    &:hover {
+                        .news-opac {
+                            opacity: 1;
+                        }
+                    }
                 }
 
-                .news-text-area{
-                    a{
+                .news-text-area {
+                    a {
                         color: #333;
                         font-size: 20px;
                         font-weight: bold;
                         margin-bottom: 4px;
                     }
-                    .author{
+
+                    .author {
                         font-size: 14px;
                         color: #444;
                         padding-bottom: 8px;
                     }
-                    .news-text{
+
+                    .news-text {
                         font-size: 14px;
                         color: #444;
                         padding-bottom: 8px;
@@ -514,8 +645,47 @@
             }
         }
 
-        .news-wrap{
+        .news-wrap {
             transition: all 0.4s;
+
+
+        }
+    }
+}
+
+.banner-area {
+
+    .banner {
+        position: relative;
+
+        .banner-opac {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: rgba(0, 0, 0, 0.4);
+            opacity: 0;
+            transition: all 0.5s;
+        }
+
+        h2 {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            margin: 0;
+            padding: 1rem 0;
+            width: 100%;
+            color: #fff;
+            text-align: center;
+            font-size: 22px;
+            font-weight: 600;
+        }
+
+        &:hover {
+            .banner-opac {
+                opacity: 1;
+            }
         }
     }
 }
