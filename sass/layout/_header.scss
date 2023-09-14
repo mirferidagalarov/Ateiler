@@ -8,6 +8,10 @@
   .navimg{
 
   margin: 0 auto;
+
+    div{
+      padding: 1.5rem 0;  
+    }
      ul{
       
       li{
@@ -54,7 +58,7 @@
          &:before
                 {
                     border-left: 1px solid lightgrey;
-                    padding: 22px;
+                    padding: 29px;
                      
                   }
         color: #222222;
@@ -78,7 +82,7 @@
               &::before
                 {
                     border-right: 1px solid lightgrey;
-                    padding: 20px;
+                    padding: 28px;
                      
                   }
                      &:hover
@@ -160,17 +164,21 @@
   .homehover{
     cursor: pointer;
       position: relative;
-      padding: 1.5rem;
+      padding: 1.5rem 0 1.5rem 0;
       
       
       
       .homehoverin{
+        width: 30vw;
+        height: 35vh;
           display: none;
           position: absolute;
-          background-color: red;
+          background-color: #fff;
           z-index: 10;
-          padding: 5rem;
+          padding: 2rem;
           top:100%;
+          // transform: translateX(-29.9%);
+          // transform:translateY(10%);
         }
           &:hover
         {
@@ -187,3 +195,227 @@
           
           }
     }                
+
+
+
+  .shopStylesHover{
+    cursor: pointer;
+      position: relative;
+       padding: 1.5rem 0 1.5rem 0;
+      
+      .shopStylesHoverin{
+         width: 98vw;
+         height: 60vh;
+          display: none;
+          position: absolute;
+          background-color: #fff;
+          z-index: 10;
+          padding: 2rem;
+          top:100%;
+          transform: translateX(-34.5%);
+          // transform:translateY(10%);
+        }
+          &:hover
+        {
+          
+          .hover-link{
+
+                        color: #ffba00;
+                        
+            }
+         .shopStylesHoverin{
+          
+           display: block;
+          }
+          
+          }
+    } 
+    
+
+
+    .featuresHover{
+    cursor: pointer;
+      position: relative;
+       padding: 1.5rem 0 1.5rem 0;
+      
+      .featuresHoverin{
+         width: 98vw;
+         height: 60vh;
+          display: none;
+          position: absolute;
+          background-color: #fff;
+          z-index: 10;
+          padding: 2rem;
+          top:100%;
+          transform: translateX(-41.5%);
+          // transform:translateY(10%);
+        }
+          &:hover
+        {
+          
+          .hover-link{
+
+                        color: #ffba00;
+                        
+            }
+         .featuresHoverin{
+          
+           display: block;
+          }
+          
+          }
+    } 
+
+
+       .pagesHover{
+    cursor: pointer;
+      position: relative;
+       padding: 1.5rem 0 1.5rem 0;
+      
+      .pagesHoverin{
+         width: 98vw;
+         height: 60vh;
+          display: none;
+          position: absolute;
+          background-color: #fff;
+          z-index: 10;
+          padding: 2rem;
+          top:100%;
+          transform: translateX(-56.5%);
+          // transform:translateY(10%);
+        }
+          &:hover
+        {
+          
+          .hover-link{
+
+                        color: #ffba00;
+                        
+            }
+         .pagesHoverin{
+          
+           display: block;
+          }
+          
+          }
+    } 
+
+
+       .elementsHover{
+    cursor: pointer;
+      position: relative;
+       padding: 1.5rem 0 1.5rem 0;
+      
+      .elementsHoverin{
+         width: 98vw;
+         height: 60vh;
+          display: none;
+          position: absolute;
+          background-color: #fff;
+          z-index: 10;
+          padding: 2rem;
+          top:100%;
+          transform: translateX(-61%);
+          // transform:translateY(10%);
+        }
+          &:hover
+        {
+          
+          .hover-link{
+
+                        color: #ffba00;
+                        
+            }
+         .elementsHoverin{
+          
+           display: block;
+          }
+          
+          }
+    } 
+
+          .demosHover{
+    cursor: pointer;
+      position: relative;
+       padding: 1.5rem 0 1.5rem 0;
+      
+      .demosHoverin{
+         width: 98vw;
+         height: 30vh;
+          display: none;
+          position: absolute;
+          background-color: #fff;
+          z-index: 10;
+          padding: 2rem;
+          top:100%;
+          transform: translateX(-67%);
+          // transform:translateY(10%);
+            img{
+                width: 10rem;
+                height: 8rem;
+              
+              }
+
+              
+        }
+          &:hover
+        {
+          
+          .hover-link{
+
+                        color: #ffba00;
+                        
+            }
+         .demosHoverin{
+          
+           display: block;
+          }
+          
+          }
+    } 
+
+
+  .btnhov{
+    position: relative;
+     i{
+      display: none;
+      padding-top: 12%;
+    
+         }
+    a{
+        position: absolute;
+        display: flex;
+        
+      &:hover
+        {
+        transition:  margin-right 2s;
+              
+              i{
+                
+                display: block;
+                font-size: 1.3rem;
+                
+
+
+                
+                }
+              
+          
+          }
+      
+      }
+    
+       width: 9rem;
+       height: 3rem;
+       background: #000;
+       display:flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 2%;
+        span{
+         
+          color: #fff;
+         
+           }
+    
+    }

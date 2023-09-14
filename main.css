@@ -22511,6 +22511,10 @@ footer .threecol p span input {
   border-left: none;
   border-bottom-color: #fff;
 }
+footer .threecol p span input:focus {
+  outline: none;
+  border-bottom-color: #ffba00;
+}
 
 .containers {
   display: flex;
@@ -22520,6 +22524,9 @@ footer .threecol p span input {
 
 .navimg {
   margin: 0 auto;
+}
+.navimg div {
+  padding: 1.5rem 0;
 }
 .navimg ul li a {
   color: #333333;
@@ -22540,7 +22547,7 @@ footer .threecol p span input {
 }
 .magnifyingicon a i:before {
   border-left: 1px solid lightgrey;
-  padding: 22px;
+  padding: 29px;
 }
 .magnifyingicon a i:hover {
   color: #ffba00;
@@ -22548,7 +22555,7 @@ footer .threecol p span input {
 
 .newspapericon a i::before {
   border-right: 1px solid lightgrey;
-  padding: 20px;
+  padding: 28px;
 }
 .newspapericon a i:hover {
   color: #ffba00;
@@ -22584,14 +22591,16 @@ footer .threecol p span input {
 .homehover {
   cursor: pointer;
   position: relative;
-  padding: 1.5rem;
+  padding: 1.5rem 0 1.5rem 0;
 }
 .homehover .homehoverin {
+  width: 30vw;
+  height: 35vh;
   display: none;
   position: absolute;
-  background-color: red;
+  background-color: #fff;
   z-index: 10;
-  padding: 5rem;
+  padding: 2rem;
   top: 100%;
 }
 .homehover:hover .hover-link {
@@ -22599,6 +22608,154 @@ footer .threecol p span input {
 }
 .homehover:hover .homehoverin {
   display: block;
+}
+
+.shopStylesHover {
+  cursor: pointer;
+  position: relative;
+  padding: 1.5rem 0 1.5rem 0;
+}
+.shopStylesHover .shopStylesHoverin {
+  width: 98vw;
+  height: 60vh;
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  z-index: 10;
+  padding: 2rem;
+  top: 100%;
+  transform: translateX(-34.5%);
+}
+.shopStylesHover:hover .hover-link {
+  color: #ffba00;
+}
+.shopStylesHover:hover .shopStylesHoverin {
+  display: block;
+}
+
+.featuresHover {
+  cursor: pointer;
+  position: relative;
+  padding: 1.5rem 0 1.5rem 0;
+}
+.featuresHover .featuresHoverin {
+  width: 98vw;
+  height: 60vh;
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  z-index: 10;
+  padding: 2rem;
+  top: 100%;
+  transform: translateX(-41.5%);
+}
+.featuresHover:hover .hover-link {
+  color: #ffba00;
+}
+.featuresHover:hover .featuresHoverin {
+  display: block;
+}
+
+.pagesHover {
+  cursor: pointer;
+  position: relative;
+  padding: 1.5rem 0 1.5rem 0;
+}
+.pagesHover .pagesHoverin {
+  width: 98vw;
+  height: 60vh;
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  z-index: 10;
+  padding: 2rem;
+  top: 100%;
+  transform: translateX(-56.5%);
+}
+.pagesHover:hover .hover-link {
+  color: #ffba00;
+}
+.pagesHover:hover .pagesHoverin {
+  display: block;
+}
+
+.elementsHover {
+  cursor: pointer;
+  position: relative;
+  padding: 1.5rem 0 1.5rem 0;
+}
+.elementsHover .elementsHoverin {
+  width: 98vw;
+  height: 60vh;
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  z-index: 10;
+  padding: 2rem;
+  top: 100%;
+  transform: translateX(-61%);
+}
+.elementsHover:hover .hover-link {
+  color: #ffba00;
+}
+.elementsHover:hover .elementsHoverin {
+  display: block;
+}
+
+.demosHover {
+  cursor: pointer;
+  position: relative;
+  padding: 1.5rem 0 1.5rem 0;
+}
+.demosHover .demosHoverin {
+  width: 98vw;
+  height: 30vh;
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  z-index: 10;
+  padding: 2rem;
+  top: 100%;
+  transform: translateX(-67%);
+}
+.demosHover .demosHoverin img {
+  width: 10rem;
+  height: 8rem;
+}
+.demosHover:hover .hover-link {
+  color: #ffba00;
+}
+.demosHover:hover .demosHoverin {
+  display: block;
+}
+
+.btnhov {
+  position: relative;
+  width: 9rem;
+  height: 3rem;
+  background: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2%;
+}
+.btnhov i {
+  display: none;
+  padding-top: 12%;
+}
+.btnhov a {
+  position: absolute;
+  display: flex;
+}
+.btnhov a:hover {
+  transition: margin-right 2s;
+}
+.btnhov a:hover i {
+  display: block;
+  font-size: 1.3rem;
+}
+.btnhov span {
+  color: #fff;
 }
 
 .swiper-area .swiper {
@@ -22988,4 +23145,124 @@ footer .threecol p span input {
   #slider-section .banner-slider .navigation .swiper-next {
     font-size: 18px;
   }
+}
+.imgleft {
+  height: 100vh;
+  background-image: url("./sass/assets/img/download.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.imgleft h1, .imgleft .h1 {
+  font-size: 3rem;
+  color: #fff;
+  font-weight: bold;
+}
+.imgleft .borderbottom {
+  border: 1px solid #fff;
+  width: 14rem;
+  margin-top: 2rem;
+}
+.imgleft .hrefbottom {
+  margin-top: 2rem;
+}
+.imgleft .hrefbottom span a {
+  color: #999999;
+}
+.imgleft .hrefbottom span a:hover {
+  color: #fff;
+}
+.imgleft .hrefbottom a {
+  color: #fff;
+}
+.imgleft .hrefbottom i {
+  color: #fff;
+  font-size: 0.7rem;
+}
+
+.imgarea {
+  margin-top: 18rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.scrollright {
+  height: 100%;
+  width: 49%;
+  border: 1 px solid grey;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+.scroolwid {
+  height: 46rem;
+  width: 100%;
+  padding: 2rem;
+}
+
+.imgscroll {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.imgscroll .opac-img-scroll {
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: all 0.4s;
+}
+.imgscroll .opac-img-scroll:hover {
+  opacity: 1;
+}
+.imgscroll .opac-img-scroll i {
+  display: none;
+  color: #fff;
+  position: absolute;
+  left: 9rem;
+  top: 6rem;
+  font-size: 2rem;
+  transition: all 0.4s;
+}
+.imgscroll .opac-img-scroll:hover i {
+  display: block;
+}
+.imgscroll img {
+  width: 100%;
+  height: 100%;
+}
+
+.contentscroll {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background-color: #fff;
+  position: absolute;
+  width: 18.5vw;
+  padding: 1rem;
+  margin-left: 13px;
+  margin-top: -20px;
+}
+.contentscroll h5, .contentscroll .h5 {
+  color: #000;
+}
+.contentscroll a {
+  color: #000;
+}
+.contentscroll a:hover {
+  text-decoration: underline !important;
+}
+
+.imgdate {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  top: -3%;
+  right: 4%;
+  background-color: #fff;
 }/*# sourceMappingURL=main.css.map */

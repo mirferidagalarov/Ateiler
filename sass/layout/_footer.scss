@@ -215,14 +215,24 @@ footer{
         }
 
             p{
+                 
                 span{
                     
+                     
                     input{
                         background-color: #252525;
                         border-top: none;
                         border-right: none;
                         border-left: none;
-                       border-bottom-color: #fff;     
+                       border-bottom-color: #fff; 
+
+    &:focus
+        
+             {
+               outline: none;
+                border-bottom-color: #ffba00; 
+              } 
+                        
                         }
                    
                     
