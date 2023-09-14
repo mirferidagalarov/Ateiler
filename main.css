@@ -22526,11 +22526,7 @@ footer .threecol p span input:focus {
   margin: 0 auto;
 }
 .navimg div {
-<<<<<<< HEAD
-  padding: 1rem;
-=======
   padding: 1.5rem 0;
->>>>>>> mirfarid
 }
 .navimg ul li a {
   color: #333333;
@@ -22557,11 +22553,21 @@ footer .threecol p span input:focus {
   color: #ffba00;
 }
 
-.newspapericon a i::before {
-  border-right: 1px solid lightgrey;
-  padding: 28px;
+.baricon a i {
+  color: #222222;
 }
-.newspapericon a i:hover {
+.baricon a i:hover {
+  color: #ffba00;
+}
+
+.magnifyingicon a i {
+  color: #222222;
+}
+.magnifyingicon a i:before {
+  border-left: 1px solid lightgrey;
+  padding: 22px;
+}
+.magnifyingicon a i:hover {
   color: #ffba00;
 }
 
@@ -22581,15 +22587,22 @@ footer .threecol p span input:focus {
   font-size: 14px;
 }
 
-.usericon a i {
-  color: #252525;
+.usericon a {
+  color: #333;
+  transition: all 0.5s;
+  border-left: 1px solid lightgrey;
+  padding: 22px;
 }
-.usericon a i:hover {
-  color: #ffba00;
+.usericon a:hover {
+  color: #eabe12;
 }
 
-.shopicon a i {
-  color: #333333;
+.shopicon a {
+  color: #333;
+  transition: all 0.5s;
+}
+.shopicon a:hover {
+  color: #eabe12;
 }
 
 .homehover {
@@ -22733,33 +22746,36 @@ footer .threecol p span input:focus {
   display: block;
 }
 
-.btnhov {
-  position: relative;
-  width: 9rem;
-  height: 3rem;
-  background: #000;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 2%;
-}
-.btnhov i {
-  display: none;
-  padding-top: 12%;
-}
 .btnhov a {
-  position: absolute;
+  min-width: -moz-max-content;
+  min-width: max-content;
   display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: #fff !important;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 15px 35px;
+  background-color: #000;
+  transition: all 0.5s;
+  text-align: center;
 }
-.btnhov a:hover {
-  transition: margin-right 2s;
+.btnhov a span {
+  transform: translateX(12px);
+  transition: all 0.4s;
+}
+.btnhov a i {
+  font-size: 18px;
+  transform: scale(0.5);
+  opacity: 0;
+  transition: all 0.4s;
+}
+.btnhov a:hover span {
+  transform: translateX(0);
 }
 .btnhov a:hover i {
-  display: block;
-  font-size: 1.3rem;
-}
-.btnhov span {
-  color: #fff;
+  transform: scale(1);
+  opacity: 1;
 }
 
 .swiper-area .swiper {
@@ -23539,7 +23555,6 @@ footer .threecol p span input:focus {
   #slider-section .banner-slider .navigation .swiper-next {
     font-size: 18px;
   }
-<<<<<<< HEAD
   .card-section .card-item h3, .card-section .card-item .h3 {
     font-size: 19px;
   }
@@ -23552,7 +23567,6 @@ footer .threecol p span input:focus {
   .card-section .card-item .paragraph2 {
     font-size: 13px;
   }
-=======
 }
 .imgleft {
   height: 100vh;
@@ -23673,5 +23687,4 @@ footer .threecol p span input:focus {
   top: -3%;
   right: 4%;
   background-color: #fff;
->>>>>>> mirfarid
 }/*# sourceMappingURL=main.css.map */
