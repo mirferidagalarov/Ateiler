@@ -1,691 +1,676 @@
 .swiper-area {
-    .swiper {
-        .swiper-pagination-bullet-active {
-            background-color: $secondary-black;
-        }
-
-        width: 100%;
-
-        .slider-ateiler {
-            padding: 11.2rem 0;
-            background-image: url(https://atelier.swiftideas.com/wp-content/uploads/2015/04/slider_bkg_look.jpg);
-            background-position: center center;
-            background-size: cover;
-            height: 100%;
-            position: relative;
-
-            .slider-opac{
-                width: 100%;
-                height: 100%;
-                position: absolute;
-                top: 0;
-                left: 0;
-                background-color: rgba(0, 0, 0, 0.1);
-                z-index: 200;
-            }
-
-            .slider-text {
-                font-size: 24px;
-                color: #fff;
-
-                p {
-                    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
-                    font-size: 20px;
-                    font-weight: 600;
-
-                    @media (min-width: 768px) {
-                        font-size: 50px;
-                    }
-                }
-            }
-
-            .learn-more-btn {
-                position: relative;
-                margin-top: 20px;
-
-                a {
-                    min-width: max-content;
-                    display: flex;
-                    align-items: center;
-                    gap: 1rem;
-                    color: $secondary-black;
-                    font-size: 12px;
-                    font-weight: 600;
-                    padding: 15px 35px;
-                    position: absolute;
-                    top: 50%;
-                    left: 50%;
-                    transform: translate(-50%, -50%);
-                    background-color: #fff;
-                    transition: all 0.5s;
-                    text-align: center;
-
-                    span {
-                        transform: translateX(12px);
-                        transition: all 0.4s;
-                    }
-
-
-                    i {
-                        font-size: 18px;
-                        transform: scale(0.5);
-                        opacity: 0;
-                        transition: all 0.4s;
-                    }
-
-                    &:hover {
-                        background-color: $bg-white;
-
-                        span {
-                            transform: translateX(0);
-                        }
-
-                        i {
-                            transform: scale(1);
-                            opacity: 1;
-                        }
-                    }
-                }
-            }
-        }
-
-        .slider-workshop {
-            padding: 4rem 0;
-            background-image: url(https://atelier.swiftideas.com/wp-content/uploads/2014/09/about-compass-lrg.jpg);
-            background-position: center center;
-            background-size: cover;
-
-            display: flex;
-            justify-content: center;
-            align-items: center;
-
-            img {
-                width: 20%;
-            }
-
-
-        }
-
-        .slider-achil {
-            padding: 9rem 0;
-            background-image: url(https://atelier.swiftideas.com/wp-content/uploads/2014/11/slider_bkg_shoes2_small.jpg);
-            background-position: center center;
-            background-size: cover;
-
-            a {
-                display: inline-block;
-            }
-
-            .slider-title {
-                font-size: 24px;
-
-                @media (min-width:768px) {
-                    font-size: 40px;
-                }
-            }
-
-
-
-        }
-    }
-}
-
-.shop-content-area {
-    margin-top: 1.5rem;
-
-    .shop-content {
-        position: relative;
-
-        a {
-            display: flex;
-            align-items: center;
-            gap: 1rem;
-            color: $secondary-black;
-            font-size: 12px;
-            font-weight: 600;
-            padding: 15px 35px;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            background-color: #fff;
-            transition: all 0.5s;
-            text-align: center;
-
-            span {
-                transform: translateX(12px);
-                transition: all 0.4s;
-            }
-
-
-            i {
-                font-size: 18px;
-                transform: scale(0.5);
-                opacity: 0;
-                transition: all 0.4s;
-            }
-
-            &:hover {
-                background-color: $bg-white;
-
-                span {
-                    transform: translateX(0);
-                }
-
-                i {
-                    transform: scale(1);
-                    opacity: 1;
-                }
-            }
-        }
-    }
-}
-
-.trending-area {
-    margin-top: 1.5rem;
-    background-color: $bg-white;
-    padding-top: 2rem;
-    text-align: center;
-    padding-bottom: 1rem;
-
-    .area-title {
-
-        .section-title {
-            color: $secondary-black;
-            font-size: 18px;
-            border-bottom: 2px solid $secondary-black;
-            padding-bottom: 3px;
-            margin-bottom: 1rem;
-        }
-
-        .section-little {
-            font-size: 14px;
-            color: $secondary-black;
-            display: none;
-        }
+  .swiper {
+    .swiper-pagination-bullet-active {
+      background-color: $secondary-black;
     }
 
-    .trending {
-        overflow: hidden;
-        box-shadow: 1px 1px 1px rgba(0, 0, 0, .1);
-        transition: all 0.4s;
+    width: 100%;
 
-        .trending-imgs {
-            position: relative;
-            background-color: #f7f7f9;
+    .slider-ateiler {
+      padding: 11.2rem 0;
+      background-image: url(https://atelier.swiftideas.com/wp-content/uploads/2015/04/slider_bkg_look.jpg);
+      background-position: center center;
+      background-size: cover;
+      height: 100%;
+      position: relative;
 
-            .trending-img {
-                cursor: pointer;
-                position: absolute;
-                top: 0;
-                left: 15%;
-                height: 100%;
-                width: 70%;
-                opacity: 0;
-                transform: translateX(160%) scale(0.7);
-                transition: all 0.4s;
-            }
-
-            .img-move-left {
-                transform: translateX(-80%) scale(0.7);
-            }
-
-            .img-move-right {
-                transform: translateX(80%) scale(0.7);
-            }
-
-            .img-hide-left {
-                transform: translateX(-160%) scale(0.7);
-            }
-
-            &:hover {
-                .img-move-left {
-                    opacity: 0.3;
-
-                    &:hover {
-                        opacity: 1;
-                        transform: translateX(-81%) scale(0.8);
-                    }
-                }
-
-                .img-move-right {
-                    opacity: 0.3;
-
-                    &:hover {
-                        opacity: 1;
-                        transform: translateX(79%) scale(0.8);
-                    }
-                }
-
-            }
-
-            @media (max-width: 992px) {
-                .trending-img {
-                    opacity: 0.3;
-                }
-            }
-
-            .selected {
-                z-index: 5;
-                position: relative;
-                opacity: 1;
-                transform: translateX(0) scale(1);
-            }
-        }
-
-        .trending-pagination {
-            position: absolute;
-            left: 50%;
-            bottom: 2%;
-            transform: translateX(-50%);
-            display: flex;
-            gap: 5px;
-            z-index: 200;
-
-            .pagination-dot {
-                cursor: pointer;
-                width: 6px;
-                height: 6px;
-                border-radius: 50%;
-                background-color: rgba(0, 0, 0, 0.4);
-            }
-
-            .selected {
-                background-color: rgba(0, 0, 0, 0.8);
-            }
-        }
-
-        .trending-details {
-            background-color: #fff;
-            padding: 30px;
-
-            .row {
-                gap: 0.6rem;
-
-                .col-12 {
-                    display: flex;
-                    justify-content: space-between;
-
-                    .details-name {
-                        font-size: 18px;
-                        color: $secondary-black;
-                        font-weight: 600;
-                    }
-
-                    .price {
-                        font-size: 16px;
-                        color: $gray-black;
-                        font-weight: 600;
-                    }
-
-                    .details-info {
-                        font-size: 14px;
-                        color: $secondary-black;
-                    }
-                }
-            }
-
-            .checked {
-                color: #eabe12;
-            }
-        }
-
-        &:hover {
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
-            transform: translateY(-4px);
-        }
-    }
-
-}
-
-.wavy-area {
-    background-image: url(https://atelier.swiftideas.com/wp-content/uploads/2014/05/waves.jpg);
-    background-size: cover;
-    background-attachment: scroll;
-    background-repeat: no-repeat;
-    padding: 120px 0;
-    position: relative;
-
-    .opac {
+      .slider-opac {
         width: 100%;
         height: 100%;
         position: absolute;
         top: 0;
         left: 0;
-        background-color: rgba(34, 34, 34, 0.5);
-    }
+        background-color: rgba(0, 0, 0, 0.1);
+        z-index: 200;
+      }
 
-    .wavy-inner-area {
-        z-index: 100;
-        width: 40%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 1rem;
+      .slider-text {
+        font-size: 24px;
+        color: #fff;
 
         p {
-            font-size: 16px;
-            color: #fff;
-            text-align: center;
+          text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+          font-size: 20px;
+          font-weight: 600;
 
-            @media (min-width: 768px) {
-                font-size: 24px;
-            }
-
-            @media (min-width: 1024px) {
-                font-size: 30px;
-            }
+          @media (min-width: 768px) {
+            font-size: 50px;
+          }
         }
+      }
+
+      .learn-more-btn {
+        position: relative;
+        margin-top: 20px;
+
+        a {
+          min-width: max-content;
+          display: flex;
+          align-items: center;
+          gap: 1rem;
+          color: $secondary-black;
+          font-size: 12px;
+          font-weight: 600;
+          padding: 15px 35px;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          background-color: #fff;
+          transition: all 0.5s;
+          text-align: center;
+
+          span {
+            transform: translateX(12px);
+            transition: all 0.4s;
+          }
+
+          i {
+            font-size: 18px;
+            transform: scale(0.5);
+            opacity: 0;
+            transition: all 0.4s;
+          }
+
+          &:hover {
+            background-color: $bg-white;
+
+            span {
+              transform: translateX(0);
+            }
+
+            i {
+              transform: scale(1);
+              opacity: 1;
+            }
+          }
+        }
+      }
     }
+
+    .slider-workshop {
+      padding: 4rem 0;
+      background-image: url(https://atelier.swiftideas.com/wp-content/uploads/2014/09/about-compass-lrg.jpg);
+      background-position: center center;
+      background-size: cover;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      img {
+        width: 20%;
+      }
+    }
+
+    .slider-achil {
+      padding: 9rem 0;
+      background-image: url(https://atelier.swiftideas.com/wp-content/uploads/2014/11/slider_bkg_shoes2_small.jpg);
+      background-position: center center;
+      background-size: cover;
+
+      a {
+        display: inline-block;
+      }
+
+      .slider-title {
+        font-size: 24px;
+
+        @media (min-width: 768px) {
+          font-size: 40px;
+        }
+      }
+    }
+  }
+}
+
+.shop-content-area {
+  margin-top: 1.5rem;
+
+  .shop-content {
+    position: relative;
+
+    a {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      color: $secondary-black;
+      font-size: 12px;
+      font-weight: 600;
+      padding: 15px 35px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: #fff;
+      transition: all 0.5s;
+      text-align: center;
+
+      span {
+        transform: translateX(12px);
+        transition: all 0.4s;
+      }
+
+      i {
+        font-size: 18px;
+        transform: scale(0.5);
+        opacity: 0;
+        transition: all 0.4s;
+      }
+
+      &:hover {
+        background-color: $bg-white;
+
+        span {
+          transform: translateX(0);
+        }
+
+        i {
+          transform: scale(1);
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
+
+.trending-area {
+  margin-top: 1.5rem;
+  background-color: $bg-white;
+  padding-top: 2rem;
+  text-align: center;
+  padding-bottom: 1rem;
+
+  .area-title {
+    .section-title {
+      color: $secondary-black;
+      font-size: 18px;
+      border-bottom: 2px solid $secondary-black;
+      padding-bottom: 3px;
+      margin-bottom: 1rem;
+    }
+
+    .section-little {
+      font-size: 14px;
+      color: $secondary-black;
+      display: none;
+    }
+  }
+
+  .trending {
+    overflow: hidden;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+    transition: all 0.4s;
+
+    .trending-imgs {
+      position: relative;
+      background-color: #f7f7f9;
+
+      .trending-img {
+        cursor: pointer;
+        position: absolute;
+        top: 0;
+        left: 15%;
+        height: 100%;
+        width: 70%;
+        opacity: 0;
+        transform: translateX(160%) scale(0.7);
+        transition: all 0.4s;
+      }
+
+      .img-move-left {
+        transform: translateX(-80%) scale(0.7);
+      }
+
+      .img-move-right {
+        transform: translateX(80%) scale(0.7);
+      }
+
+      .img-hide-left {
+        transform: translateX(-160%) scale(0.7);
+      }
+
+      &:hover {
+        .img-move-left {
+          opacity: 0.3;
+
+          &:hover {
+            opacity: 1;
+            transform: translateX(-81%) scale(0.8);
+          }
+        }
+
+        .img-move-right {
+          opacity: 0.3;
+
+          &:hover {
+            opacity: 1;
+            transform: translateX(79%) scale(0.8);
+          }
+        }
+      }
+
+      @media (max-width: 992px) {
+        .trending-img {
+          opacity: 0.3;
+        }
+      }
+
+      .selected {
+        z-index: 5;
+        position: relative;
+        opacity: 1;
+        transform: translateX(0) scale(1);
+      }
+    }
+
+    .trending-pagination {
+      position: absolute;
+      left: 50%;
+      bottom: 2%;
+      transform: translateX(-50%);
+      display: flex;
+      gap: 5px;
+      z-index: 200;
+
+      .pagination-dot {
+        cursor: pointer;
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        background-color: rgba(0, 0, 0, 0.4);
+      }
+
+      .selected {
+        background-color: rgba(0, 0, 0, 0.8);
+      }
+    }
+
+    .trending-details {
+      background-color: #fff;
+      padding: 30px;
+
+      .row {
+        gap: 0.6rem;
+
+        .col-12 {
+          display: flex;
+          justify-content: space-between;
+
+          .details-name {
+            font-size: 18px;
+            color: $secondary-black;
+            font-weight: 600;
+          }
+
+          .price {
+            font-size: 16px;
+            color: $gray-black;
+            font-weight: 600;
+          }
+
+          .details-info {
+            font-size: 14px;
+            color: $secondary-black;
+          }
+        }
+      }
+
+      .checked {
+        color: #eabe12;
+      }
+    }
+
+    &:hover {
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+      transform: translateY(-4px);
+    }
+  }
+}
+
+.wavy-area {
+  background-image: url(https://atelier.swiftideas.com/wp-content/uploads/2014/05/waves.jpg);
+  background-size: cover;
+  background-attachment: scroll;
+  background-repeat: no-repeat;
+  padding: 120px 0;
+  position: relative;
+
+  .opac {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(34, 34, 34, 0.5);
+  }
+
+  .wavy-inner-area {
+    z-index: 100;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+
+    p {
+      font-size: 16px;
+      color: #fff;
+      text-align: center;
+
+      @media (min-width: 768px) {
+        font-size: 24px;
+      }
+
+      @media (min-width: 1024px) {
+        font-size: 30px;
+      }
+    }
+  }
 }
 
 .brief-area {
-    background-color: rgb(34, 34, 34);
-    padding: 2rem 0;
+  background-color: rgb(34, 34, 34);
+  padding: 2rem 0;
 
-    .brief {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 1rem;
+  .brief {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
 
-        i {
-            font-size: 60px;
-            color: #fff;
-            transition: all 0.3s;
-        }
-
-        .brief-title {
-            font-size: 18px;
-            color: #fff;
-            font-weight: 600;
-        }
-
-        .brief-little {
-            font-size: 14px;
-            color: #fff;
-            text-align: center;
-        }
-
-        &:hover {
-            i {
-                color: rgb(68, 68, 68);
-            }
-        }
+    i {
+      font-size: 60px;
+      color: #fff;
+      transition: all 0.3s;
     }
+
+    .brief-title {
+      font-size: 18px;
+      color: #fff;
+      font-weight: 600;
+    }
+
+    .brief-little {
+      font-size: 14px;
+      color: #fff;
+      text-align: center;
+    }
+
+    &:hover {
+      i {
+        color: rgb(68, 68, 68);
+      }
+    }
+  }
 }
 
 .feature-area {
-    margin-top: 1.5rem;
-    padding-top: 2rem;
-    text-align: center;
-    padding-bottom: 1rem;
+  margin-top: 1.5rem;
+  padding-top: 2rem;
+  text-align: center;
+  padding-bottom: 1rem;
 
-    .area-title {
+  .area-title {
+    .section-title {
+      color: $secondary-black;
+      font-size: 18px;
+      border-bottom: 2px solid $secondary-black;
+      padding-bottom: 3px;
+      margin-bottom: 1rem;
+    }
 
-        .section-title {
-            color: $secondary-black;
+    .section-little {
+      font-size: 14px;
+      color: $secondary-black;
+      display: none;
+    }
+  }
+
+  .row {
+    row-gap: 1.5rem;
+    padding-bottom: 2.5rem;
+    border-bottom: 2px solid #f2f2f2;
+
+    .col-12 {
+      .feature {
+        box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+        position: relative;
+        overflow: hidden;
+
+        img {
+          transition: all 0.4s;
+        }
+
+        .feature-actions {
+          position: absolute;
+          bottom: 4%;
+          left: 4%;
+          background-color: #fff;
+          z-index: 100;
+
+          span {
+            color: #444;
             font-size: 18px;
-            border-bottom: 2px solid $secondary-black;
-            padding-bottom: 3px;
-            margin-bottom: 1rem;
-        }
+            font-weight: 600;
+            padding: 0.8rem;
+            display: inline-block;
+          }
 
-        .section-little {
-            font-size: 14px;
-            color: $secondary-black;
-            display: none;
-        }
-    }
+          a {
+            color: #333;
+            font-size: 18px;
+            font-weight: 600;
+            padding: 0.8rem 1.2rem;
+            display: inline-block;
+            position: relative;
+            transition: all 0.4s;
 
-    .row {
-        row-gap: 1.5rem;
-        padding-bottom: 2.5rem;
-        border-bottom: 2px solid #f2f2f2;
-
-        .col-12 {
-            .feature {
-                box-shadow: 1px 1px 1px rgba(0, 0, 0, .1);
-                position: relative;
-                overflow: hidden;
-
-                img {
-                    transition: all 0.4s;
-                }
-
-                .feature-actions {
-                    position: absolute;
-                    bottom: 4%;
-                    left: 4%;
-                    background-color: #fff;
-                    z-index: 100;
-
-                    span {
-                        color: #444;
-                        font-size: 18px;
-                        font-weight: 600;
-                        padding: 0.8rem;
-                        display: inline-block;
-                    }
-
-                    a {
-                        color: #333;
-                        font-size: 18px;
-                        font-weight: 600;
-                        padding: 0.8rem 1.2rem;
-                        display: inline-block;
-                        position: relative;
-                        transition: all 0.4s;
-
-                        &::before {
-                            content: '';
-                            position: absolute;
-                            top: 0;
-                            left: -1%;
-                            height: 100%;
-                            width: 1px;
-                            border: 1px solid rgba(0, 0, 0, 0.1);
-                        }
-
-                        &:hover {
-                            color: #eabe12;
-                        }
-                    }
-                }
-
-                .opac-caption {
-                    width: 100%;
-                    height: 100%;
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    background-color: rgba(34, 34, 34, 0.7);
-                    display: flex;
-                    flex-direction: column;
-                    gap: 0.3rem;
-                    padding: 20px;
-                    opacity: 0;
-                    transition: all 0.4s;
-
-                    .caption-title {
-                        font-weight: bold;
-                        text-align: left;
-                        color: #fff;
-                        transform: translateX(-50%);
-                        transition: all 0.4s;
-                    }
-
-                    .caption-little {
-                        font-size: 14px;
-                        text-align: left;
-                        color: #fff;
-                        margin-left: 1rem;
-                    }
-                }
-
-                &:hover {
-                    .opac-caption {
-                        opacity: 1;
-
-                        .caption-title {
-                            transform: translateX(0);
-                        }
-                    }
-                }
+            &::before {
+              content: "";
+              position: absolute;
+              top: 0;
+              left: -1%;
+              height: 100%;
+              width: 1px;
+              border: 1px solid rgba(0, 0, 0, 0.1);
             }
+
+            &:hover {
+              color: #eabe12;
+            }
+          }
         }
+
+        .opac-caption {
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          top: 0;
+          left: 0;
+          background-color: rgba(34, 34, 34, 0.7);
+          display: flex;
+          flex-direction: column;
+          gap: 0.3rem;
+          padding: 20px;
+          opacity: 0;
+          transition: all 0.4s;
+
+          .caption-title {
+            font-weight: bold;
+            text-align: left;
+            color: #fff;
+            transform: translateX(-50%);
+            transition: all 0.4s;
+          }
+
+          .caption-little {
+            font-size: 14px;
+            text-align: left;
+            color: #fff;
+            margin-left: 1rem;
+          }
+        }
+
+        &:hover {
+          .opac-caption {
+            opacity: 1;
+
+            .caption-title {
+              transform: translateX(0);
+            }
+          }
+        }
+      }
     }
+  }
 }
 
 .news-area {
-    padding-bottom: 5rem;
+  padding-bottom: 5rem;
 
-    .area-title {
-        padding-bottom: 1rem;
+  .area-title {
+    padding-bottom: 1rem;
 
-        span {
-            color: $secondary-black;
-            font-size: 18px;
-            font-weight: bold;
-            padding-bottom: 3px;
-            border-bottom: 3px solid $secondary-black;
-        }
-
-        .news-icons {
-            font-size: 28px;
-            color: #333;
-
-            i {
-                cursor: pointer;
-                transition: all 0.4s linear;
-
-                &:hover {
-                    color: #eabe12;
-                }
-            }
-        }
+    span {
+      color: $secondary-black;
+      font-size: 18px;
+      font-weight: bold;
+      padding-bottom: 3px;
+      border-bottom: 3px solid $secondary-black;
     }
 
-    .row {
-        overflow: hidden;
+    .news-icons {
+      font-size: 28px;
+      color: #333;
 
-        .col-12 {
+      i {
+        cursor: pointer;
+        transition: all 0.4s linear;
 
-            .news {
-                .img-wrap {
-                    position: relative;
-                    margin-bottom: 25px;
-
-                    .news-opac {
-                        z-index: 101;
-                        width: 100%;
-                        height: 100%;
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        position: absolute;
-                        top: 0;
-                        left: 0;
-                        background-color: rgba(0, 0, 0, 0.4);
-                        opacity: 0;
-                        transition: all 0.5s linear;
-
-                        i {
-                            color: #fff;
-                            font-size: 32px;
-                        }
-                    }
-
-                    .date {
-                        z-index: 102;
-                        padding: 7px 16px 9px 16px;
-                        background-color: #fff;
-                        position: absolute;
-                        top: 4%;
-                        right: 4%;
-
-                        .month {
-                            font-size: 14px;
-                            color: rgb(37, 37, 37);
-                        }
-
-                        .day {
-                            font-size: 18px;
-                            color: rgb(37, 37, 37);
-                        }
-                    }
-
-                    &:hover {
-                        .news-opac {
-                            opacity: 1;
-                        }
-                    }
-                }
-
-                .news-text-area {
-                    a {
-                        color: #333;
-                        font-size: 20px;
-                        font-weight: bold;
-                        margin-bottom: 4px;
-                    }
-
-                    .author {
-                        font-size: 14px;
-                        color: #444;
-                        padding-bottom: 8px;
-                    }
-
-                    .news-text {
-                        font-size: 14px;
-                        color: #444;
-                        padding-bottom: 8px;
-                    }
-                }
-            }
+        &:hover {
+          color: #eabe12;
         }
-
-        .news-wrap {
-            transition: all 0.4s;
-
-
-        }
+      }
     }
-}
+  }
 
-.banner-area {
+  .row {
+    overflow: hidden;
 
-    .banner {
-        position: relative;
+    .col-12 {
+      .news {
+        .img-wrap {
+          position: relative;
+          margin-bottom: 25px;
 
-        .banner-opac {
+          .news-opac {
+            z-index: 101;
             width: 100%;
             height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             position: absolute;
             top: 0;
             left: 0;
             background-color: rgba(0, 0, 0, 0.4);
             opacity: 0;
-            transition: all 0.5s;
-        }
+            transition: all 0.5s linear;
 
-        h2 {
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            margin: 0;
-            padding: 1rem 0;
-            width: 100%;
-            color: #fff;
-            text-align: center;
-            font-size: 22px;
-            font-weight: 600;
-        }
-
-        &:hover {
-            .banner-opac {
-                opacity: 1;
+            i {
+              color: #fff;
+              font-size: 32px;
             }
+          }
+
+          .date {
+            z-index: 102;
+            padding: 7px 16px 9px 16px;
+            background-color: #fff;
+            position: absolute;
+            top: 4%;
+            right: 4%;
+
+            .month {
+              font-size: 14px;
+              color: rgb(37, 37, 37);
+            }
+
+            .day {
+              font-size: 18px;
+              color: rgb(37, 37, 37);
+            }
+          }
+
+          &:hover {
+            .news-opac {
+              opacity: 1;
+            }
+          }
         }
+
+        .news-text-area {
+          a {
+            color: #333;
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 4px;
+          }
+
+          .author {
+            font-size: 14px;
+            color: #444;
+            padding-bottom: 8px;
+          }
+
+          .news-text {
+            font-size: 14px;
+            color: #444;
+            padding-bottom: 8px;
+          }
+        }
+      }
     }
+
+    .news-wrap {
+      transition: all 0.4s;
+    }
+  }
+}
+
+.banner-area {
+  .banner {
+    position: relative;
+
+    .banner-opac {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: rgba(0, 0, 0, 0.4);
+      opacity: 0;
+      transition: all 0.5s;
+    }
+
+    h2 {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      margin: 0;
+      padding: 1rem 0;
+      width: 100%;
+      color: #fff;
+      text-align: center;
+      font-size: 22px;
+      font-weight: 600;
+    }
+
+    &:hover {
+      .banner-opac {
+        opacity: 1;
+      }
+    }
+  }
 }
