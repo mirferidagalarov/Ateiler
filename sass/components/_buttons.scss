@@ -10,7 +10,7 @@
 
         &:hover {
             background-color: $secondary-black;
-            color: #fff;
+            color: $white;
         }
 
         @media (min-width:768px) {
@@ -24,7 +24,7 @@
         font-size: 14px;
         background-color: $primary-black;
         border-color: $primary-black;
-        color: #fff;
+        color: $white;
         padding: 11px 34px;
 
         @media (min-width:768px) {
@@ -33,43 +33,80 @@
     }
 }
 
-.shop-btn{
+.shop-btn {
     background: none;
     border: 2px solid $bg-white;
     padding: 15px 25px;
     transition: all 0.5s;
-    color: #fff;
+    color: $white;
     min-width: max-content;
 
-    &:hover{
+    &:hover {
         color: $secondary-black;
         background-color: $bg-white;
     }
-}.btn-ordinary{
-    color: #444444;
+}
+
+.btn-ordinary {
+    color: $gray-black;
     border-radius: 50px !important;
     padding: 15px 30px !important;
     font-family: 'Karla', sans-serif;
     font-size: 15px !important;
     font-weight: 600 !important;
     font-family: 'Karla', sans-serif;
-    &:hover{
-        background-color: #111111 !important;
+
+    &:hover {
+        background-color: $primary-black !important;
         transition: 0.5s ease;
     }
 }
-.btn-hover{
-    border: 3px solid #222222 !important;
-    color: #444444;
+
+.btn-hover {
+    border: 3px solid $secondary-black !important;
+    color: $gray-black;
     font-weight: 700 !important;
     padding: 20px 50px !important;
     border-radius: 50px !important;
     font-size: 15px !important;
-    margin-top:100px;
+    margin-top: 100px;
     font-family: 'Karla', sans-serif;
-    &:hover{
-        color: white !important;
-        background-color: #222222 !important;
+
+    &:hover {
+        color: $white !important;
+        background-color: $secondary-black !important;
+    }
+}
+
+.btn-hover1 {
+    border: 2px solid $secondary-black !important;
+    color: $secondary-black;
+    font-weight: 700 !important;
+    padding: 15px 30px !important;
+    border-radius: 50px !important;
+    font-size: 12px !important;
+    margin-top: 15px;
+    font-family: 'Karla', sans-serif;
+
+    &:hover {
+        color: $white !important;
+        background-color: $secondary-black !important;
+    }
+}
+
+.btn-hover-secondary {
+    border: 2px solid $white !important;
+    color: $white;
+    font-weight: 700 !important;
+    padding: 16px 35px !important;
+    border-radius: 25px !important;
+    font-size: 12px !important;
+    margin-top: 32px;
+    font-family: 'Karla', sans-serif;
+
+    &:hover {
+        color: $secondary-black !important;
+        background-color: $bg-white !important;
     }
 }
 
