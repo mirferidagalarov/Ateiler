@@ -8,6 +8,12 @@
                 font-size: 27px;
                 width: 55%;
             }
+            p{
+                width: 80%;
+            }
+        }
+        .swiper-side1{
+            padding: 200px 0 250px 0;
         }
     }
 
@@ -15,8 +21,15 @@
     #features-section {
         .heading-text {
             padding: 40px 0;
-
             h1 {
+                font-size: 30px;
+            }
+        }
+    }
+    #product-section{
+        .heading-text2{
+            padding: 40px 0;
+            h1{
                 font-size: 30px;
             }
         }
@@ -102,22 +115,15 @@
             h3 {
                 font-size: 19px;
             }
-
             p {
                 font-size: 16px;
             }
             .paragraph1 {
                 font-size: 15px;
-                
             }
-        
             .paragraph2 {
                 font-size: 13px;
-                
-        
-            }
-        
-           
+            } 
         }
     }
     

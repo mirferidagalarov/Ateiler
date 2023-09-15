@@ -11,6 +11,47 @@
             width: 45%;
             font-family: 'Dosis', sans-serif;
         }
+
+        h2 {
+            font-size: 37px;
+            width: 85%;
+            font-family: 'Dosis', sans-serif;
+        }
+
+
+        p {
+            color: #999999;
+            font-size: 14px;
+            width: 95%;
+            font-family: 'Karla', sans-serif;
+        }
+    }
+
+    .swiper-side1 {
+        padding: 120px 0 15px 0;
+        .banner-slider {
+            position: relative;
+    
+            .swiper-pagination {
+                bottom: 15px;
+                position: absolute;
+    
+            }
+    
+            .navigation {
+                background-color: $white;
+                position: absolute;
+                bottom: 15px;
+                right: 20px;
+                z-index: 10000;
+    
+                .swiper-prev,
+                .swiper-next {
+                    font-size: 18px;
+    
+                }
+            }
+        }
     }
 
     .banner-slider {
@@ -21,12 +62,13 @@
             position: absolute;
 
         }
+
         .swiper-pagination-bullet-active {
-            background-color:white;
+            background-color: $white;
         }
 
         .navigation {
-            background-color: white;
+            background-color: $white;
             position: absolute;
             bottom: 30px;
             right: 40px;
@@ -44,12 +86,9 @@
 
 }
 
-
-
-
 // layout section
 .section-div1 {
-    background-color: #222222;
+    background-color: $secondary-black;
 
     .content-text {
         padding: 50px 0;
@@ -66,7 +105,29 @@
             width: 53%;
         }
     }
+    .content-text1 {
+        padding: 130px 0 80px 0;
+        h1 {
+            font-size: 38px;
+            width: 47%;
+            font-family: 'Dosis', sans-serif;
+        }
 
+        p {
+            color: #999999;
+            font-size: 16px;
+            width: 48%;
+            line-height: 27px;
+            font-family: 'Karla', sans-serif;
+        }
+    }
+    .headers-part{
+        span{
+            color: #999999;
+            font-size: 14px;
+            font-family: 'Karla' , sans-serif;
+        }
+    }
     .cards {
         padding-bottom: 130px;
 
@@ -75,7 +136,7 @@
 
             &:hover {
                 img {
-                    background-color: #444444;
+                    background-color: $gray-black;
                     opacity: 0.3;
                     transition: 0.5s ease;
                 }
@@ -99,11 +160,7 @@
             }
         }
     }
-
-
 }
-
-
 
 #features-section {
     padding-bottom: 100px;
@@ -112,28 +169,30 @@
         padding-bottom: 80px;
 
         h1 {
-            color: #444444;
+            color: $gray-black;
             font-size: 40px;
             width: 47%;
             font-family: 'Dosis', sans-serif;
         }
     }
+
     .heading-text1 {
         padding: 80px 0 30px 0;
 
         h1 {
-            color: #444444;
+            color: $gray-black;
             font-size: 36px;
             width: 47%;
             font-family: 'Dosis', sans-serif;
         }
-        p{
-            color: #222222;
+
+        p {
+            color: $secondary-black;
             width: 50%;
             font-size: 16px;
-            line-height:30px;
-            font-family: 'Karla' , sans-serif;
-            
+            line-height: 30px;
+            font-family: 'Karla', sans-serif;
+
         }
     }
 
@@ -151,60 +210,136 @@
 // cards
 .card-section {
     .card-item {
-        .card-img{
+        .card-img {
             cursor: pointer;
 
-            &:hover{
-                .shadow-box{
+            &:hover {
+                .shadow-box {
                     top: 0;
                     left: 0;
-                    background-color: #444444;
+                    background-color: $gray-black;
                     opacity: 0.6;
                     z-index: 10000;
                     transition: 0.8s ease;
                 }
             }
-            
-            
         }
-       
-       
+
+
         h3 {
-            color: #222222;
+            color: $secondary-black;
             font-size: 23px;
             font-family: 'Dosis', sans-serif;
         }
-        h4{
+
+        h4 {
             font-size: 16px;
-            color: #222222;
+            color: $secondary-black;
             font-family: 'Karla', sans-serif;
         }
-        h5{
+
+        h5 {
             font-size: 25px;
-            color: #444444;
+            color: $gray-black;
             font-family: 'Dosis', sans-serif;
         }
 
         p {
             font-size: 18px;
             width: 83%;
-            color: #444444;
+            color: $gray-black;
             font-family: 'Karla', sans-serif;
         }
 
         .paragraph1 {
             font-size: 16.5px;
-            color: #222222;
+            color: $secondary-black;
             width: 100%;
             font-family: 'Karla', sans-serif;
         }
 
         .paragraph2 {
             font-size: 14.5px;
-            color: #444444;
+            color: $gray-black;
             width: 100%;
             font-family: 'Karla', sans-serif;
+        }
+    }
+}
+
+#product-section{
+    background-color: #F8F8FA;
+    .heading-text2 {
+        padding: 140px 0 85px 0;
+
+        h1 {
+            color: $gray-black;
+            font-size: 39px;
+            width: 47%;
+            font-family: 'Dosis', sans-serif;
+        }
+
+        p {
+            color: $secondary-black;
+            width: 75%;
+            font-size: 16px;
+            line-height: 30px;
+            font-family: 'Karla', sans-serif;
+        }
+    }
+    .swiper-side1 {
+        .banner-slider {
+            position: relative;
+    
+            .swiper-pagination {
+                bottom: 15px;
+                position: absolute;
+    
+            }
+    
+            .navigation {
+                background-color: $white;
+                position: absolute;
+                bottom: 15px;
+                right: 20px;
+                z-index: 10000;
+    
+                .swiper-prev,
+                .swiper-next {
+                    font-size: 18px;
+    
+                }
+            }
+        }
+    }
+
+    .banner-slider {
+        position: relative;
+
+        .swiper-pagination {
+            bottom: 30px;
+            position: absolute;
 
         }
+
+        .swiper-pagination-bullet-active {
+            background-color: $white;
+        }
+
+        .navigation {
+            background-color: $white;
+            position: absolute;
+            bottom: 30px;
+            right: 40px;
+            z-index: 10000;
+
+            .swiper-prev,
+            .swiper-next {
+
+                font-size: 20px;
+
+            }
+        }
+
     }
 }

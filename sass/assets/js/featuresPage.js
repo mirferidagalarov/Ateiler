@@ -1,6 +1,6 @@
-var swiper = new Swiper(".bannerSwiper", {
-    spaceBetween: 30,
-    effect: "fade",
+const swiper = new Swiper('.bannerSwiper', {
+    spaceBetween:0,
+    effect:'fade',
     navigation: {
         nextEl: ".swiper-next",
         prevEl: ".swiper-prev",
@@ -10,7 +10,8 @@ var swiper = new Swiper(".bannerSwiper", {
         clickable: true,
     },
     autoplay: {
-        delay: 6000
+        delay: 4000
     },
-    loop: true
+    loop: true,
+    slidesPerView: 1,
 });
