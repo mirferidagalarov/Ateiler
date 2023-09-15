@@ -72,3 +72,52 @@
         background-color: #222222 !important;
     }
 }
+
+.learn-more-btn {
+    position: relative;
+    margin-top: 20px;
+
+    a {
+        min-width: max-content;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        color: $secondary-black;
+        font-size: 12px;
+        font-weight: 600;
+        padding: 15px 35px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #fff;
+        transition: all 0.5s;
+        text-align: center;
+
+        span {
+            transform: translateX(12px);
+            transition: all 0.4s;
+        }
+
+
+        i {
+            font-size: 18px;
+            transform: scale(0.5);
+            opacity: 0;
+            transition: all 0.4s;
+        }
+
+        &:hover {
+            background-color: $bg-white;
+
+            span {
+                transform: translateX(0);
+            }
+
+            i {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+    }
+}
