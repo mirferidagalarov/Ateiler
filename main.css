@@ -23490,8 +23490,8 @@ footer .threecol p span input:focus {
   padding: 85px 0;
 }
 .section-div .banner-text h1, .section-div .banner-text .h1 {
-  font-size: 37px;
-  width: 45%;
+  font-size: 40px;
+  width: 40%;
   font-family: "Dosis", sans-serif;
 }
 .section-div .banner-text h2, .section-div .banner-text .h2 {
@@ -23519,7 +23519,7 @@ footer .threecol p span input:focus {
   background-color: #fff;
   position: absolute;
   bottom: 15px;
-  right: 20px;
+  right: 50px;
   z-index: 10000;
 }
 .section-div .swiper-side1 .banner-slider .navigation .swiper-prev,
