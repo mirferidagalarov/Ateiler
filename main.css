@@ -23518,8 +23518,8 @@ footer .threecol p span input:focus {
 .section-div .swiper-side1 .banner-slider .navigation {
   background-color: #fff;
   position: absolute;
-  bottom: 15px;
-  right: 20px;
+  bottom: 5%;
+  right: 2%;
   z-index: 10000;
 }
 .section-div .swiper-side1 .banner-slider .navigation .swiper-prev,
@@ -23539,8 +23539,8 @@ footer .threecol p span input:focus {
 .section-div .banner-slider .navigation {
   background-color: #fff;
   position: absolute;
-  bottom: 30px;
-  right: 40px;
+  bottom: 5%;
+  right: 5%;
   z-index: 10000;
 }
 .section-div .banner-slider .navigation .swiper-prev,
@@ -23719,8 +23719,8 @@ footer .threecol p span input:focus {
 #product-section .swiper-side1 .banner-slider .navigation {
   background-color: #fff;
   position: absolute;
-  bottom: 15px;
-  right: 20px;
+  bottom: 5%;
+  right: 5%;
   z-index: 10000;
 }
 #product-section .swiper-side1 .banner-slider .navigation .swiper-prev,
@@ -23740,8 +23740,8 @@ footer .threecol p span input:focus {
 #product-section .banner-slider .navigation {
   background-color: #fff;
   position: absolute;
-  bottom: 30px;
-  right: 40px;
+  bottom: 5%;
+  right: 11%;
   z-index: 10000;
 }
 #product-section .banner-slider .navigation .swiper-prev,
@@ -23891,6 +23891,8 @@ footer .threecol p span input:focus {
   width: 100%;
   cursor: pointer;
   position: relative;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
 }
 .imgscroll .img-wrap {
   position: relative;
@@ -23939,21 +23941,28 @@ footer .threecol p span input:focus {
   gap: 1rem;
   background-color: #fff;
   position: relative;
-  width: 18.5vw;
-  padding: 1rem;
-  margin-left: 13px;
+  width: 80%;
+  padding: 20px 10px 0 10px;
   cursor: pointer;
-  border-bottom: 1px solid lightgrey;
+  padding-bottom: 20px;
 }
 .imgscroll .contentscroll h5, .imgscroll .contentscroll .h5 {
+  font-weight: 600;
   color: #000;
   position: absolute;
   top: 0;
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: #fff;
-  width: 18.5vw;
+  width: 100%;
   padding: 10px;
+  min-width: -moz-max-content;
+  min-width: max-content;
+}
+@media (max-width: 1200px) {
+  .imgscroll .contentscroll h5, .imgscroll .contentscroll .h5 {
+    font-size: 16px;
+  }
 }
 .imgscroll .contentscroll a {
   color: #000;
