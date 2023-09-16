@@ -58,22 +58,81 @@
     border-top: 2px solid #e3e3e3;
     border-bottom: 2px solid #e3e3e3;
 
-    .shop-filter{
-        color: #333;
-        font-weight: 600;
+    .shop-filter {
+        p {
+            color: #333;
+            font-size: 14px;
+            position: relative;
+            margin-left: 20px;
+
+            &::after {
+                position: absolute;
+                top: calc(50% - 1px);
+                left: -15px;
+                width: 14px;
+                height: 2px;
+                content: "";
+                transition: all 0.5s ease 0s;
+                transform: scale(0.75);
+                rotate: 90deg;
+                background-color: #000;
+                transition: all 0.4s;
+            }
+
+            &::before {
+                position: absolute;
+                top: calc(50% - 1px);
+                left: -15px;
+                width: 14px;
+                height: 2px;
+                content: "";
+                transition: all 0.5s ease 0s;
+                transform: scale(0.75);
+                background-color: #000;
+            }
+        }
+    }
+
+    .shop-type{
+        font-size: 14px;
+
+        i{
+            font-size: 18px;
+            transition: all 0.4s;
+
+            &:hover{
+                color: #eabe12;
+                text-decoration: underline;
+            }
+        }
+
+        p{
+            span{
+                transition: all 0.4s;
+                font-weight: 600;
+
+                &:hover{
+                    color: #eabe12;
+                    text-decoration: underline; 
+                }
+            }
+        }
     }
 
     .shop-sort {
         .select-wrapper {
-            .tab-text{
-                font-weight: 600;
+            .tab-text {
+                font-size: 14px;
+                color: #444;
             }
+
             .shop-select {
                 .select-area {
                     border-radius: 0px;
                     cursor: pointer;
                     display: block;
-                    font-weight: 600;
+                    font-size: 14px;
+                    color: #444;
                     line-height: 45px;
                     outline: none;
                     padding-left: 10px;
@@ -115,8 +174,9 @@
                         opacity: 1;
                     }
 
-                    .current {
-                        color: #090909;
+                    i {
+                        font-size: 14px;
+                        color: #444;
                     }
                 }
             }
