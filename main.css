@@ -23906,6 +23906,13 @@ footer .threecol p span input:focus {
   right: 4%;
   background-color: #fff;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding: 0.5rem;
+}
+.imgscroll .img-wrap .imgdate span {
+  font-family: Karla;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
 }
 .imgscroll .img-wrap .opac-img-scroll {
   background-color: rgba(0, 0, 0, 0.4);
@@ -23941,7 +23948,7 @@ footer .threecol p span input:focus {
   gap: 1rem;
   background-color: #fff;
   position: relative;
-  width: 80%;
+  width: 90%;
   padding: 20px 10px 0 10px;
   cursor: pointer;
   padding-bottom: 20px;
@@ -23968,6 +23975,95 @@ footer .threecol p span input:focus {
   color: #000;
 }
 .imgscroll .contentscroll a:hover {
+  text-decoration: underline !important;
+}
+
+.imgscrollauido {
+  width: 100%;
+  cursor: pointer;
+  position: relative;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+}
+.imgscrollauido .img-wrapp {
+  position: relative;
+  height: 20;
+}
+.imgscrollauido .img-wrapp .imgdate {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  top: -3%;
+  right: 4%;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding: 0.5rem;
+}
+.imgscrollauido .img-wrapp .imgdate span {
+  font-family: Karla;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+}
+.imgscrollauido .img-wrapp .opac-img-scroll {
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: all 0.4s;
+}
+.imgscrollauido .img-wrapp .opac-img-scroll:hover {
+  opacity: 1;
+}
+.imgscrollauido .img-wrapp .opac-img-scroll i {
+  display: none;
+  color: #fff;
+  position: absolute;
+  left: 9rem;
+  top: 6rem;
+  font-size: 2rem;
+  transition: all 0.4s;
+}
+.imgscrollauido .img-wrapp .opac-img-scroll:hover i {
+  display: block;
+}
+.imgscrollauido .img-wrapp .imgsize {
+  height: 20%;
+}
+.imgscrollauido .img-wrapp img {
+  width: 30%;
+  height: 20%;
+}
+.imgscrollauido .contentscroll {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background-color: #fff;
+  width: 90%;
+  padding: 20px 10px 0 10px;
+  cursor: pointer;
+}
+.imgscrollauido .contentscroll h5, .imgscrollauido .contentscroll .h5 {
+  font-weight: 600;
+  color: #000;
+  top: 0;
+  background-color: #fff;
+  min-width: -moz-max-content;
+  min-width: max-content;
+}
+@media (max-width: 1200px) {
+  .imgscrollauido .contentscroll h5, .imgscrollauido .contentscroll .h5 {
+    font-size: 16px;
+  }
+}
+.imgscrollauido .contentscroll a {
+  color: #000;
+}
+.imgscrollauido .contentscroll a:hover {
   text-decoration: underline !important;
 }
 
