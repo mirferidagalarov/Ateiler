@@ -7,7 +7,7 @@ function trendingSlider() {
 
   sliderActionWithImg(trendingImgs);
   sliderActionWithDots(trendingImgs);
-};
+}
 
 function sliderActionWithImg(trendingImgs) {
   trendingImgs.forEach((img) => {
@@ -23,11 +23,11 @@ function sliderActionWithImg(trendingImgs) {
           element.classList.remove("img-hide-left");
         });
 
-        paginations.forEach(pagination => {
+        paginations.forEach((pagination) => {
           pagination.classList.remove("selected");
-        })
+        });
 
-        paginations[index].classList.add("selected")
+        paginations[index].classList.add("selected");
 
         imgElement.classList.add("selected");
 
@@ -50,15 +50,15 @@ function sliderActionWithImg(trendingImgs) {
 }
 
 function sliderActionWithDots(trendingImgs) {
-  trendingImgs.forEach(img => {
+  trendingImgs.forEach((img) => {
     const imgElements = img.querySelectorAll(".trending-img");
     const paginations = img.querySelectorAll(".pagination-dot");
 
     paginations.forEach((pag, index) => {
-      pag.addEventListener('click', () => {
-        paginations.forEach(pagination => {
-          pagination.classList.remove('selected');
-        })
+      pag.addEventListener("click", () => {
+        paginations.forEach((pagination) => {
+          pagination.classList.remove("selected");
+        });
 
         imgElements.forEach((element) => {
           element.classList.remove("selected");
@@ -67,8 +67,8 @@ function sliderActionWithDots(trendingImgs) {
           element.classList.remove("img-hide-left");
         });
 
-        pag.classList.add('selected');
-        imgElements[index].classList.add('selected');
+        pag.classList.add("selected");
+        imgElements[index].classList.add("selected");
 
         let prevIndex = index - 1;
         let nextIndex = index + 1;
@@ -84,9 +84,9 @@ function sliderActionWithDots(trendingImgs) {
         if (nextIndex >= imgElements.length) {
           imgElements[0].classList.add("img-hide-left");
         }
-      })
-    })
-  })
+      });
+    });
+  });
 }
 
 // function newsMover() {
@@ -197,6 +197,36 @@ const nextSlider = (areaItem) => {
     totalIndex = 0;
 }
 
+  const moveLeftIcon = document.getElementById("news-move-left");
+  const moveRightIcon = document.getElementById("news-move-right");
+  const newsContainer = document.querySelector(".news-area .row");
+  const newsItems = document.querySelectorAll(".news-wrap");
+  const itemWidth = newsItems[0].clientWidth;
+  let currentIndex = 0;
+
+  moveLeftIcon.addEventListener("click", () => {
+    currentIndex = (currentIndex - 1 + newsItems.length) % newsItems.length;
+    updateNewsWrapPosition();
+  });
+
+  moveRightIcon.addEventListener("click", () => {
+    currentIndex = (currentIndex + 1) % newsItems.length;
+    updateNewsWrapPosition();
+  });
+  
+  function updateNewsWrapPosition() {
+    newsItems.forEach((item) => {
+      let newPosition = -currentIndex * itemWidth;
+      if (newsContainer.clientWidth / itemWidth != 1) {
+        if (newPosition < -itemWidth) {
+          newPosition = 0;
+          currentIndex = 0;
+        }
+      }
+      item.style.transform = `translateX(${newPosition}px)`;
+    });
+  }
+}
 
 function pageInit() {
   trendingSlider();
@@ -208,3 +238,6 @@ function pageInit() {
 }
 
 pageInit();
+window.addEventListener("resize", () => {
+  newsMover();
+});
