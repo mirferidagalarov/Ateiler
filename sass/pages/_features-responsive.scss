@@ -8,8 +8,12 @@
                 font-size: 27px;
                 width: 55%;
             }
+            h2{
+                font-size: 27px;
+            }
             p{
                 width: 80%;
+                font-size: 14px;
             }
         }
         .swiper-side1{
@@ -23,6 +27,7 @@
             padding: 40px 0;
             h1 {
                 font-size: 30px;
+                width: 60%;
             }
         }
     }
@@ -34,7 +39,82 @@
             }
         }
     }
+    #blue-section{
+        
+        .content-text2{
+            padding: 100px 0 70px 0;
+            h1 {
+                font-size: 30px;
+                width: 60%;
+            }
+    
+            p {
+                font-size: 15px;
+                width: 60%;
+            }
+    
+        }
+    }
+// page-builder
+    .section-div2 {
 
+        .banner-text {
+            padding: 85px 0;
+    
+            h2 {
+                color: $gray-black;
+                font-size: 27px;
+                width: 75%;
+                font-family: 'Dosis', sans-serif;
+            }
+    
+    
+            p {
+                color: $gray-black;
+                font-size: 15px;
+                width: 92%;
+                line-height: 30px;
+                font-family: 'Karla', sans-serif;
+            }
+            strong{
+                color: $gray-black;
+                font-size: 15px;
+            }
+        }
+    img{
+        width: 150px;
+    }
+    }
+    // icons fonts section
+    #icons-section{
+        .heading-text2 {
+            padding: 40px 0;
+            h1{
+                font-size: 30px;
+            }
+            p{
+                font-size: 15px;
+                width: 60%;
+            }
+        }
+    }
+    // custom color section
+
+    #custom-section{
+
+        .heading-text2 {
+            padding: 40px 0;
+            h1{
+                font-size: 30px;
+            }
+            p{
+                font-size: 15px;
+                width: 60%;
+            }
+        }
+    }
+    
+    
 
     // cards
     .card-section {
@@ -51,7 +131,7 @@
     }
 
     .btn-ordinary,
-    .btn-hover {
+    .btn-hover, .btn-hover1, .btn-hover-secondary {
         padding: 12px 20px !important;
         font-size: 12px !important;
     }
@@ -66,6 +146,11 @@
             p {
                 font-size: 14px;
                 width: 60%;
+            }
+        }
+        .content-text1{
+            h1{
+                width: 55%;
             }
         }
 

@@ -22405,12 +22405,12 @@ ul {
 }
 
 .btn-hover1 {
-  border: 2px solid #222 !important;
-  color: #222;
+  border: 3px solid #222 !important;
+  color: #444;
   font-weight: 700 !important;
   padding: 15px 30px !important;
   border-radius: 50px !important;
-  font-size: 12px !important;
+  font-size: 14px !important;
   margin-top: 15px;
   font-family: "Karla", sans-serif;
 }
@@ -22420,12 +22420,12 @@ ul {
 }
 
 .btn-hover-secondary {
-  border: 2px solid #fff !important;
+  border: 3px solid #fff !important;
   color: #fff;
-  font-weight: 700 !important;
+  font-weight: 600 !important;
   padding: 16px 35px !important;
   border-radius: 25px !important;
-  font-size: 12px !important;
+  font-size: 14px !important;
   margin-top: 32px;
   font-family: "Karla", sans-serif;
 }
@@ -23490,19 +23490,20 @@ footer .threecol p span input:focus {
   padding: 85px 0;
 }
 .section-div .banner-text h1, .section-div .banner-text .h1 {
-  font-size: 37px;
+  font-size: 40px;
   width: 45%;
   font-family: "Dosis", sans-serif;
 }
 .section-div .banner-text h2, .section-div .banner-text .h2 {
-  font-size: 37px;
-  width: 85%;
+  font-size: 40px;
+  width: 75%;
   font-family: "Dosis", sans-serif;
 }
 .section-div .banner-text p {
   color: #999999;
-  font-size: 14px;
-  width: 95%;
+  font-size: 16px;
+  width: 92%;
+  line-height: 30px;
   font-family: "Karla", sans-serif;
 }
 .section-div .swiper-side1 {
@@ -23556,13 +23557,13 @@ footer .threecol p span input:focus {
 }
 .section-div1 .content-text h1, .section-div1 .content-text .h1 {
   font-size: 40px;
-  width: 47%;
+  width: 44%;
   font-family: "Dosis", sans-serif;
 }
 .section-div1 .content-text p {
   color: #999999;
   font-size: 16px;
-  width: 53%;
+  width: 48%;
 }
 .section-div1 .content-text1 {
   padding: 130px 0 80px 0;
@@ -23576,6 +23577,21 @@ footer .threecol p span input:focus {
   color: #999999;
   font-size: 16px;
   width: 48%;
+  line-height: 27px;
+  font-family: "Karla", sans-serif;
+}
+.section-div1 .content-text2 {
+  padding: 100px 0 80px 0;
+}
+.section-div1 .content-text2 h1, .section-div1 .content-text2 .h1 {
+  font-size: 38px;
+  width: 47%;
+  font-family: "Dosis", sans-serif;
+}
+.section-div1 .content-text2 p {
+  color: #999999;
+  font-size: 16px;
+  width: 41%;
   line-height: 27px;
   font-family: "Karla", sans-serif;
 }
@@ -23616,7 +23632,7 @@ footer .threecol p span input:focus {
 #features-section .heading-text h1, #features-section .heading-text .h1 {
   color: #444;
   font-size: 40px;
-  width: 47%;
+  width: 40%;
   font-family: "Dosis", sans-serif;
 }
 #features-section .heading-text1 {
@@ -23630,8 +23646,8 @@ footer .threecol p span input:focus {
 }
 #features-section .heading-text1 p {
   color: #222;
-  width: 50%;
-  font-size: 16px;
+  width: 46%;
+  font-size: 17px;
   line-height: 30px;
   font-family: "Karla", sans-serif;
 }
@@ -23704,8 +23720,8 @@ footer .threecol p span input:focus {
 }
 #product-section .heading-text2 p {
   color: #222;
-  width: 75%;
-  font-size: 16px;
+  width: 65%;
+  font-size: 17px;
   line-height: 30px;
   font-family: "Karla", sans-serif;
 }
@@ -23719,8 +23735,8 @@ footer .threecol p span input:focus {
 #product-section .swiper-side1 .banner-slider .navigation {
   background-color: #fff;
   position: absolute;
-  bottom: 5%;
-  right: 5%;
+  bottom: 3%;
+  right: 2%;
   z-index: 10000;
 }
 #product-section .swiper-side1 .banner-slider .navigation .swiper-prev,
@@ -23749,6 +23765,86 @@ footer .threecol p span input:focus {
   font-size: 20px;
 }
 
+#blue-section {
+  background-color: #62D8B6;
+}
+#blue-section .content-text2 {
+  padding: 110px 0 80px 0;
+}
+#blue-section .content-text2 h1, #blue-section .content-text2 .h1 {
+  font-size: 42px;
+  width: 35%;
+  font-family: "Dosis", sans-serif;
+}
+#blue-section .content-text2 p {
+  font-size: 18px;
+  width: 42%;
+  line-height: 30px;
+  font-family: "Karla", sans-serif;
+}
+
+.section-div2 .banner-text {
+  padding: 85px 0;
+}
+.section-div2 .banner-text h2, .section-div2 .banner-text .h2 {
+  color: #444;
+  font-size: 40px;
+  width: 75%;
+  font-family: "Dosis", sans-serif;
+}
+.section-div2 .banner-text p {
+  color: #444;
+  font-size: 16px;
+  width: 92%;
+  line-height: 30px;
+  font-family: "Karla", sans-serif;
+}
+.section-div2 .banner-text strong {
+  color: #444;
+  font-size: 16px;
+}
+.section-div2 img {
+  width: 210px;
+}
+
+#icons-section {
+  background-color: #F7F7F7;
+  padding-bottom: 110px;
+}
+#icons-section .heading-text2 {
+  padding: 120px 0 80px 0;
+}
+#icons-section .heading-text2 h1, #icons-section .heading-text2 .h1 {
+  color: #444;
+  font-size: 39px;
+  width: 47%;
+  font-family: "Dosis", sans-serif;
+}
+#icons-section .heading-text2 p {
+  color: #222;
+  width: 45%;
+  font-size: 17px;
+  line-height: 30px;
+  font-family: "Karla", sans-serif;
+}
+
+#custom-section .heading-text2 {
+  padding: 130px 0 80px 0;
+}
+#custom-section .heading-text2 h1, #custom-section .heading-text2 .h1 {
+  color: #444;
+  font-size: 39px;
+  width: 47%;
+  font-family: "Dosis", sans-serif;
+}
+#custom-section .heading-text2 p {
+  color: #222;
+  width: 45%;
+  font-size: 17px;
+  line-height: 30px;
+  font-family: "Karla", sans-serif;
+}
+
 @media (width <= 375px) {
   .section-div .banner-text {
     padding: 50px 0;
@@ -23757,8 +23853,12 @@ footer .threecol p span input:focus {
     font-size: 27px;
     width: 55%;
   }
+  .section-div .banner-text h2, .section-div .banner-text .h2 {
+    font-size: 27px;
+  }
   .section-div .banner-text p {
     width: 80%;
+    font-size: 14px;
   }
   .section-div .swiper-side1 {
     padding: 200px 0 250px 0;
@@ -23768,12 +23868,67 @@ footer .threecol p span input:focus {
   }
   #features-section .heading-text h1, #features-section .heading-text .h1 {
     font-size: 30px;
+    width: 60%;
   }
   #product-section .heading-text2 {
     padding: 40px 0;
   }
   #product-section .heading-text2 h1, #product-section .heading-text2 .h1 {
     font-size: 30px;
+  }
+  #blue-section .content-text2 {
+    padding: 100px 0 70px 0;
+  }
+  #blue-section .content-text2 h1, #blue-section .content-text2 .h1 {
+    font-size: 30px;
+    width: 60%;
+  }
+  #blue-section .content-text2 p {
+    font-size: 15px;
+    width: 60%;
+  }
+  .section-div2 .banner-text {
+    padding: 85px 0;
+  }
+  .section-div2 .banner-text h2, .section-div2 .banner-text .h2 {
+    color: #444;
+    font-size: 27px;
+    width: 75%;
+    font-family: "Dosis", sans-serif;
+  }
+  .section-div2 .banner-text p {
+    color: #444;
+    font-size: 15px;
+    width: 92%;
+    line-height: 30px;
+    font-family: "Karla", sans-serif;
+  }
+  .section-div2 .banner-text strong {
+    color: #444;
+    font-size: 15px;
+  }
+  .section-div2 img {
+    width: 150px;
+  }
+  #icons-section .heading-text2 {
+    padding: 40px 0;
+  }
+  #icons-section .heading-text2 h1, #icons-section .heading-text2 .h1 {
+    font-size: 30px;
+  }
+  #icons-section .heading-text2 p {
+    font-size: 15px;
+    width: 60%;
+  }
+  #custom-section .heading-text2 {
+    padding: 40px 0;
+  }
+  #custom-section .heading-text2 h1, #custom-section .heading-text2 .h1 {
+    font-size: 30px;
+  }
+  #custom-section .heading-text2 p {
+    font-size: 15px;
+    width: 60%;
   }
   .card-section .card-item h3, .card-section .card-item .h3 {
     font-size: 19px;
@@ -23782,7 +23937,7 @@ footer .threecol p span input:focus {
     font-size: 16px;
   }
   .btn-ordinary,
-  .btn-hover {
+  .btn-hover, .btn-hover1, .btn-hover-secondary {
     padding: 12px 20px !important;
     font-size: 12px !important;
   }
@@ -23793,6 +23948,9 @@ footer .threecol p span input:focus {
   .section-div1 .content-text p {
     font-size: 14px;
     width: 60%;
+  }
+  .section-div1 .content-text1 h1, .section-div1 .content-text1 .h1 {
+    width: 55%;
   }
   .section-div1 .cards {
     padding-bottom: 80px;
