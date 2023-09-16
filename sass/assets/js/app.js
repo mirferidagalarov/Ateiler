@@ -197,36 +197,36 @@ const nextSlider = (areaItem) => {
     totalIndex = 0;
 }
 
-  const moveLeftIcon = document.getElementById("news-move-left");
-  const moveRightIcon = document.getElementById("news-move-right");
-  const newsContainer = document.querySelector(".news-area .row");
-  const newsItems = document.querySelectorAll(".news-wrap");
-  const itemWidth = newsItems[0].clientWidth;
-  let currentIndex = 0;
+  // const moveLeftIcon = document.getElementById("news-move-left");
+  // const moveRightIcon = document.getElementById("news-move-right");
+  // const newsContainer = document.querySelector(".news-area .row");
+  // const newsItems = document.querySelectorAll(".news-wrap");
+  // const itemWidth = newsItems[0].clientWidth;
+  // let currentIndex = 0;
 
-  moveLeftIcon.addEventListener("click", () => {
-    currentIndex = (currentIndex - 1 + newsItems.length) % newsItems.length;
-    updateNewsWrapPosition();
-  });
+  // moveLeftIcon.addEventListener("click", () => {
+  //   currentIndex = (currentIndex - 1 + newsItems.length) % newsItems.length;
+  //   updateNewsWrapPosition();
+  // });
 
-  moveRightIcon.addEventListener("click", () => {
-    currentIndex = (currentIndex + 1) % newsItems.length;
-    updateNewsWrapPosition();
-  });
+  // moveRightIcon.addEventListener("click", () => {
+  //   currentIndex = (currentIndex + 1) % newsItems.length;
+  //   updateNewsWrapPosition();
+  // });
   
-  function updateNewsWrapPosition() {
-    newsItems.forEach((item) => {
-      let newPosition = -currentIndex * itemWidth;
-      if (newsContainer.clientWidth / itemWidth != 1) {
-        if (newPosition < -itemWidth) {
-          newPosition = 0;
-          currentIndex = 0;
-        }
-      }
-      item.style.transform = `translateX(${newPosition}px)`;
-    });
-  }
-}
+  // function updateNewsWrapPosition() {
+  //   newsItems.forEach((item) => {
+  //     let newPosition = -currentIndex * itemWidth;
+  //     if (newsContainer.clientWidth / itemWidth != 1) {
+  //       if (newPosition < -itemWidth) {
+  //         newPosition = 0;
+  //         currentIndex = 0;
+  //       }
+  //     }
+  //     item.style.transform = `translateX(${newPosition}px)`;
+  //   });
+  // }
+
 
 function pageInit() {
   trendingSlider();
