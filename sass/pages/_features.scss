@@ -13,16 +13,17 @@
         }
 
         h2 {
-            font-size: 37px;
-            width: 85%;
+            font-size: 40px;
+            width: 75%;
             font-family: 'Dosis', sans-serif;
         }
 
 
         p {
             color: #999999;
-            font-size: 14px;
-            width: 95%;
+            font-size: 16px;
+            width: 92%;
+            line-height: 30px;
             font-family: 'Karla', sans-serif;
         }
     }
@@ -95,14 +96,14 @@
 
         h1 {
             font-size: 40px;
-            width: 47%;
+            width: 44%;
             font-family: 'Dosis', sans-serif;
         }
 
         p {
             color: #999999;
             font-size: 16px;
-            width: 53%;
+            width: 48%;
         }
     }
     .content-text1 {
@@ -120,6 +121,23 @@
             line-height: 27px;
             font-family: 'Karla', sans-serif;
         }
+    }
+    .content-text2{
+        padding: 100px 0 80px 0;
+        h1 {
+            font-size: 38px;
+            width: 47%;
+            font-family: 'Dosis', sans-serif;
+        }
+
+        p {
+            color: #999999;
+            font-size: 16px;
+            width: 41%;
+            line-height: 27px;
+            font-family: 'Karla', sans-serif;
+        }
+
     }
     .headers-part{
         span{
@@ -171,7 +189,7 @@
         h1 {
             color: $gray-black;
             font-size: 40px;
-            width: 47%;
+            width: 40%;
             font-family: 'Dosis', sans-serif;
         }
     }
@@ -188,8 +206,8 @@
 
         p {
             color: $secondary-black;
-            width: 50%;
-            font-size: 16px;
+            width: 46%;
+            font-size: 17px;
             line-height: 30px;
             font-family: 'Karla', sans-serif;
 
@@ -281,8 +299,8 @@
 
         p {
             color: $secondary-black;
-            width: 75%;
-            font-size: 16px;
+            width: 65%;
+            font-size: 17px;
             line-height: 30px;
             font-family: 'Karla', sans-serif;
         }
@@ -343,3 +361,104 @@
 
     }
 }
+#blue-section{
+    background-color: #62D8B6;
+    .content-text2{
+        padding: 110px 0 80px 0;
+        h1 {
+            font-size: 42px;
+            width: 35%;
+            font-family: 'Dosis', sans-serif;
+        }
+
+        p {
+            font-size: 18px;
+            width: 42%;
+            line-height: 30px;
+            font-family: 'Karla', sans-serif;
+        }
+
+    }
+}
+// page builder
+
+.section-div2 {
+
+    .banner-text {
+        padding: 85px 0;
+
+        h2 {
+            color: $gray-black;
+            font-size: 40px;
+            width: 75%;
+            font-family: 'Dosis', sans-serif;
+        }
+
+
+        p {
+            color: $gray-black;
+            font-size: 16px;
+            width: 92%;
+            line-height: 30px;
+            font-family: 'Karla', sans-serif;
+        }
+        strong{
+            color: $gray-black;
+            font-size: 16px;
+        }
+    }
+    img{
+        width: 210px;
+    }
+}
+
+// icons fonts section
+#icons-section{
+    background-color: #F7F7F7;
+    padding-bottom: 110px;
+    .heading-text2 {
+        padding: 120px 0 80px 0;
+
+        h1 {
+            color: $gray-black;
+            font-size: 39px;
+            width: 47%;
+            font-family: 'Dosis', sans-serif;
+        }
+
+        p {
+            color: $secondary-black;
+            width: 45%;
+            font-size: 17px;
+            line-height: 30px;
+            font-family: 'Karla', sans-serif;
+
+        }
+    }
+}
+
+// custom color section
+#custom-section{
+
+    .heading-text2 {
+        padding: 130px 0 80px 0;
+
+        h1 {
+            color: $gray-black;
+            font-size: 39px;
+            width: 47%;
+            font-family: 'Dosis', sans-serif;
+        }
+
+        p {
+            color: $secondary-black;
+            width: 45%;
+            font-size: 17px;
+            line-height: 30px;
+            font-family: 'Karla', sans-serif;
+
+        }
+    }
+}
+
+
