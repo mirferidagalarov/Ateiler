@@ -113,6 +113,21 @@
             }
         }
     }
+
+    // yellow section
+
+    #yellow-section{
+        padding: 70px 0;
+        .center-text{
+            h2{
+                font-size: 30px;
+            }
+            p{
+                font-size: 22px;
+                width: 45%;
+            }
+        }
+    }
     
     
 
@@ -191,6 +206,18 @@
                 .swiper-next {
                     font-size: 18px;
                 }
+            }
+        }
+    }
+
+    #icons-section1{
+       
+        .heading-text2 {
+            padding: 110px 0 40px 0;
+    
+            h1 {
+                font-size: 32px;
+                width: 70%;
             }
         }
     }

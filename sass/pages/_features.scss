@@ -14,15 +14,15 @@
 
         h2 {
             font-size: 40px;
-            width: 75%;
+            width: 85%;
             font-family: 'Dosis', sans-serif;
         }
 
 
         p {
             color: #999999;
-            font-size: 16px;
-            width: 92%;
+            font-size: 14px;
+            width: 94%;
             line-height: 30px;
             font-family: 'Karla', sans-serif;
         }
@@ -96,14 +96,14 @@
 
         h1 {
             font-size: 40px;
-            width: 44%;
+            width: 48%;
             font-family: 'Dosis', sans-serif;
         }
 
         p {
             color: #999999;
             font-size: 16px;
-            width: 48%;
+            width: 52%;
         }
     }
     .content-text1 {
@@ -133,7 +133,7 @@
         p {
             color: #999999;
             font-size: 16px;
-            width: 41%;
+            width: 47%;
             line-height: 27px;
             font-family: 'Karla', sans-serif;
         }
@@ -188,8 +188,8 @@
 
         h1 {
             color: $gray-black;
-            font-size: 40px;
-            width: 40%;
+            font-size: 39px;
+            width: 47%;
             font-family: 'Dosis', sans-serif;
         }
     }
@@ -206,8 +206,8 @@
 
         p {
             color: $secondary-black;
-            width: 46%;
-            font-size: 17px;
+            width: 51%;
+            font-size: 16px;
             line-height: 30px;
             font-family: 'Karla', sans-serif;
 
@@ -243,7 +243,6 @@
             }
         }
 
-
         h3 {
             color: $secondary-black;
             font-size: 23px;
@@ -263,8 +262,8 @@
         }
 
         p {
-            font-size: 18px;
-            width: 83%;
+            font-size: 15px;
+            width: 98%;
             color: $gray-black;
             font-family: 'Karla', sans-serif;
         }
@@ -285,6 +284,32 @@
     }
 }
 
+.card-section1{
+    .card-item1{
+        .card-img1{
+            i{
+                font-size: 40px;
+                color: #1DC6DF;
+            }
+        }
+        .text-part{
+            h4{
+                font-size: 19px;
+                color: $secondary-black;
+                font-family: 'Dosis', sans-serif;
+            }
+            p{
+                font-size: 14px;
+                color: $gray-black;
+                line-height: 25px;
+                width: 95%;
+                margin-top: 12px;
+                font-family: 'Karla', sans-serif;
+            }
+        }
+    }
+}
+
 #product-section{
     background-color: #F8F8FA;
     .heading-text2 {
@@ -299,8 +324,8 @@
 
         p {
             color: $secondary-black;
-            width: 65%;
-            font-size: 17px;
+            width: 75%;
+            font-size: 16px;
             line-height: 30px;
             font-family: 'Karla', sans-serif;
         }
@@ -361,19 +386,22 @@
 
     }
 }
+
+// blue section
+
 #blue-section{
     background-color: #62D8B6;
     .content-text2{
         padding: 110px 0 80px 0;
         h1 {
             font-size: 42px;
-            width: 35%;
+            width: 37%;
             font-family: 'Dosis', sans-serif;
         }
 
         p {
             font-size: 18px;
-            width: 42%;
+            width: 48%;
             line-height: 30px;
             font-family: 'Karla', sans-serif;
         }
@@ -390,15 +418,15 @@
         h2 {
             color: $gray-black;
             font-size: 40px;
-            width: 75%;
+            width: 85%;
             font-family: 'Dosis', sans-serif;
         }
 
 
         p {
             color: $gray-black;
-            font-size: 16px;
-            width: 92%;
+            font-size: 15px;
+            width: 97%;
             line-height: 30px;
             font-family: 'Karla', sans-serif;
         }
@@ -428,7 +456,7 @@
 
         p {
             color: $secondary-black;
-            width: 45%;
+            width: 50%;
             font-size: 17px;
             line-height: 30px;
             font-family: 'Karla', sans-serif;
@@ -452,11 +480,49 @@
 
         p {
             color: $secondary-black;
-            width: 45%;
+            width: 49%;
             font-size: 17px;
             line-height: 30px;
             font-family: 'Karla', sans-serif;
 
+        }
+    }
+}
+
+// features list section
+#icons-section1{
+    background-color: #F7F7F7;
+    padding-bottom: 110px;
+    .heading-text2 {
+        padding: 110px 0 40px 0;
+
+        h1 {
+            color: $gray-black;
+            font-size: 39px;
+            width: 47%;
+            font-family: 'Dosis', sans-serif;
+        }
+    }
+}
+
+
+// yellow section
+
+#yellow-section{
+    background-color: #EFD213;
+    padding: 95px 0;
+    .center-text{
+        h2{
+            font-size: 35px;
+            color: $secondary-black;
+            font-family: 'Dosis', sans-serif;
+        }
+        p{
+            margin: 13px 0 15px 0;
+            font-size: 25px;
+            width: 40%;
+            color: $secondary-black;
+            font-family: 'Dosis', sans-serif;
         }
     }
 }
