@@ -24261,4 +24261,53 @@ footer .threecol p span input:focus {
   height: 12%;
   width: 65%;
   background-color: red;
+}
+
+.product-part {
+  height: 270px;
+  background-image: url(https://atelier.swiftideas.com/wp-content/uploads/2014/11/Atelier-header-turtleneck-bkg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+}
+.product-part .product-info-box {
+  position: absolute;
+  top: 127px;
+  right: 100px;
+}
+@media (width <= 992px) {
+  .product-part .product-info-box {
+    right: 0;
+  }
+}
+.product-part .product-info-box .product-lil-swiper .photoboxes {
+  display: flex;
+  width: 100%;
+}
+@media (width <= 992px) {
+  .product-part .product-info-box .product-lil-swiper .photoboxes {
+    display: none;
+  }
+}
+.product-part .product-info-box .product-lil-swiper .photoboxes .photobox {
+  display: flex;
+  margin: 30px 30px 0 0;
+  transition: 0.5s ease;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.product-part .product-info-box .product-lil-swiper .photoboxes .photobox:first-child {
+  opacity: 0.5;
+}
+.product-part .product-info-box .product-lil-swiper .photoboxes .photobox:last-child {
+  margin-right: 0;
+}
+.product-part .product-info-box .product-lil-swiper .photoboxes .photobox:hover {
+  opacity: 0.5;
+}
+.product-part .product-info-box .product-lil-swiper .photoboxes .photobox img {
+  width: 130px;
+  height: 130px;
+  background-position: center;
 }/*# sourceMappingURL=main.css.map */

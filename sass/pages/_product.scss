@@ -1,0 +1,58 @@
+.product-part {
+    height: 270px;
+    background-image: url(https://atelier.swiftideas.com/wp-content/uploads/2014/11/Atelier-header-turtleneck-bkg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+
+    .product-info-box {
+        position: absolute;
+        top: 127px;
+        right: 100px;
+
+        @media(width<=992px) {
+            right: 0;
+        }
+
+        .product-lil-swiper {
+            .swiper-slide {}
+
+            .photoboxes {
+                display: flex;
+                width: 100%;
+
+                @media(width<=992px) {
+                    display: none;
+                }
+
+                .photobox {
+                    display: flex;
+                    margin: 30px 30px 0 0;
+                    transition: 0.5s ease;
+                    cursor: pointer;
+                    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+                    &:first-child {
+                        opacity: 0.5;
+                    }
+
+                    &:last-child {
+                        margin-right: 0;
+                    }
+
+                    &:hover {
+                        opacity: 0.5;
+                    }
+
+                    img {
+                        width: 130px;
+                        height: 130px;
+                        background-position: center;
+
+                    }
+                }
+            }
+        }
+    }
+}
