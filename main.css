@@ -23610,15 +23610,33 @@ footer .threecol p span input:focus {
   font-size: 14px;
   font-weight: 600;
 }
+.shop-products-area .products-wrap .product .product-details .prod-brief {
+  display: none;
+}
 .shop-products-area .products-wrap .product .product-details .prod-price {
   color: #111;
   font-weight: 700;
 }
-.shop-products-area .products-grid .product {
+.shop-products-area .products-grid .col-12 {
   width: 100% !important;
 }
-.shop-products-area .products-grid .product .img-wrap {
+.shop-products-area .products-grid .col-12 .product {
+  width: 100% !important;
+  display: flex;
+  justify-content: space-between;
+}
+.shop-products-area .products-grid .col-12 .product .img-wrap {
   width: 40%;
+}
+.shop-products-area .products-grid .col-12 .product .product-details {
+  width: 55%;
+}
+.shop-products-area .products-grid .col-12 .product .product-details .prod-brief {
+  display: block;
+  color: #444;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 15px 0;
 }
 .shop-products-area .pagination ul {
   list-style: none;

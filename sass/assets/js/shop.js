@@ -80,6 +80,9 @@ function pagination(n = 12) {
     const totalPages = Math.ceil(products.length / productsPerPage);
 
     function displayProducts(page) {
+        const brief = document.querySelector('.prods-brief');
+        brief.innerHTML = 'Showing <span class="start-index"></span>-<span class="end-index"></span> of <span class="prod-count">36</span> results';
+
         if (n < 30) {
             products.forEach(prod => {
                 prod.classList.add('d-none');
@@ -97,7 +100,6 @@ function pagination(n = 12) {
             products.forEach(prod => {
                 prod.classList.remove('d-none');
             })
-            const brief = document.querySelector('.prods-brief');
             brief.textContent = 'Showing all ' + products.length + ' results';
         }
     }
@@ -109,6 +111,7 @@ function pagination(n = 12) {
             for (let i = 1; i <= totalPages; i++) {
                 const listItem = document.createElement("li");
                 const link = document.createElement("a");
+                link.href = '#';
                 link.textContent = i;
                 link.addEventListener("click", () => {
                     displayProducts(i);
@@ -123,7 +126,6 @@ function pagination(n = 12) {
         const startIndex = document.querySelector('.start-index');
         const endIndex = document.querySelector('.end-index');
         const prodCount = document.querySelector('.prod-count');
-
         startIndex.textContent = ++startIdx;
         endIndex.textContent = endIdx;
         prodCount.textContent = products.length;
@@ -149,6 +151,23 @@ function paginationOption() {
 
 }
 
+function layoutChanging(){
+    const standart = document.querySelector('.standart-layout');
+    const list = document.querySelector('.list-layout');
+    const prodWrapper = document.querySelector('.products-wrap');
+
+    standart.addEventListener('click', () =>{
+        prodWrapper.classList.remove('products-grid');
+        standart.classList.add('active');
+        list.classList.remove('active');
+    })
+    list.addEventListener('click', () =>{
+        prodWrapper.classList.add('products-grid');
+        standart.classList.remove('active');
+        list.classList.add('active');
+    })
+}
+
 function pageInit() {
     listOpening();
     listSelector();
@@ -157,6 +176,7 @@ function pageInit() {
     priceFilter();
     pagination();
     paginationOption();
+    layoutChanging();
 }
 
 window.onload = pageInit();
