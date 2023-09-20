@@ -23481,6 +23481,13 @@ footer .threecol p span input:focus {
   color: #eabe12;
   text-decoration: underline;
 }
+.shop-options-wrap .shop-type .d-flex .active {
+  color: #eabe12;
+  text-decoration: underline;
+}
+.shop-options-wrap .shop-type p {
+  cursor: default;
+}
 .shop-options-wrap .shop-type p span {
   transition: all 0.4s;
 }
@@ -23491,6 +23498,9 @@ footer .threecol p span input:focus {
 .shop-options-wrap .shop-type p .active {
   color: #eabe12;
   text-decoration: underline;
+}
+.shop-options-wrap .shop-type .pagin-count {
+  cursor: pointer;
 }
 .shop-options-wrap .shop-sort .select-wrapper .tab-text {
   font-size: 14px;
@@ -23603,6 +23613,12 @@ footer .threecol p span input:focus {
 .shop-products-area .products-wrap .product .product-details .prod-price {
   color: #111;
   font-weight: 700;
+}
+.shop-products-area .products-grid .product {
+  width: 100% !important;
+}
+.shop-products-area .products-grid .product .img-wrap {
+  width: 40%;
 }
 .shop-products-area .pagination ul {
   list-style: none;

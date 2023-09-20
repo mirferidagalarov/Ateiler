@@ -85,16 +85,20 @@ function pagination(n = 12) {
                 prod.classList.add('d-none');
             })
             const startIdx = (page - 1) * productsPerPage;
-            const endIdx = startIdx + productsPerPage;
+            const endIdx = startIdx + productsPerPage > products.length ? products.length : startIdx + productsPerPage;
 
             for (let i = startIdx; i < endIdx && i < products.length; i++) {
                 products[i].classList.remove('d-none');
             }
+
+            showingIndex(startIdx, endIdx);
         }
         else{
             products.forEach(prod => {
                 prod.classList.remove('d-none');
             })
+            const brief = document.querySelector('.prods-brief');
+            brief.textContent = 'Showing all ' + products.length + ' results';
         }
     }
 
@@ -113,6 +117,16 @@ function pagination(n = 12) {
                 paginationList.appendChild(listItem);
             }
         }
+    }
+
+    function showingIndex(startIdx, endIdx){
+        const startIndex = document.querySelector('.start-index');
+        const endIndex = document.querySelector('.end-index');
+        const prodCount = document.querySelector('.prod-count');
+
+        startIndex.textContent = ++startIdx;
+        endIndex.textContent = endIdx;
+        prodCount.textContent = products.length;
     }
 
     displayProducts(1);

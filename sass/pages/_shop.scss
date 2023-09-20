@@ -113,9 +113,20 @@
                 color: #eabe12;
                 text-decoration: underline;
             }
+
         }
 
+        .d-flex {
+            .active {
+                color: #eabe12;
+                text-decoration: underline;
+            }
+        }
+
+
         p {
+            cursor: default;
+
             span {
                 transition: all 0.4s;
 
@@ -129,6 +140,10 @@
                 color: #eabe12;
                 text-decoration: underline;
             }
+        }
+
+        .pagin-count {
+            cursor: pointer;
         }
     }
 
@@ -270,6 +285,16 @@
         }
 
 
+    }
+
+    .products-grid{
+        .product{
+            width: 100% !important;
+
+            .img-wrap{
+                width: 40%;
+            }
+        }
     }
 
     .pagination {
