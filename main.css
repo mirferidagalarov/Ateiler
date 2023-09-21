@@ -22666,16 +22666,65 @@ footer .threecol p span input:focus {
   border-left: 1px solid lightgrey;
   padding: 22px;
 }
-.usericon a:hover {
+.usericon a i {
+  transition: all 0.5s;
+}
+.usericon a:hover i {
   color: #eabe12;
+}
+.usericon a:hover div {
+  opacity: 1;
+}
+.usericon a div {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  z-index: 1000;
+  background-color: #fff;
+  opacity: 0;
+  transition: all 0.5s;
+}
+.usericon a div span {
+  padding: 15px 20px;
+  min-width: -moz-max-content;
+  min-width: max-content;
+  border-bottom: 1px solid #222;
+  color: #252525;
+  transition: all 0.5s;
+}
+.usericon a div span:hover {
+  color: #eabe12;
+}
+.usericon a div span:last-child {
+  border: 0;
 }
 
 .shopicon a {
   color: #333;
   transition: all 0.5s;
 }
-.shopicon a:hover {
+.shopicon a i {
+  transition: all 0.5s;
+}
+.shopicon a:hover i {
   color: #eabe12;
+}
+.shopicon a:hover span {
+  opacity: 1;
+}
+.shopicon a span {
+  position: absolute;
+  right: 0;
+  top: 100%;
+  transform: translateY(30%);
+  min-width: -moz-max-content;
+  min-width: max-content;
+  padding: 25px 30px;
+  background-color: #fff;
+  font-size: 14px;
+  z-index: 1000;
+  opacity: 0;
+  transition: all 0.5s;
 }
 
 .homehover {
@@ -22849,6 +22898,49 @@ footer .threecol p span input:focus {
 .btnhov a:hover i {
   transform: scale(1);
   opacity: 1;
+}
+
+.mobile-menu-wrap {
+  top: 0;
+  left: 0;
+  width: 280px;
+  height: 100%;
+  background-color: #222;
+  z-index: 200;
+  transform: translateX(-100%);
+}
+.mobile-menu-wrap .mobile-menu-inner .mob-menu-search {
+  position: relative;
+}
+.mobile-menu-wrap .mobile-menu-inner .mob-menu-search input {
+  padding: 15px 20px;
+  font-weight: 700;
+  color: #e4e4e4;
+  background-color: transparent;
+  border: 0;
+  border-bottom: 2px solid #444;
+  outline: none;
+  width: 100%;
+}
+.mobile-menu-wrap .mobile-menu-inner .mob-menu-search i {
+  position: absolute;
+  top: 50%;
+  right: 10%;
+  transform: translateY(-50%);
+  color: #e4e4e4;
+}
+.mobile-menu-wrap .mobile-menu-inner ul li {
+  border-bottom: 1px solid #444;
+}
+.mobile-menu-wrap .mobile-menu-inner ul li a {
+  display: block;
+  padding: 15px 20px;
+  color: #fff;
+  font-weight: 600;
+  transition: all 0.5s;
+}
+.mobile-menu-wrap .mobile-menu-inner ul li:hover a {
+  color: #eabe12;
 }
 
 .swiper-area .swiper {
