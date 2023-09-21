@@ -25053,22 +25053,52 @@ footer .threecol p span input:focus {
 }
 .product-swiper-section .reviews-box .review-box1 {
   background-color: #f7f7f7;
+  padding-top: 2%;
 }
-.product-swiper-section .reviews-box .review-box1 .review .review-content p {
+.product-swiper-section .reviews-box .review-box1 .review .part-name {
   color: #111;
   font-size: 19px;
   font-family: "Dosis", sans-serif;
   position: relative;
 }
-.product-swiper-section .reviews-box .review-box1 .review .review-content p::after {
+.product-swiper-section .reviews-box .review-box1 .review .part-name::after {
   content: "";
+  bottom: -6px;
+  left: 0;
   position: absolute;
-  width: 10px;
-  height: 10px;
-  color: #111;
+  width: 100%;
+  height: 2px;
+  background-color: #111;
 }
-.product-swiper-section .reviews-box .review-box1 .review .review-content p span {
+.product-swiper-section .reviews-box .review-box1 .review .part-name span {
   color: #767676;
   font-size: 19px;
   font-family: "Dosis", sans-serif;
+}
+.product-swiper-section .reviews-box .review-box1 .review .review-content {
+  border-bottom: 2px solid #e3e3e3;
+}
+.product-swiper-section .reviews-box .review-box1 .review .review-content:last-child {
+  border-bottom: none;
+}
+.product-swiper-section .reviews-box .review-box1 .review .review-content .review-info .rating-part i {
+  font-size: 12px;
+  color: #EABE12;
+}
+.product-swiper-section .reviews-box .review-box1 .review .review-content .review-info .img-part {
+  border-radius: 100px;
+  width: -moz-fit-content;
+  width: fit-content;
+  overflow: hidden;
+  margin: 5% 0;
+}
+.product-swiper-section .reviews-box .review-box1 .review .review-content .review-info .img-part img {
+  width: 50px;
+  height: 50px;
+}
+.product-swiper-section .reviews-box .review-box1 .review .review-text p {
+  font-size: 14px;
+  width: 95%;
+  color: #222;
+  font-family: "Karla", sans-serif;
 }/*# sourceMappingURL=main.css.map */
