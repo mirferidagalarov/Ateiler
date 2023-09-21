@@ -10,10 +10,12 @@
   div {
     padding: 1.5rem 0;
   }
+
   ul {
     li {
       a {
         color: #333333;
+
         &:hover {
           color: #ffba00;
         }
@@ -41,6 +43,7 @@
         border-left: 1px solid lightgrey;
         padding: 29px;
       }
+
       color: #222222;
 
       &:hover {
@@ -105,8 +108,42 @@
     border-left: 1px solid lightgrey;
     padding: 22px;
 
+    i{
+      transition: all 0.5s;
+    }
+
     &:hover {
-      color: #eabe12;
+      i{
+        color: #eabe12;
+      }
+      div{
+        opacity: 1;
+      }
+    }
+    div{
+      position: absolute;
+      top: 100%;
+      right: 0;
+      z-index: 1000;
+      background-color: #fff;
+      opacity: 0;
+      transition: all 0.5s;
+
+      span{
+        padding: 15px 20px;
+        min-width: max-content;
+        border-bottom: 1px solid #222;
+        color: #252525;
+        transition: all 0.5s;
+
+        &:hover{
+          color: #eabe12;
+        }
+
+        &:last-child{
+          border: 0;
+        }
+      }
     }
   }
 }
@@ -116,8 +153,29 @@
     color: #333;
     transition: all 0.5s;
 
+    i{
+      transition: all 0.5s;
+    }
     &:hover {
-      color: #eabe12;
+      i{
+        color: #eabe12;
+      }
+      span{
+        opacity: 1;
+      }
+    }
+    span{
+      position: absolute;
+      right: 0;
+      top: 100%;
+      transform: translateY(30%);
+      min-width: max-content;
+      padding: 25px 30px;
+      background-color: #fff;
+      font-size: 14px;
+      z-index: 1000;
+      opacity: 0;
+      transition: all 0.5s;
     }
   }
 }
@@ -137,10 +195,12 @@
     padding: 2rem;
     top: 100%;
   }
+
   &:hover {
     .hover-link {
       color: #ffba00;
     }
+
     .homehoverin {
       display: block;
     }
@@ -164,10 +224,12 @@
     transform: translateX(-34.5%);
     // transform:translateY(10%);
   }
+
   &:hover {
     .hover-link {
       color: #ffba00;
     }
+
     .shopStylesHoverin {
       display: block;
     }
@@ -191,10 +253,12 @@
     transform: translateX(-41.5%);
     // transform:translateY(10%);
   }
+
   &:hover {
     .hover-link {
       color: #ffba00;
     }
+
     .featuresHoverin {
       display: block;
     }
@@ -218,10 +282,12 @@
     transform: translateX(-56.5%);
     // transform:translateY(10%);
   }
+
   &:hover {
     .hover-link {
       color: #ffba00;
     }
+
     .pagesHoverin {
       display: block;
     }
@@ -245,10 +311,12 @@
     transform: translateX(-61%);
     // transform:translateY(10%);
   }
+
   &:hover {
     .hover-link {
       color: #ffba00;
     }
+
     .elementsHoverin {
       display: block;
     }
@@ -270,16 +338,19 @@
     padding: 2rem;
     top: 100%;
     transform: translateX(-67%);
+
     // transform:translateY(10%);
     img {
       width: 10rem;
       height: 8rem;
     }
   }
+
   &:hover {
     .hover-link {
       color: #ffba00;
     }
+
     .demosHoverin {
       display: block;
     }
@@ -321,6 +392,66 @@
         transform: scale(1);
         opacity: 1;
       }
+    }
+  }
+}
+
+
+.mobile-menu-wrap {
+  top: 0;
+  left: 0;
+  width: 280px;
+  height: 100%;
+  background-color: #222;
+  z-index: 200;
+
+
+  ////////////// 
+  transform: translateX(-100%);
+  /////////////
+
+
+  .mobile-menu-inner {
+    .mob-menu-search {
+      position: relative;
+
+      input {
+        padding: 15px 20px;
+        font-weight: 700;
+        color: #e4e4e4;
+        background-color: transparent;
+        border: 0;
+        border-bottom: 2px solid #444;
+        outline: none;
+        width: 100%;
+      }
+      i{
+        position: absolute;
+        top: 50%;
+        right: 10%;
+        transform: translateY(-50%);
+        color: #e4e4e4;
+      }
+    }
+
+    ul{
+      li{
+        border-bottom: 1px solid #444;
+        a{
+          display: block;
+          padding: 15px 20px;
+          color: #fff;
+          font-weight: 600;
+          transition: all 0.5s;
+        }
+
+        &:hover{
+          a{
+            color: #eabe12;
+          }
+        }
+      }
+
     }
   }
 }
