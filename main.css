@@ -5,6 +5,7 @@
  * Copyright 2011-2023 The Bootstrap Authors
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+@import url("https://fonts.googleapis.com/css?family=Roboto");
 :root,
 [data-bs-theme=light] {
   --bs-blue: #0d6efd;
@@ -24086,6 +24087,14 @@ footer .threecol p span input:focus {
   overflow: hidden;
   overflow-y: scroll;
 }
+@media (max-width: 1200px) {
+  .scrollright {
+    overflow: none;
+    overflow-y: none;
+    height: 100%;
+    width: 100%;
+  }
+}
 
 .scroolwid {
   height: 46rem;
@@ -24193,7 +24202,6 @@ footer .threecol p span input:focus {
 }
 .imgscrollauido .img-wrapp {
   position: relative;
-  height: 20;
 }
 .imgscrollauido .img-wrapp .imgdate {
   position: absolute;
@@ -24212,37 +24220,14 @@ footer .threecol p span input:focus {
   font-style: normal;
   font-size: 14px;
 }
-.imgscrollauido .img-wrapp .opac-img-scroll {
-  background-color: rgba(0, 0, 0, 0.4);
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  opacity: 0;
-  transition: all 0.4s;
-}
-.imgscrollauido .img-wrapp .opac-img-scroll:hover {
-  opacity: 1;
-}
-.imgscrollauido .img-wrapp .opac-img-scroll i {
-  display: none;
-  color: #fff;
-  position: absolute;
-  left: 9rem;
-  top: 6rem;
-  font-size: 2rem;
-  transition: all 0.4s;
-}
-.imgscrollauido .img-wrapp .opac-img-scroll:hover i {
-  display: block;
-}
 .imgscrollauido .img-wrapp .imgsize {
-  height: 20%;
+  position: relative;
 }
-.imgscrollauido .img-wrapp img {
-  width: 30%;
-  height: 20%;
+.imgscrollauido .img-wrapp .imgsize img {
+  width: 100%;
+  height: 7rem;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .imgscrollauido .contentscroll {
   display: flex;
@@ -24273,6 +24258,144 @@ footer .threecol p span input:focus {
   text-decoration: underline !important;
 }
 
+.swiper {
+  width: 100%;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 70%;
+}
+
+.imgdate1 {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  top: -3%;
+  right: 4%;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding: 0.5rem;
+}
+.imgdate1 span {
+  font-family: Karla;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+}
+
+.contentscrolla {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background-color: #fff;
+  width: 90%;
+  padding: 20px 10px 0 10px;
+  cursor: pointer;
+}
+.contentscrolla h5, .contentscrolla .h5 {
+  font-weight: 600;
+  color: #000;
+  top: 0;
+  background-color: #fff;
+  min-width: -moz-max-content;
+  min-width: max-content;
+}
+@media (max-width: 1200px) {
+  .contentscrolla h5, .contentscrolla .h5 {
+    font-size: 16px;
+  }
+}
+.contentscrolla a {
+  color: #000;
+}
+.contentscrolla a:hover {
+  text-decoration: underline !important;
+}
+
+.button {
+  width: 50px;
+  background-color: #fff;
+  bottom: 5%;
+  right: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  padding: 15px;
+  gap: 1rem;
+}
+.button i {
+  font-size: 20px;
+}
+.o-video {
+  width: 100%;
+  height: 0;
+  position: relative;
+  padding-top: 56.25%; /* 9 / 16 * 100 */
+}
+
+.o-video > iframe {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 0;
+}
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+}
+.card--video .card__info-video {
+  padding: 0;
+  cursor: pointer;
+}
+.card--video .card__info-video_thumb {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+.card--video .card__info-video_thumb img {
+  position: absolute;
+  display: block;
+  z-index: 1;
+  margin: auto;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: auto;
+  height: 50px;
+  vertical-align: middle;
+}
+.card--video .card__info-desc {
+  padding: 0 15px;
+  font-size: 18px;
+  max-width: 300px;
+}
+.card--video .card__info-desc p {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 .twoimage {
   background-color: rgb(247, 247, 249);
 }
@@ -24294,49 +24417,193 @@ footer .threecol p span input:focus {
   height: 100%;
 }
 
-.twoproduct {
-  padding: 1rem 10rem 1rem 10rem;
+@media (min-width: 1200px) {
+  .twoproduct {
+    padding: 1rem 10rem 1rem 10rem;
+  }
+}
+.twoproduct .cartshop {
+  cursor: pointer;
+  position: relative;
+}
+.twoproduct .cartshop .productimg {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.twoproduct .cartshop .productimg img {
+  width: 100%;
+  height: 100%;
+}
+.twoproduct .cartshop .productimg .second-img {
+  top: 0;
+  position: absolute;
+  opacity: 0;
+  transition: all 0.5s linear;
+}
+.twoproduct .cartshop .productimg .one-img {
+  opacity: 1;
+  transition: all 0.5s linear;
+}
+.twoproduct .cartshop .productimg:hover .one-img {
+  opacity: 0;
+}
+.twoproduct .cartshop .productimg:hover .hovericon {
+  opacity: 1;
+}
+.twoproduct .cartshop .productimg:hover .second-img {
+  opacity: 1;
+}
+.twoproduct .cartshop ul li span {
+  color: #444444;
+  font-weight: bold;
+}
+.twoproduct .cartshop ul li span i {
+  color: #eabe12;
+}
+.twoproduct .cartshop ul li a {
+  color: #222222;
+  font-family: Doris;
+}
+.twoproduct .cartshop ul li a span {
+  font-family: Doris;
+  transition: all 1s;
+}
+.twoproduct .cartshop ul li a :hover {
+  color: #eabe12;
+  transition: all 300ms;
+}
+.twoproduct .cartshop ul li a h5, .twoproduct .cartshop ul li a .h5 {
+  color: #222222;
+  font-family: Doris;
+}
+.twoproduct .cartshop .hovericon {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  position: absolute;
+  height: 15.5%;
+  width: 65%;
+  background-color: #fff;
+  bottom: 10%;
+  right: 1px;
+  left: 10%;
+  opacity: 0;
+}
+.twoproduct .cartshop .hovericon a {
+  color: #333333;
+}
+.twoproduct .cartshop .hovericon a :hover {
+  color: #eabe12;
+  transition: all 300ms;
+}
+.twoproduct .cartshop .hovericon .hovericonfirst {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.twoproduct .cartshop .hovericon .hovericonfirst a {
+  color: #333333;
+}
+.twoproduct .cartshop .hovericon .hovericonfirst a ::before {
+  border-right: 1px solid lightgrey;
+  padding: 15px;
+}
+.twoproduct .cartshop .hovericon .hovericonfirst a ::before :hover {
+  color: #eabe12;
+  transition: all 300ms;
 }
 .twoproduct .textheader h5 span, .twoproduct .textheader .h5 span {
   font-family: Doris;
   border-bottom: 2px solid black;
 }
-.twoproduct .productimg {
+.twoproduct .cartshoptwoimg {
+  cursor: pointer;
+  position: relative;
+}
+.twoproduct .cartshoptwoimg:hover .hovericon {
+  opacity: 1;
+}
+.twoproduct .cartshoptwoimg .productimg {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.twoproduct .cartshoptwoimg .productimg img {
   width: 100%;
   height: 100%;
 }
-.twoproduct .productimg img {
-  width: 100%;
-  height: 100%;
+.twoproduct .cartshoptwoimg .productimg .oneimg {
+  position: absolute;
+  opacity: 1;
 }
-.twoproduct ul li span {
+.twoproduct .cartshoptwoimg .productimg .oneimg:hover {
+  opacity: 0;
+}
+.twoproduct .cartshoptwoimg .productimg .twoimg {
+  position: absolute;
+}
+.twoproduct .cartshoptwoimg .productimg .twoimg:hover {
+  opacity: 1;
+}
+.twoproduct .cartshoptwoimg ul li span {
   color: #444444;
   font-weight: bold;
 }
-.twoproduct ul li span i {
+.twoproduct .cartshoptwoimg ul li span i {
   color: #eabe12;
 }
-.twoproduct ul li a {
+.twoproduct .cartshoptwoimg ul li a {
   color: #222222;
   font-family: Doris;
 }
-.twoproduct ul li a span {
+.twoproduct .cartshoptwoimg ul li a span {
   font-family: Doris;
   transition: all 1s;
 }
-.twoproduct ul li a :hover {
+.twoproduct .cartshoptwoimg ul li a :hover {
   color: #eabe12;
   transition: all 300ms;
 }
-.twoproduct ul li a h5, .twoproduct ul li a .h5 {
+.twoproduct .cartshoptwoimg ul li a h5, .twoproduct .cartshoptwoimg ul li a .h5 {
   color: #222222;
   font-family: Doris;
 }
-.twoproduct .hovericon {
+.twoproduct .cartshoptwoimg .hovericon {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  height: 12%;
+  position: absolute;
+  height: 15%;
   width: 65%;
-  background-color: red;
+  background-color: #fff;
+  right: 1px;
+  left: 10%;
+  bottom: 10%;
+  opacity: 1;
+}
+.twoproduct .cartshoptwoimg .hovericon a {
+  color: #333333;
+}
+.twoproduct .cartshoptwoimg .hovericon a :hover {
+  color: #eabe12;
+  transition: all 300ms;
+}
+.twoproduct .cartshoptwoimg .hovericon .hovericonfirst {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.twoproduct .cartshoptwoimg .hovericon .hovericonfirst a {
+  color: #333333;
+}
+.twoproduct .cartshoptwoimg .hovericon .hovericonfirst a ::before {
+  border-right: 1px solid lightgrey;
+  padding: 15px;
+}
+.twoproduct .cartshoptwoimg .hovericon .hovericonfirst a ::before :hover {
+  color: #eabe12;
+  transition: all 300ms;
 }/*# sourceMappingURL=main.css.map */
