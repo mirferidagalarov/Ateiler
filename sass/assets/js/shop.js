@@ -1,10 +1,19 @@
 function listOpening() {
     const opener = document.querySelector('.select-area');
     const list = document.querySelector('.list');
+    const icon = document.querySelector('.select-area i');
 
-    opener.addEventListener('click', () => {
-        list.classList.toggle('open');
-    })
+    document.addEventListener('click', (e) => {
+        const target = e.target;
+        if (!opener.contains(target)) {
+            list.classList.remove('open');
+            icon.classList.remove('turn');
+        }
+        else {
+            list.classList.toggle('open');
+            icon.classList.toggle('turn');
+        }
+    });
 }
 
 function listSelector() {
@@ -24,28 +33,49 @@ function listSelector() {
 }
 
 function sizeListOpening() {
-    const opener = document.querySelector('.category-selector');
-    const list = document.querySelector('.size-list');
+    const opener = document.querySelectorAll('.category-selector');
 
-    document.addEventListener('click', (e) => {
-        const target = e.target;
-        if (!opener.contains(target)) {
-            list.classList.remove('d-flex');
-        }
-        else {
-            list.classList.toggle('d-flex');
-        }
-    });
+    opener.forEach(elem => {
+        document.addEventListener('click', (e) => {
+            const target = e.target;
+            const list = elem.querySelector('.size-list');
+            const icon = elem.querySelector('.cat-icons i');
+            const clear = elem.querySelector('.closer');
+
+            if (!elem.contains(target) || target == clear) {
+                list.classList.remove('d-flex');
+                icon.classList.remove('turn');
+            }
+            else {
+                list.classList.toggle('d-flex');
+                icon.classList.toggle('turn');
+            }
+        });
+    })
 }
 
 function sizeListText() {
-    const currenSize = document.querySelector('.current-size');
-    const sizes = document.querySelectorAll('.size');
+    const opener = document.querySelectorAll('.category-selector');
 
-    sizes.forEach(size => {
-        size.addEventListener('click', () => {
-            currenSize.textContent = size.textContent;
+    opener.forEach(elem => {
+        const currenSize = elem.querySelector('.current-size');
+        const temp = currenSize.textContent;
+        const sizes = elem.querySelectorAll('.size');
+        const clear = elem.querySelector('.closer');
+
+
+        sizes.forEach(size => {
+            size.addEventListener('click', () => {
+                currenSize.textContent = size.textContent;
+                clear.classList.remove('d-none');
+            })
         })
+
+        clear.addEventListener('click', () => {
+            currenSize.textContent = temp;
+            clear.classList.add('d-none');
+        })
+
     })
 }
 
@@ -57,7 +87,6 @@ function priceFilter() {
     })
 
     function getVals() {
-        // Get slider values
         let parent = this.parentNode;
         let slides = parent.getElementsByTagName("input");
         let slide1 = parseFloat(slides[0].value);
@@ -96,7 +125,7 @@ function pagination(n = 12) {
 
             showingIndex(startIdx, endIdx);
         }
-        else{
+        else {
             products.forEach(prod => {
                 prod.classList.remove('d-none');
             })
@@ -122,7 +151,7 @@ function pagination(n = 12) {
         }
     }
 
-    function showingIndex(startIdx, endIdx){
+    function showingIndex(startIdx, endIdx) {
         const startIndex = document.querySelector('.start-index');
         const endIndex = document.querySelector('.end-index');
         const prodCount = document.querySelector('.prod-count');
@@ -151,20 +180,30 @@ function paginationOption() {
 
 }
 
-function layoutChanging(){
+function layoutChanging() {
     const standart = document.querySelector('.standart-layout');
     const list = document.querySelector('.list-layout');
     const prodWrapper = document.querySelector('.products-wrap');
 
-    standart.addEventListener('click', () =>{
+    standart.addEventListener('click', () => {
         prodWrapper.classList.remove('products-grid');
         standart.classList.add('active');
         list.classList.remove('active');
     })
-    list.addEventListener('click', () =>{
+    list.addEventListener('click', () => {
         prodWrapper.classList.add('products-grid');
         standart.classList.remove('active');
         list.classList.add('active');
+    })
+}
+
+function filterOpener() {
+    const filterBtn = document.querySelector('.shop-filter p');
+    const filterArea = document.querySelector('.filter-area');
+
+    filterBtn.addEventListener('click', () => {
+        filterBtn.classList.toggle('active');
+        filterArea.classList.toggle('filter-open');
     })
 }
 
@@ -177,6 +216,7 @@ function pageInit() {
     pagination();
     paginationOption();
     layoutChanging();
+    filterOpener();
 }
 
 window.onload = pageInit();
