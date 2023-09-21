@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
   </head>
   <body>
     <div class="container-fluid p-0 m-0">
@@ -375,7 +379,7 @@
       </header>
       <section class="halfimg">
         <div class="row mx-0">
-          <div class="imgleft col-6">
+          <div class="imgleft col-12 col-xl-6">
             <div class="imgarea">
               <h1 class="aa">OUR JOURNAL</h1>
               <div class="borderbottom"></div>
@@ -392,12 +396,14 @@
               </div>
             </div>
           </div>
-          <div class="scrollright col-6">
+          <div class="scrollright col-12 col-xl-6">
             <div class="scroolwid">
               <div class="cart">
                 <div class="row">
-                  <div class="col-6">
-                    <div class="imgscroll d-flex flex-column align-items-center">
+                  <div class="col-12 col-sm-6">
+                    <div
+                      class="imgscroll d-flex flex-column align-items-center"
+                    >
                       <div class="img-wrap">
                         <img
                           src="./sass/assets/img/blondie-600x422.jpg"
@@ -432,7 +438,9 @@
                         <a href="#">Read More</a>
                       </div>
                     </div>
-                    <div class="imgscroll d-flex flex-column align-items-center">
+                    <div
+                      class="imgscroll d-flex flex-column align-items-center"
+                    >
                       <div class="img-wrap">
                         <img
                           src="./sass/assets/img/slow_down-600x400.jpg"
@@ -467,7 +475,9 @@
                         <a href="#">Read More</a>
                       </div>
                     </div>
-                    <div class="imgscroll d-flex flex-column align-items-center">
+                    <div
+                      class="imgscroll d-flex flex-column align-items-center"
+                    >
                       <div class="img-wrap">
                         <img
                           src="./sass/assets/img/benchgirl-600x400.jpg"
@@ -488,23 +498,27 @@
                         <h5>Sidebar Post</h5>
                         <span>By Ateiler</span>
                         <p>
-                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer imperdiet iaculis ipsum aliquet ultricies. Sed a tincidunt enim. Maecenas ultrices…
+                          Lorem ipsum dolor sit amet, consectetur adipiscing
+                          elit. Integer imperdiet iaculis ipsum aliquet
+                          ultricies. Sed a tincidunt enim. Maecenas ultrices…
                         </p>
                         <a href="#">Read More</a>
                       </div>
                     </div>
-                    <div class="imgscrollauido d-flex flex-column align-items-center">
+                    <div
+                      class="imgscrollauido d-flex flex-column align-items-center"
+                    >
                       <div class="img-wrapp">
                         <div class="imgsize">
                           <img
-                          src="./sass/assets/img/gplaypattern.png"
-                          class="img-fluid"
-                        />
+                            src="./sass/assets/img/gplaypattern.png"
+                            class="img-fluid"
+                          />
                         </div>
                         <audio controls>
-                          <source>
+                          <source src="http://cardinal.swiftideas.com/demo-content-testing/wp-content/uploads/sites/27/2014/03/AudioQuattro-CLOUDS.mp3?_=1" />
                         </audio>
-                       
+
                         <div class="imgdate">
                           <span>MAR</span>
                           <span>24</span>
@@ -515,14 +529,18 @@
                         <h5>Sidebar Post</h5>
                         <span>By Ateiler</span>
                         <p>
-                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer imperdiet iaculis ipsum aliquet ultricies. Sed a tincidunt enim. Maecenas ultrices…
+                          Lorem ipsum dolor sit amet, consectetur adipiscing
+                          elit. Integer imperdiet iaculis ipsum aliquet
+                          ultricies. Sed a tincidunt enim. Maecenas ultrices…
                         </p>
                         <a href="#">Read More</a>
                       </div>
                     </div>
                   </div>
-                  <div class="col-6">
-                    <div class="imgscroll d-flex flex-column align-items-center">
+                  <div class="col-12 col-sm-6">
+                    <div
+                      class="imgscroll d-flex flex-column align-items-center"
+                    >
                       <div class="img-wrap">
                         <img
                           src="./sass/assets/img/newlook-600x656.jpg"
@@ -543,11 +561,128 @@
                         <h5>Hot items for the New Year</h5>
                         <span>By Ateiler</span>
                         <p>
-                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus posuere mattis ligula id consectetur. Nullam pellentesque blandit dolor, eleifend rhoncus…
+                          Lorem ipsum dolor sit amet, consectetur adipiscing
+                          elit. Phasellus posuere mattis ligula id consectetur.
+                          Nullam pellentesque blandit dolor, eleifend rhoncus…
                         </p>
                         <a href="#">Read More</a>
                       </div>
                     </div>
+                    <div
+                      class="imgscroll d-flex flex-column align-items-center"
+                    >
+                      <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide">
+                            <img
+                              src="./sass/assets/img/winter_walk-600x450.jpg"
+                            />
+                          </div>
+                          <div class="swiper-slide">
+                            <img
+                              src="./sass/assets/img/winter_walk2-600x450.jpg"
+                            />
+                          </div>
+                          <div class="swiper-slide">
+                            <img
+                              src="./sass/assets/img/winter_walk-600x450.jpg"
+                            />
+                          </div>
+                          <div class="swiper-slide">
+                            <img
+                              src="/sass/assets/img/winter_walk2-600x450.jpg"
+                            />
+                          </div>
+                          <div class="button position-absolute">
+                            <div class="swiper-button-next1">
+                              <i class="fa-solid fa-angle-left"></i>
+                            </div>
+                            <div class="swiper-button-prev1">
+                              <i class="fa-solid fa-angle-right"></i>
+                            </div>
+                          </div>
+                          <div class="imgdate1">
+                            <span>Sep</span>
+                            <span>01</span>
+                            <span>2014</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="contentscrolla">
+                        <h5>Gallery Post</h5>
+                        <span>By Ateiler</span>
+                        <p>
+                          Lorem ipsum dolor sit amet, consectetur adipiscing
+                          elit. Phasellus posuere mattis ligula id consectetur.
+                          Nullam pellentesque blandit dolor, eleifend rhoncus…
+                        </p>
+                        <a href="#">Read More</a>
+                      </div>
+                    </div>
+                    <div
+                      class="imgscroll d-flex flex-column align-items-center"
+                    >
+                    <iframe src="https://player.vimeo.com/video/90617432" width="100%" height="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                    <div class="imgdate1">
+                      <span>Sep</span>
+                      <span>01</span>
+                      <span>2014</span>
+                    </div>
+                      <div class="contentscrolla">
+                        <h5>Vimeo Post</h5>
+                        <span>By Ateiler</span>
+                        <p>
+                          Lorem ipsum dolor sit amet, consectetur adipiscing
+                          elit. Phasellus posuere mattis ligula id consectetur.
+                          Nullam pellentesque blandit dolor, eleifend rhoncus…
+                        </p>
+                        <a href="#">Read More</a>
+                      </div>
+                    </div>
+                    <div
+                      class="imgscroll d-flex flex-column align-items-center"
+                    >
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/Kch8n4tcOZQ" frameborder="0" allowfullscreen></iframe>
+                    <div class="imgdate1">
+                      <span>Sep</span>
+                      <span>01</span>
+                      <span>2014</span>
+                    </div>
+                      <div class="contentscrolla">
+                        <h5>Youtube Post</h5>
+                        <span>By Ateiler</span>
+                        <p>
+                          Lorem ipsum dolor sit amet, consectetur adipiscing
+                          elit. Phasellus posuere mattis ligula id consectetur.
+                          Nullam pellentesque blandit dolor, eleifend rhoncus…
+                        </p>
+                        <a href="#">Read More</a>
+                      </div>
+                    </div>
+                    <div
+                    class="imgscroll d-flex flex-column align-items-center"
+                  >
+                  <video width="100%" height="100%" controls
+                  poster="https://atelier.swiftideas.com/wp-content/uploads/2014/03/youths_poster-1024x575.jpg">
+                    <source src="http://cardinal.swiftideas.com/demo-content-testing/wp-content/uploads/sites/27/2014/03/youths.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                  </video>
+                  <div class="imgdate1">
+                    <span>Sep</span>
+                    <span>01</span>
+                    <span>2014</span>
+                  </div>
+                    <div class="contentscrolla">
+                      <h5>Self Hosted Post</h5>
+                      <span>By Ateiler</span>
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing
+                        elit. Phasellus posuere mattis ligula id consectetur.
+                        Nullam pellentesque blandit dolor, eleifend rhoncus…
+                      </p>
+                      <a href="#">Read More</a>
+                    </div>
+                  </div>
                   </div>
                 </div>
               </div>
@@ -699,5 +834,8 @@
         </div>
       </footer>
     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="./sass/assets/js/halfslider.js"></script>
   </body>
 </html>

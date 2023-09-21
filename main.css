@@ -25169,8 +25169,35 @@ footer .threecol p span input:focus {
   position: absolute;
   height: 15%;
   width: 65%;
-<<<<<<< HEAD
-  background-color: red;
+  background-color: #fff;
+  right: 1px;
+  left: 10%;
+  bottom: 10%;
+  opacity: 1;
+}
+.twoproduct .cartshoptwoimg .hovericon a {
+  color: #333333;
+}
+.twoproduct .cartshoptwoimg .hovericon a :hover {
+  color: #eabe12;
+  transition: all 300ms;
+}
+.twoproduct .cartshoptwoimg .hovericon .hovericonfirst {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.twoproduct .cartshoptwoimg .hovericon .hovericonfirst a {
+  color: #333333;
+}
+.twoproduct .cartshoptwoimg .hovericon .hovericonfirst a ::before {
+  border-right: 1px solid lightgrey;
+  padding: 15px;
+}
+.twoproduct .cartshoptwoimg .hovericon .hovericonfirst a ::before :hover {
+  color: #eabe12;
+  transition: all 300ms;
 }
 
 .product-swiper-section .product-part .bg-img {
@@ -25562,35 +25589,4 @@ footer .threecol p span input:focus {
   width: 95%;
   color: #222;
   font-family: "Karla", sans-serif;
-=======
-  background-color: #fff;
-  right: 1px;
-  left: 10%;
-  bottom: 10%;
-  opacity: 1;
-}
-.twoproduct .cartshoptwoimg .hovericon a {
-  color: #333333;
-}
-.twoproduct .cartshoptwoimg .hovericon a :hover {
-  color: #eabe12;
-  transition: all 300ms;
-}
-.twoproduct .cartshoptwoimg .hovericon .hovericonfirst {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
-}
-.twoproduct .cartshoptwoimg .hovericon .hovericonfirst a {
-  color: #333333;
-}
-.twoproduct .cartshoptwoimg .hovericon .hovericonfirst a ::before {
-  border-right: 1px solid lightgrey;
-  padding: 15px;
-}
-.twoproduct .cartshoptwoimg .hovericon .hovericonfirst a ::before :hover {
-  color: #eabe12;
-  transition: all 300ms;
->>>>>>> mirfarid
 }/*# sourceMappingURL=main.css.map */
