@@ -117,6 +117,7 @@
         color: #eabe12;
       }
       div{
+        visibility: visible;
         opacity: 1;
       }
     }
@@ -127,6 +128,7 @@
       z-index: 1000;
       background-color: #fff;
       opacity: 0;
+      visibility: hidden;
       transition: all 0.5s;
 
       span{
@@ -162,6 +164,7 @@
       }
       span{
         opacity: 1;
+        visibility: visible;
       }
     }
     span{
@@ -175,6 +178,7 @@
       font-size: 14px;
       z-index: 1000;
       opacity: 0;
+      visibility: hidden;
       transition: all 0.5s;
     }
   }
