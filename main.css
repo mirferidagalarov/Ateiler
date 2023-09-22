@@ -22909,10 +22909,12 @@ footer .threecol p span input:focus {
   top: 0;
   left: 0;
   width: 280px;
-  height: 100%;
+  height: 100vh;
   background-color: #222;
-  z-index: 200;
+  z-index: 2000;
+  overflow-y: auto;
   transform: translateX(-100%);
+  transition: all 0.4s;
 }
 .mobile-menu-wrap .mobile-menu-inner .mob-menu-search {
   position: relative;
@@ -22946,6 +22948,29 @@ footer .threecol p span input:focus {
 }
 .mobile-menu-wrap .mobile-menu-inner ul li:hover a {
   color: #eabe12;
+}
+
+.sub-menu {
+  max-height: 0;
+  transition: all 0.5s;
+  overflow: hidden;
+}
+.sub-menu li {
+  color: #fff;
+  padding: 15px 25px;
+}
+
+.active {
+  max-height: 1000px;
+}
+
+.turn {
+  rotate: 180deg;
+  transition: all 1s ease;
+}
+
+.opened {
+  transform: translateX(0);
 }
 
 .swiper-area .swiper {
@@ -23469,6 +23494,17 @@ footer .threecol p span input:focus {
 }
 .banner-area .banner:hover .banner-opac {
   opacity: 1;
+}
+
+.commonopac {
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+  z-index: 1000;
 }
 
 .shop-header {
@@ -24633,10 +24669,12 @@ footer .threecol p span input:focus {
   }
 }
 .imgleft {
-  height: 100vh;
   background-image: url("./sass/assets/img/download.jpeg");
   background-size: cover;
   background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .imgleft h1, .imgleft .h1 {
   font-size: 3rem;
@@ -24666,7 +24704,7 @@ footer .threecol p span input:focus {
 }
 
 .imgarea {
-  margin-top: 18rem;
+  padding: 9rem 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
