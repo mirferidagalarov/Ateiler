@@ -22909,10 +22909,12 @@ footer .threecol p span input:focus {
   top: 0;
   left: 0;
   width: 280px;
-  height: 100%;
+  height: 100vh;
   background-color: #222;
-  z-index: 200;
+  z-index: 2000;
+  overflow-y: auto;
   transform: translateX(-100%);
+  transition: all 0.4s;
 }
 .mobile-menu-wrap .mobile-menu-inner .mob-menu-search {
   position: relative;
@@ -22946,6 +22948,29 @@ footer .threecol p span input:focus {
 }
 .mobile-menu-wrap .mobile-menu-inner ul li:hover a {
   color: #eabe12;
+}
+
+.sub-menu {
+  max-height: 0;
+  transition: all 0.5s;
+  overflow: hidden;
+}
+.sub-menu li {
+  color: #fff;
+  padding: 15px 25px;
+}
+
+.active {
+  max-height: 1000px;
+}
+
+.turn {
+  rotate: 180deg;
+  transition: all 1s ease;
+}
+
+.opened {
+  transform: translateX(0);
 }
 
 .swiper-area .swiper {
@@ -23469,6 +23494,17 @@ footer .threecol p span input:focus {
 }
 .banner-area .banner:hover .banner-opac {
   opacity: 1;
+}
+
+.commonopac {
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+  z-index: 1000;
 }
 
 .shop-header {
@@ -24633,10 +24669,12 @@ footer .threecol p span input:focus {
   }
 }
 .imgleft {
-  height: 100vh;
   background-image: url("./sass/assets/img/download.jpeg");
   background-size: cover;
   background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .imgleft h1, .imgleft .h1 {
   font-size: 3rem;
@@ -24666,7 +24704,7 @@ footer .threecol p span input:focus {
 }
 
 .imgarea {
-  margin-top: 18rem;
+  padding: 9rem 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -25169,8 +25207,35 @@ footer .threecol p span input:focus {
   position: absolute;
   height: 15%;
   width: 65%;
-<<<<<<< HEAD
-  background-color: red;
+  background-color: #fff;
+  right: 1px;
+  left: 10%;
+  bottom: 10%;
+  opacity: 1;
+}
+.twoproduct .cartshoptwoimg .hovericon a {
+  color: #333333;
+}
+.twoproduct .cartshoptwoimg .hovericon a :hover {
+  color: #eabe12;
+  transition: all 300ms;
+}
+.twoproduct .cartshoptwoimg .hovericon .hovericonfirst {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.twoproduct .cartshoptwoimg .hovericon .hovericonfirst a {
+  color: #333333;
+}
+.twoproduct .cartshoptwoimg .hovericon .hovericonfirst a ::before {
+  border-right: 1px solid lightgrey;
+  padding: 15px;
+}
+.twoproduct .cartshoptwoimg .hovericon .hovericonfirst a ::before :hover {
+  color: #eabe12;
+  transition: all 300ms;
 }
 
 .product-swiper-section .part-name {
@@ -25609,6 +25674,7 @@ footer .threecol p span input:focus {
   color: #222;
   font-family: "Karla", sans-serif;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
   background-color: #fff;
   right: 1px;
@@ -25720,4 +25786,6 @@ footer .threecol p span input:focus {
     font-size: 9px;
   }
 >>>>>>> maleyka
+=======
+>>>>>>> mirfarid
 }/*# sourceMappingURL=main.css.map */
