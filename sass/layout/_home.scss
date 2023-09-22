@@ -1,3 +1,14 @@
+.common-opac{
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  display: none;
+}
+
 .swiper-area {
   .swiper {
     .swiper-pagination-bullet-active {
@@ -7,12 +18,14 @@
     width: 100%;
 
     .slider-ateiler {
-      padding: 11.2rem 0;
+      height: 452px;
       background-image: url(https://atelier.swiftideas.com/wp-content/uploads/2015/04/slider_bkg_look.jpg);
       background-position: center center;
       background-size: cover;
-      height: 100%;
       position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
 
             .slider-opac{
                 width: 100%;
@@ -42,7 +55,7 @@
         }
 
     .slider-workshop {
-      padding: 4rem 0;
+      height: 452px;
       background-image: url(https://atelier.swiftideas.com/wp-content/uploads/2014/09/about-compass-lrg.jpg);
       background-position: center center;
       background-size: cover;
@@ -57,10 +70,12 @@
     }
 
     .slider-achil {
-      padding: 9rem 0;
+      height: 452px;
       background-image: url(https://atelier.swiftideas.com/wp-content/uploads/2014/11/slider_bkg_shoes2_small.jpg);
       background-position: center center;
       background-size: cover;
+      display: flex;
+      align-items: center;
 
       a {
         display: inline-block;

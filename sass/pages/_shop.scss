@@ -222,6 +222,7 @@
                         box-sizing: border-box;
                         margin-top: 8px;
                         opacity: 0;
+                        visibility: hidden;
                         position: absolute;
                         top: 100%;
                         right: 0;
@@ -248,6 +249,7 @@
 
                     .open {
                         opacity: 1;
+                        visibility: visible;
                     }
 
                     i {
@@ -270,7 +272,7 @@
     overflow: hidden;
     max-height: 0;
     transition: all 0.5s linear;
-    
+
     .category-wrap {
         margin-bottom: 30px;
 
@@ -337,7 +339,7 @@
     }
 }
 
-.filter-open{
+.filter-open {
     max-height: 80px;
     overflow: visible;
 
@@ -350,7 +352,7 @@
 
     .products-wrap {
         margin-bottom: 50px;
-        
+
         .product {
             margin-bottom: 15px;
 
@@ -358,34 +360,60 @@
                 position: relative;
                 margin-bottom: 20px;
 
+
                 img {
                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1);
-                    transition: all 0.4s ease-in-out;
+                    transition: all 0.2s;
                 }
 
-                img:last-child {
+                img:nth-child(2) {
                     position: absolute;
                     top: 0;
                     left: 0;
                     opacity: 0;
                 }
 
-                &:hover {
+                .img-icon {
+                    position: absolute;
+                    bottom: 4%;
+                    left: 4%;
+                    background-color: #fff;
+                    padding: 19px 21px;
+                    opacity: 0;
+                    transition: all 0.4s;
 
+                    i {
+                        color: #333;
+                        font-size: 20px;
+                        transition: all 0.4s;
+                    }
+
+                    &:hover {
+                        i {
+                            color: #eabe12;
+                        }
+                    }
+                }
+
+                &:hover {
                     img:first-child {
                         opacity: 0;
                     }
 
-                    img:last-child {
+                    img:nth-child(2) {
+                        opacity: 1;
+                    }
+
+                    .img-icon{
                         opacity: 1;
                     }
                 }
             }
 
             .single-img {
-                img:last-child {
-                    position: relative;
-                    opacity: 1;
+                img:first-child {
+                    position: relative !important;
+                    opacity: 1 !important;
                 }
             }
 

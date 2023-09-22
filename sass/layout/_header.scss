@@ -401,6 +401,7 @@
 }
 
 
+
 .mobile-menu-wrap {
   top: 0;
   left: 0;
@@ -408,6 +409,7 @@
   height: 100%;
   background-color: #222;
   z-index: 200;
+  transition: all 0.5s;
 
 
   ////////////// 
@@ -458,4 +460,8 @@
 
     }
   }
+}
+
+.sub-menu{
+  transform: translateX(0);
 }

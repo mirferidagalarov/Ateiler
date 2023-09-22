@@ -14,20 +14,16 @@
             <div class="baricon me-4">
               <a href="#"><i class="fa-solid fa-bars fa-lg"></i></a>
             </div>
-
+  
             <div class="d-none d-lg-flex magnifyingicon">
               <a href="#"><i class="fa-solid fa-magnifying-glass fa-lg"></i></a>
             </div>
           </div>
-          <div
-            class="navimg col-8 d-flex justify-content-center align-items-center gap-4"
-          >
-            <ul
-              class="d-none d-lg-flex d-flex justify-content-between align-items-center gap-4"
-            >
+          <div class="navimg col-8 d-flex justify-content-center align-items-center gap-4">
+            <ul class="d-none d-lg-flex d-flex justify-content-between align-items-center gap-4">
               <li class="homehover">
                 <a href="#" class="hover-link">Home</a>
-
+  
                 <ul class="homehoverin">
                   <li class="d-flex gap-5">
                     <ul class="d-flex flex-column gap-3 pt-3">
@@ -111,7 +107,7 @@
                   </li>
                 </ul>
               </li>
-
+  
               <li class="featuresHover">
                 <a href="#" class="hover-link">Features</a>
                 <ul class="featuresHoverin">
@@ -171,14 +167,10 @@
               </li>
             </ul>
             <div>
-              <a href="#"
-                ><img
-                  src="./sass/assets/img/atelier-logo-alt2-dark.png"
-                  alt=""
-                />
+              <a href="#"><img src="./sass/assets/img/atelier-logo-alt2-dark.png" alt="" />
               </a>
             </div>
-
+  
             <ul class="d-none d-lg-flex d-flex align-items-center gap-4">
               <li class="pagesHover">
                 <a href="#">Pages</a>
@@ -348,15 +340,27 @@
           </div>
           <div class="col-2 d-flex justify-content-evenly">
             <div class="shopicon d-flex gap-2 align-items-center">
-              <a href="#"><i class="fa-solid fa-cart-shopping fa-xl"></i></a>
-              <a href="#"><i class="fa-regular fa-newspaper fa-xl"></i></a>
+              <a href="#" class="position-relative">
+                <i class="fa-solid fa-cart-shopping fa-xl"></i>
+                <span>Your cart is empty</span>
+              </a>
+              <a href="#" class="position-relative">
+                <i class="fa-regular fa-newspaper fa-xl"></i>
+                <span>Your wishlist is empty</span>
+              </a>
             </div>
-            <div class="usericon d-none d-lg-flex">
-              <a href="#"><i class="fa-regular fa-user fa-xl"></i></a>
+            <div class="usericon d-none d-lg-flex position-relative">
+              <a href="#">
+                <i class="fa-regular fa-user fa-xl"></i>
+                <div class="d-flex flex-column">
+                  <span>Login</span>
+                  <span>Sign up</span>
+                </div>
+              </a>
             </div>
           </div>
         </div>
-
+  
         <div class="infohead row w-100 m-0 justify-content-evenly">
           <div class="col-12 col-md-3">
             <i class="fa-solid fa-truck"></i>
@@ -364,8 +368,7 @@
           </div>
           <div class="col-12 col-md-3">
             <i class="fa-solid fa-check"></i>
-            <span
-              ><strong> Worldwide Delivery</strong> and same day dispatch.
+            <span><strong> Worldwide Delivery</strong> and same day dispatch.
             </span>
           </div>
           <div class="col-12 col-md-3">
