@@ -22973,6 +22973,17 @@ footer .threecol p span input:focus {
   transform: translateX(0);
 }
 
+.common-opac {
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  display: none;
+}
+
 .swiper-area .swiper {
   width: 100%;
 }
@@ -22980,12 +22991,14 @@ footer .threecol p span input:focus {
   background-color: #222;
 }
 .swiper-area .swiper .slider-ateiler {
-  padding: 11.2rem 0;
+  height: 452px;
   background-image: url(https://atelier.swiftideas.com/wp-content/uploads/2015/04/slider_bkg_look.jpg);
   background-position: center center;
   background-size: cover;
-  height: 100%;
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .swiper-area .swiper .slider-ateiler .slider-opac {
   width: 100%;
@@ -23010,7 +23023,7 @@ footer .threecol p span input:focus {
   }
 }
 .swiper-area .swiper .slider-workshop {
-  padding: 4rem 0;
+  height: 452px;
   background-image: url(https://atelier.swiftideas.com/wp-content/uploads/2014/09/about-compass-lrg.jpg);
   background-position: center center;
   background-size: cover;
@@ -23022,10 +23035,12 @@ footer .threecol p span input:focus {
   width: 20%;
 }
 .swiper-area .swiper .slider-achil {
-  padding: 9rem 0;
+  height: 452px;
   background-image: url(https://atelier.swiftideas.com/wp-content/uploads/2014/11/slider_bkg_shoes2_small.jpg);
   background-position: center center;
   background-size: cover;
+  display: flex;
+  align-items: center;
 }
 .swiper-area .swiper .slider-achil a {
   display: inline-block;
@@ -23697,6 +23712,7 @@ footer .threecol p span input:focus {
   box-sizing: border-box;
   margin-top: 8px;
   opacity: 0;
+  visibility: hidden;
   position: absolute;
   top: 100%;
   right: 0;
@@ -23721,6 +23737,7 @@ footer .threecol p span input:focus {
 }
 .shop-options-wrap .shop-sort .select-wrapper .shop-select .select-area .open {
   opacity: 1;
+  visibility: visible;
 }
 .shop-options-wrap .shop-sort .select-wrapper .shop-select .select-area i {
   font-size: 14px;
@@ -23815,21 +23832,41 @@ footer .threecol p span input:focus {
   box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
   transition: all 0.2s;
 }
-.shop-products-area .products-wrap .product .img-wrap img:last-child {
+.shop-products-area .products-wrap .product .img-wrap img:nth-child(2) {
   position: absolute;
   top: 0;
   left: 0;
   opacity: 0;
 }
+.shop-products-area .products-wrap .product .img-wrap .img-icon {
+  position: absolute;
+  bottom: 4%;
+  left: 4%;
+  background-color: #fff;
+  padding: 19px 21px;
+  opacity: 0;
+  transition: all 0.4s;
+}
+.shop-products-area .products-wrap .product .img-wrap .img-icon i {
+  color: #333;
+  font-size: 20px;
+  transition: all 0.4s;
+}
+.shop-products-area .products-wrap .product .img-wrap .img-icon:hover i {
+  color: #eabe12;
+}
 .shop-products-area .products-wrap .product .img-wrap:hover img:first-child {
   opacity: 0;
 }
-.shop-products-area .products-wrap .product .img-wrap:hover img:last-child {
+.shop-products-area .products-wrap .product .img-wrap:hover img:nth-child(2) {
   opacity: 1;
 }
-.shop-products-area .products-wrap .product .single-img img:last-child {
-  position: relative;
+.shop-products-area .products-wrap .product .img-wrap:hover .img-icon {
   opacity: 1;
+}
+.shop-products-area .products-wrap .product .single-img img:first-child {
+  position: relative !important;
+  opacity: 1 !important;
 }
 .shop-products-area .products-wrap .product .product-details {
   display: flex;
@@ -25673,40 +25710,6 @@ footer .threecol p span input:focus {
   width: 95%;
   color: #222;
   font-family: "Karla", sans-serif;
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-  background-color: #fff;
-  right: 1px;
-  left: 10%;
-  bottom: 10%;
-  opacity: 1;
-}
-.twoproduct .cartshoptwoimg .hovericon a {
-  color: #333333;
-}
-.twoproduct .cartshoptwoimg .hovericon a :hover {
-  color: #eabe12;
-  transition: all 300ms;
-}
-.twoproduct .cartshoptwoimg .hovericon .hovericonfirst {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
-}
-.twoproduct .cartshoptwoimg .hovericon .hovericonfirst a {
-  color: #333333;
-}
-.twoproduct .cartshoptwoimg .hovericon .hovericonfirst a ::before {
-  border-right: 1px solid lightgrey;
-  padding: 15px;
-}
-.twoproduct .cartshoptwoimg .hovericon .hovericonfirst a ::before :hover {
-  color: #eabe12;
-  transition: all 300ms;
->>>>>>> mirfarid
-=======
 }
 @media (width <= 375px) {
   .product-swiper-section .reviews-box .review-box1 .review .review-text p {
@@ -25785,7 +25788,4 @@ footer .threecol p span input:focus {
   .product-swiper-section .cards-with-hover .cards-hover .card-hover .img-info-box .rating-part i {
     font-size: 9px;
   }
->>>>>>> maleyka
-=======
->>>>>>> mirfarid
 }/*# sourceMappingURL=main.css.map */
