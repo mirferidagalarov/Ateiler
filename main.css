@@ -25169,8 +25169,35 @@ footer .threecol p span input:focus {
   position: absolute;
   height: 15%;
   width: 65%;
-<<<<<<< HEAD
-  background-color: red;
+  background-color: #fff;
+  right: 1px;
+  left: 10%;
+  bottom: 10%;
+  opacity: 1;
+}
+.twoproduct .cartshoptwoimg .hovericon a {
+  color: #333333;
+}
+.twoproduct .cartshoptwoimg .hovericon a :hover {
+  color: #eabe12;
+  transition: all 300ms;
+}
+.twoproduct .cartshoptwoimg .hovericon .hovericonfirst {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.twoproduct .cartshoptwoimg .hovericon .hovericonfirst a {
+  color: #333333;
+}
+.twoproduct .cartshoptwoimg .hovericon .hovericonfirst a ::before {
+  border-right: 1px solid lightgrey;
+  padding: 15px;
+}
+.twoproduct .cartshoptwoimg .hovericon .hovericonfirst a ::before :hover {
+  color: #eabe12;
+  transition: all 300ms;
 }
 
 .product-swiper-section .part-name {
@@ -25244,8 +25271,7 @@ footer .threecol p span input:focus {
   display: flex;
   margin: 30px 30px 0 0;
   transition: 0.5s ease;
-  width: -moz-fit-content !important;
-  width: fit-content !important;
+  width: 130px;
   height: 130px;
   opacity: 0.5;
   cursor: pointer;
@@ -25254,7 +25280,7 @@ footer .threecol p span input:focus {
 .product-swiper-section .product-part .product-info-box .product-lil-swiper .myPhotobox .swiper-slide:hover {
   opacity: 1;
 }
-@media (width <= 925px) {
+@media (width <= 375px) {
   .product-swiper-section .product-part .product-info-box .product-lil-swiper .myPhotobox .swiper-slide {
     width: -moz-fit-content !important;
     width: fit-content !important;
@@ -25608,39 +25634,6 @@ footer .threecol p span input:focus {
   width: 95%;
   color: #222;
   font-family: "Karla", sans-serif;
-<<<<<<< HEAD
-=======
-  background-color: #fff;
-  right: 1px;
-  left: 10%;
-  bottom: 10%;
-  opacity: 1;
-}
-.twoproduct .cartshoptwoimg .hovericon a {
-  color: #333333;
-}
-.twoproduct .cartshoptwoimg .hovericon a :hover {
-  color: #eabe12;
-  transition: all 300ms;
-}
-.twoproduct .cartshoptwoimg .hovericon .hovericonfirst {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
-}
-.twoproduct .cartshoptwoimg .hovericon .hovericonfirst a {
-  color: #333333;
-}
-.twoproduct .cartshoptwoimg .hovericon .hovericonfirst a ::before {
-  border-right: 1px solid lightgrey;
-  padding: 15px;
-}
-.twoproduct .cartshoptwoimg .hovericon .hovericonfirst a ::before :hover {
-  color: #eabe12;
-  transition: all 300ms;
->>>>>>> mirfarid
-=======
 }
 @media (width <= 375px) {
   .product-swiper-section .reviews-box .review-box1 .review .review-text p {
@@ -25661,11 +25654,14 @@ footer .threecol p span input:focus {
   visibility: visible;
   opacity: 1;
 }
+.product-swiper-section .cards-with-hover .cards-hover .card-hover .img-box .first-photo {
+  transition: all 0.5s linear;
+}
 .product-swiper-section .cards-with-hover .cards-hover .card-hover .img-box .second-photo {
   top: 0;
   left: 0;
   visibility: hidden;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.5s linear;
 }
 .product-swiper-section .cards-with-hover .cards-hover .card-hover .img-box .icons-hover {
   background-color: white;
@@ -25719,5 +25715,4 @@ footer .threecol p span input:focus {
   .product-swiper-section .cards-with-hover .cards-hover .card-hover .img-info-box .rating-part i {
     font-size: 9px;
   }
->>>>>>> maleyka
 }/*# sourceMappingURL=main.css.map */
