@@ -22947,6 +22947,9 @@ footer .threecol p span input:focus {
   font-weight: 600;
   transition: all 0.5s;
 }
+.mobile-menu-wrap .mobile-menu-inner ul li i {
+  transition: all 0.5s;
+}
 .mobile-menu-wrap .mobile-menu-inner ul li:hover a {
   color: #eabe12;
 }
@@ -22962,27 +22965,15 @@ footer .threecol p span input:focus {
 }
 
 .active {
-  max-height: 1000px;
+  max-height: 500px;
 }
 
 .turn {
   rotate: 180deg;
-  transition: all 1s ease;
 }
 
 .opened {
   transform: translateX(0);
-}
-
-.common-opac {
-  background-color: rgba(0, 0, 0, 0.4);
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 100;
-  display: none;
 }
 
 .swiper-area .swiper {
@@ -25300,7 +25291,7 @@ body {
 
 .fullscreenSwiper {
   width: 100%;
-  height: 650px;
+  height: 830px;
 }
 .fullscreenSwiper .swiper-wrapper .swiper-button-next,
 .fullscreenSwiper .swiper-wrapper .swiper-button-prev {
