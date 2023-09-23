@@ -1,3 +1,45 @@
+html,
+    body {
+      position: relative;
+      height: 100%;
+    }
+
+    .swiper {
+      width: 100%;
+      height: 650px;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 400px;
+      height: 500px;
+      object-fit: cover;
+    }
+    .swiper-button-next, .swiper-button-prev{
+        color: white;
+    }
+    .swiper-wrapper{
+        .div-cancel-button{
+            padding: 10px;
+            top: 0;
+            right: 0;
+            z-index: 1000;
+            i{
+                font-size: 30px;
+                color:white;
+            }
+        }
+    }
+
 .product-swiper-section {
     .part-name {
         color: $primary-black;
@@ -44,28 +86,43 @@
         .product-info-box {
             margin-top: -165px;
             padding-bottom: 80px;
-
+           
             .product-lil-swiper {
-                .swiper-slide {
-                    .search-icon-div {
-                        padding: 1% 2% 0.8%;
-                        box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-                        background-color: white;
-                        right: 2.5%;
-                        top: 2%;
-
-                        @media(width<=375px) {
-                            padding: 1.5% 2.5% 1%;
-                            right: 3%;
-                            top: 2.5%;
-                        }
-
-                        i {
-                            font-size: 17px;
-                            color: $primary-black;
+                .swiper{
+                    width: 100%;
+                }
+                .first-swiper{
+                    width:100%;
+                    height:100%;
+                    .swiper-slide {
+                        overflow: hidden;
+        
+                        img{
+                            object-fit: cover;
+                            width:100%;
+                            height:fit-content;
+                            display:block;                        }
+                        .search-icon-div {
+                            padding: 1% 2% 0.8%;
+                            box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+                            background-color: white;
+                            right: 2.5%;
+                            top: 2%;
+    
+                            @media(width<=375px) {
+                                padding: 1.5% 2.5% 1%;
+                                right: 3%;
+                                top: 2.5%;
+                            }
+    
+                            i {
+                                font-size: 17px;
+                                color: $primary-black;
+                            }
                         }
                     }
                 }
+            
 
                 .myPhotobox {
                     display: flex;
@@ -74,29 +131,28 @@
                     .swiper-slide-thumb-active {
                         opacity: 1;
                     }
-
                     .swiper-slide {
-
                         display: flex;
                         margin: 30px 30px 0 0;
                         transition: 0.5s ease;
-                        width: fit-content !important;
+                        width: 130px;
                         height: 130px;
                         opacity: 0.5;
                         cursor: pointer;
+                        background-size: cover;
                         box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-
                         &:hover {
                             opacity: 1;
                         }
 
-                        @media(width<=925px) {
+                        @media(width<=375px) {
                             width: fit-content !important;
                             height: 80px;
                         }
 
                         img {
-
+                            display: block;
+                            object-fit: cover;
                             background-position: center;
                         }
                     }
@@ -583,11 +639,15 @@
                         }
                     }
 
+                    .first-photo {
+                        transition: all 0.5s linear;
+                    }
+
                     .second-photo {
                         top: 0;
                         left: 0;
                         visibility: hidden;
-                        transition: all 0.5s ease-in-out;
+                        transition: all 0.5s linear;
                     }
 
                     .icons-hover {
