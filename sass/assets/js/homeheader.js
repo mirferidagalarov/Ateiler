@@ -10,34 +10,36 @@ function accordion() {
   });
 }
 
-function mobMenuOpen(){
-    const opener=document.querySelector(".baricon");
-    const mobmenu=document.querySelector(".mobile-menu-wrap");
-    const body=document.body;
-    const opac=document.querySelector(".commonopac");
-    document.addEventListener("click",(e)=>{
-        if(opener.contains(e.target))
-        {
-            mobmenu.classList.add("opened");
-            body.classList.add("overflow-hidden");
-            opac.style.display="block";
-        }
-        else if(!mobmenu.contains(e.target)){
+function mobMenuOpen() {
+  // const openerFullScreen = document.querySelectorAll('.search-icon-div');
+  const opener = document.querySelector(".baricon");
+  const mobmenu = document.querySelector(".mobile-menu-wrap");
+  const body = document.body;
+  const opac = document.querySelector(".commonopac");
+  document.addEventListener("click", (e) => {
+    if (opener.contains(e.target)) {
+      mobmenu.classList.add("opened");
+      body.classList.add("overflow-hidden");
+      opac.style.display = "block";
+    }
+    else if (!mobmenu.contains(e.target)) {
+      
+      body.classList.remove("overflow-hidden");
+      opac.style.display = "none";
+      mobmenu.classList.remove("opened");
+    }
+    
+    
 
-            body.classList.remove("overflow-hidden");
-            opac.style.display="none";
-            mobmenu.classList.remove("opened");
-        }
-
-    })
+  })
 
 }
 
 
 
-function pageInit(){
-    accordion();
-    mobMenuOpen();
+function pageInit() {
+  accordion();
+  mobMenuOpen();
 }
 
 window.onload = pageInit;
