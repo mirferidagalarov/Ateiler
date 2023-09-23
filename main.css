@@ -22739,7 +22739,8 @@ footer .threecol p span input:focus {
 }
 .homehover .homehoverin {
   width: 30vw;
-  height: 35vh;
+  height: -moz-max-content;
+  height: max-content;
   display: none;
   position: absolute;
   background-color: #fff;
