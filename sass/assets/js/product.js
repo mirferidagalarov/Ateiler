@@ -79,7 +79,7 @@ var swiper = new Swiper(".myPhotobox", {
 
 // fullscreen
 
-  var swiper = new Swiper(".mySwiper", {
+  var swiper = new Swiper(".fullscreenSwiper", {
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",

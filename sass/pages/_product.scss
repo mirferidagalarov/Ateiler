@@ -1,44 +1,51 @@
 html,
-    body {
-      position: relative;
-      height: 100%;
-    }
+body {
+    position: relative;
+    height: 100%;
+}
 
-    .swiper {
-      width: 100%;
-      height: 650px;
-    }
+.fullscreenSwiper {
+    width: 100%;
+    height: 650px;
 
-    .swiper-slide {
-      text-align: center;
-      font-size: 18px;
-      background: #000;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
+    .swiper-wrapper {
 
-    .swiper-slide img {
-      display: block;
-      width: 400px;
-      height: 500px;
-      object-fit: cover;
-    }
-    .swiper-button-next, .swiper-button-prev{
-        color: white;
-    }
-    .swiper-wrapper{
-        .div-cancel-button{
+        .swiper-button-next,
+        .swiper-button-prev {
+            color: white;
+        }
+
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            img {
+                display: block;
+                width: 400px;
+                height: 500px;
+                object-fit: cover;
+            }
+        }
+
+        .div-cancel-button {
             padding: 10px;
             top: 0;
             right: 0;
             z-index: 1000;
-            i{
+
+            i {
                 font-size: 30px;
-                color:white;
+                color: white;
             }
         }
     }
+
+}
+
 
 .product-swiper-section {
     .part-name {
@@ -86,35 +93,39 @@ html,
         .product-info-box {
             margin-top: -165px;
             padding-bottom: 80px;
-           
+
             .product-lil-swiper {
-                .swiper{
+                .swiper {
                     width: 100%;
                 }
-                .first-swiper{
-                    width:100%;
-                    height:100%;
+
+                .first-swiper {
+                    width: 100%;
+                    height: 100%;
+
                     .swiper-slide {
                         overflow: hidden;
-        
-                        img{
+
+                        img {
                             object-fit: cover;
-                            width:100%;
-                            height:fit-content;
-                            display:block;                        }
+                            width: 100%;
+                            height: fit-content;
+                            display: block;
+                        }
+
                         .search-icon-div {
                             padding: 1% 2% 0.8%;
                             box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
                             background-color: white;
                             right: 2.5%;
                             top: 2%;
-    
+
                             @media(width<=375px) {
                                 padding: 1.5% 2.5% 1%;
                                 right: 3%;
                                 top: 2.5%;
                             }
-    
+
                             i {
                                 font-size: 17px;
                                 color: $primary-black;
@@ -122,7 +133,7 @@ html,
                         }
                     }
                 }
-            
+
 
                 .myPhotobox {
                     display: flex;
@@ -131,6 +142,7 @@ html,
                     .swiper-slide-thumb-active {
                         opacity: 1;
                     }
+
                     .swiper-slide {
                         display: flex;
                         margin: 30px 30px 0 0;
@@ -141,6 +153,7 @@ html,
                         cursor: pointer;
                         background-size: cover;
                         box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
                         &:hover {
                             opacity: 1;
                         }
