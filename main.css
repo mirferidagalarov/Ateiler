@@ -24879,6 +24879,7 @@ footer .threecol p span input:focus {
 }
 .imgscrollauido .img-wrapp {
   position: relative;
+  width: 100%;
 }
 .imgscrollauido .img-wrapp .imgdate {
   position: absolute;
@@ -24899,12 +24900,16 @@ footer .threecol p span input:focus {
 }
 .imgscrollauido .img-wrapp .imgsize {
   position: relative;
+  width: 100%;
 }
 .imgscrollauido .img-wrapp .imgsize img {
   width: 100%;
   height: 7rem;
   -o-object-fit: cover;
      object-fit: cover;
+}
+.imgscrollauido .img-wrapp audio {
+  width: 100%;
 }
 .imgscrollauido .contentscroll {
   display: flex;
@@ -25012,6 +25017,7 @@ footer .threecol p span input:focus {
 .button i {
   font-size: 20px;
 }
+
 .o-video {
   width: 100%;
   height: 0;

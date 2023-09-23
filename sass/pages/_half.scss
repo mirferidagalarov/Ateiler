@@ -179,6 +179,7 @@
 
   .img-wrapp {
     position: relative;
+    width: 100%;
     .imgdate {
       position: absolute;
       display: flex;
@@ -199,12 +200,15 @@
 
     .imgsize {
       position: relative;
-
+      width: 100%;
       img {
         width: 100%;
         height: 7rem;
         object-fit: cover;
       }
+    }
+    audio{
+      width: 100%;
     }
   }
 
@@ -317,12 +321,6 @@
   gap: 1rem;
   i {
     font-size: 20px;
-  }
-
-  .swiper-button-next1 {
-  }
-
-  .swiper-button-prev1 {
   }
 }
 
