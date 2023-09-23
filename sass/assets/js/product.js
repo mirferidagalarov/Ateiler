@@ -16,24 +16,52 @@ minus.addEventListener("click", function () {
 
 // mouseover
 
-let mainImg=document.querySelector(".swiper-slide img");
+// let mainImg=document.querySelectorAll(".mainSwiper img");
+
+// mainImg.forEach(img =>{
+//   img.addEventListener("mouseover", (e) => {
+//     e.target.style.transform = "scale(2)";
+//   });
+  
+//   img.addEventListener("mouseout", (e) => {
+//     e.target.style.transform = "scale(1)";
+//   });
+  
+//   img.addEventListener("mousemove", (e) => {
+//     const rect = img.getBoundingClientRect();
+//     const X = (e.pageX - rect.left) / rect.width;
+//     const Y = (e.pageY - rect.top) / rect.height;
+//     const transformOrigin = X * 100 + '% ' + Y * 100 + '%';
+//     img.style.transformOrigin = transformOrigin;
+//   });
+// })  
 
 
-mainImg.addEventListener("mouseover", (e) => {
-  e.target.style.transform = "scale(1.5)";
+let swiperSlide = document.querySelectorAll(".first-swiper .swiper-slide ");
+
+swiperSlide.forEach(el => {
+  let mainImg = el.lastElementChild
+  // console.log(mainImg);
+  //
+  mainImg.addEventListener( "mouseover", e =>{   
+       e.target.style.transform = "scale(1.5)"
+       e.target.style.transformOrigin = "center center"
+  
+       console.log(e.target);
+  } )
+  mainImg.addEventListener("mouseout", (e) => {
+    e.target.style.transform = "scale(1)";
+});
+mainImg.addEventListener("mousemove", function(e) {
+    const rect = this.getBoundingClientRect();
+    const X = (e.pageX - rect.left) / rect.width;
+    const Y = (e.pageY - rect.top) / rect.height;
+    const transformOrigin = X * 100 + '% ' + Y * 100 + '%';
+    this.style.transformOrigin = transformOrigin;
 });
 
-mainImg.addEventListener("mouseout", (e) => {
-  e.target.style.transform = "scale(1)";
 });
 
-mainImg.addEventListener("mousemove", (e) => {
-  const rect = mainImg.getBoundingClientRect();
-  const X = (e.pageX - rect.left) / rect.width;
-  const Y = (e.pageY - rect.top) / rect.height;
-  const transformOrigin = X * 100 + '% ' + Y * 100 + '%';
-  mainImg.style.transformOrigin = transformOrigin;
-});
 
 
 var swiper = new Swiper(".myPhotobox", {
@@ -47,4 +75,13 @@ var swiper = new Swiper(".myPhotobox", {
     thumbs: {
       swiper: swiper
     }
+  });
+
+// fullscreen
+
+  var swiper = new Swiper(".mySwiper", {
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
   });
