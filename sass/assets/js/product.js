@@ -91,6 +91,7 @@ function fullscreen() {
   const container = document.querySelector('.fullscreenSwiper');
   const closer = document.querySelector('.div-cancel-button');
   const commonCntnr = document.body;
+  
   closer.addEventListener('click', () => {
     container.classList.add('d-none');
     commonCntnr.classList.remove('overflow-hidden');

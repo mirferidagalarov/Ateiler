@@ -2,9 +2,10 @@
 .fullscreenSwiper {
     width: 100%;
     height: 100vh;
-    position: fixed;
+    position: sticky;
     top: 0;
     left: 0;
+    z-index: 6;
 
     .swiper-button-next,
     .swiper-button-prev {
@@ -117,6 +118,7 @@
                             background-color: white;
                             right: 2.5%;
                             top: 2%;
+                            cursor: pointer;
 
                             @media(width<=375px) {
                                 padding: 1.5% 2.5% 1%;

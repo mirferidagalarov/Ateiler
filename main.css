@@ -22590,6 +22590,14 @@ footer .threecol p span input:focus {
   border-bottom-color: #ffba00;
 }
 
+header {
+  background-color: #fff;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 5;
+}
+
 .containers {
   display: flex;
   justify-content: center;
@@ -22937,21 +22945,22 @@ footer .threecol p span input:focus {
   transform: translateY(-50%);
   color: #e4e4e4;
 }
-.mobile-menu-wrap .mobile-menu-inner ul li {
+.mobile-menu-wrap .mobile-menu-inner .mob-menu-pages li {
   border-bottom: 1px solid #444;
 }
-.mobile-menu-wrap .mobile-menu-inner ul li a {
+.mobile-menu-wrap .mobile-menu-inner .mob-menu-pages li a {
   display: block;
   padding: 15px 20px;
   color: #fff;
   font-weight: 600;
   transition: all 0.5s;
+  cursor: pointer;
 }
-.mobile-menu-wrap .mobile-menu-inner ul li i {
-  transition: all 0.5s;
-}
-.mobile-menu-wrap .mobile-menu-inner ul li:hover a {
+.mobile-menu-wrap .mobile-menu-inner .mob-menu-pages li a:hover {
   color: #eabe12;
+}
+.mobile-menu-wrap .mobile-menu-inner .mob-menu-pages li i {
+  transition: all 0.5s;
 }
 
 .sub-menu {
@@ -22960,8 +22969,12 @@ footer .threecol p span input:focus {
   overflow: hidden;
 }
 .sub-menu li {
+  border-top: 1px solid #444;
+}
+.sub-menu li a {
+  padding: 15px 20px 15px 30px;
+  font-size: 13px;
   color: #fff;
-  padding: 15px 25px;
 }
 
 .active {
@@ -23167,7 +23180,7 @@ footer .threecol p span input:focus {
   }
 }
 .trending-area .trending .trending-imgs .selected {
-  z-index: 5;
+  z-index: 2;
   position: relative;
   opacity: 1;
   transform: translateX(0) scale(1);
@@ -23244,7 +23257,7 @@ footer .threecol p span input:focus {
   background-color: rgba(34, 34, 34, 0.5);
 }
 .wavy-area .wavy-inner-area {
-  z-index: 100;
+  z-index: 4;
   width: 40%;
   display: flex;
   flex-direction: column;
@@ -23332,7 +23345,7 @@ footer .threecol p span input:focus {
   bottom: 4%;
   left: 4%;
   background-color: #fff;
-  z-index: 100;
+  z-index: 4;
 }
 .feature-area .row .col-12 .feature .feature-actions span {
   color: #444;
@@ -23517,11 +23530,11 @@ footer .threecol p span input:focus {
   background-color: rgba(0, 0, 0, 0.4);
   width: 100%;
   height: 100%;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   display: none;
-  z-index: 1000;
+  z-index: 1001;
 }
 
 .shop-header {
@@ -24758,8 +24771,8 @@ footer .threecol p span input:focus {
 }
 @media (max-width: 1200px) {
   .scrollright {
-    overflow: none;
-    overflow-y: none;
+    overflow: hidden;
+    overflow-y: scroll;
     height: 100%;
     width: 100%;
   }
@@ -25286,9 +25299,10 @@ footer .threecol p span input:focus {
 .fullscreenSwiper {
   width: 100%;
   height: 100vh;
-  position: fixed;
+  position: sticky;
   top: 0;
   left: 0;
+  z-index: 6;
 }
 .fullscreenSwiper .swiper-button-next,
 .fullscreenSwiper .swiper-button-prev {
@@ -25386,6 +25400,7 @@ footer .threecol p span input:focus {
   background-color: white;
   right: 2.5%;
   top: 2%;
+  cursor: pointer;
 }
 @media (width <= 375px) {
   .product-swiper-section .product-part .product-info-box .product-lil-swiper .first-swiper .swiper-slide .search-icon-div {

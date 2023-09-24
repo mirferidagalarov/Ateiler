@@ -222,7 +222,7 @@
       }
 
       .selected {
-        z-index: 5;
+        z-index: 2;
         position: relative;
         opacity: 1;
         transform: translateX(0) scale(1);
@@ -314,7 +314,7 @@
   }
 
   .wavy-inner-area {
-    z-index: 100;
+    z-index: 4;
     width: 40%;
     display: flex;
     flex-direction: column;
@@ -415,7 +415,7 @@
           bottom: 4%;
           left: 4%;
           background-color: #fff;
-          z-index: 100;
+          z-index: 4;
 
           span {
             color: #444;
@@ -648,9 +648,9 @@
   background-color: rgba(0, 0, 0, 0.4);
   width: 100%;
   height: 100%;
-  position: absolute;
+  position: fixed;
   top:0;
   left: 0;
   display: none;
-  z-index: 1000;
+  z-index: 1001;
 }

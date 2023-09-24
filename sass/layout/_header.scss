@@ -1,3 +1,11 @@
+header{
+  background-color: #fff;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 5;
+}
+
 .containers {
   display: flex;
   justify-content: center;
@@ -445,7 +453,7 @@
       }
     }
 
-    ul {
+    .mob-menu-pages {
       li {
         border-bottom: 1px solid #444;
 
@@ -455,17 +463,17 @@
           color: #fff;
           font-weight: 600;
           transition: all 0.5s;
+          cursor: pointer;
+
+          &:hover {
+            color: #eabe12;
+          }
         }
 
         i {
           transition: all 0.5s;
         }
 
-        &:hover {
-          a {
-            color: #eabe12;
-          }
-        }
       }
 
     }
@@ -479,8 +487,13 @@
   overflow: hidden;
 
   li {
-    color: #fff;
-    padding: 15px 25px;
+    border-top: 1px solid #444;
+
+    a {
+      padding: 15px 20px 15px 30px;
+      font-size: 13px;
+      color: #fff;
+    }
   }
 }
 
