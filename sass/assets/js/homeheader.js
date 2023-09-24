@@ -11,7 +11,6 @@ function accordion() {
 }
 
 function mobMenuOpen() {
-  // const openerFullScreen = document.querySelectorAll('.search-icon-div');
   const opener = document.querySelector(".baricon");
   const mobmenu = document.querySelector(".mobile-menu-wrap");
   const body = document.body;
@@ -23,7 +22,6 @@ function mobMenuOpen() {
       opac.style.display = "block";
     }
     else if (!mobmenu.contains(e.target)) {
-      
       body.classList.remove("overflow-hidden");
       opac.style.display = "none";
       mobmenu.classList.remove("opened");

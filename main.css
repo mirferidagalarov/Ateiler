@@ -25283,18 +25283,15 @@ footer .threecol p span input:focus {
   transition: all 300ms;
 }
 
-html,
-body {
-  position: relative;
-  height: 100%;
-}
-
 .fullscreenSwiper {
   width: 100%;
-  height: 830px;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
 }
-.fullscreenSwiper .swiper-wrapper .swiper-button-next,
-.fullscreenSwiper .swiper-wrapper .swiper-button-prev {
+.fullscreenSwiper .swiper-button-next,
+.fullscreenSwiper .swiper-button-prev {
   color: white;
 }
 .fullscreenSwiper .swiper-wrapper .swiper-slide {

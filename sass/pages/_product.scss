@@ -1,19 +1,17 @@
-html,
-body {
-    position: relative;
-    height: 100%;
-}
 
 .fullscreenSwiper {
     width: 100%;
-    height: 830px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
 
+    .swiper-button-next,
+    .swiper-button-prev {
+        color: white;
+    }
     .swiper-wrapper {
 
-        .swiper-button-next,
-        .swiper-button-prev {
-            color: white;
-        }
 
         .swiper-slide {
             text-align: center;
