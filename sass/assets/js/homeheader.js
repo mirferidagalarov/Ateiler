@@ -15,18 +15,12 @@ function mobMenuOpen() {
   const mobmenu = document.querySelector(".mobile-menu-wrap");
   const body = document.body;
   const opac = document.querySelector(".commonopac");
-  const str = '.search-icon-div';
 
   document.addEventListener("click", (e) => {
     if (opener.contains(e.target)) {
       mobmenu.classList.add("opened");
       body.classList.add("overflow-hidden");
       opac.style.display = "block";
-    }
-    else if(str.contains(e.target)){
-      body.classList.remove("overflow-hidden");
-      opac.style.display = "none";
-      mobmenu.classList.remove("opened");
     }
     else if (!mobmenu.contains(e.target)) {
       body.classList.remove("overflow-hidden");

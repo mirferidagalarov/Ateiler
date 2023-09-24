@@ -89,17 +89,15 @@ var swiper = new Swiper(".fullscreenSwiper", {
 function fullscreen() {
   const openerFullScreen = document.querySelectorAll('.search-icon-div');
   const container = document.querySelector('.fullscreenSwiper');
-  const closer = document.querySelector('.div-cancel-button');
-  const commonCntnr = document.body;
-  
-  closer.addEventListener('click', () => {
-    container.classList.add('d-none');
-    commonCntnr.classList.remove('overflow-hidden');
+  const closer = document.querySelectorAll('.div-cancel-button');
+  closer.forEach(item => {
+    item.addEventListener('click', () => {
+      container.classList.add('d-none');
+    })
   })
   openerFullScreen.forEach(item => {
     item.addEventListener('click', () => {
       container.classList.remove('d-none');
-      commonCntnr.classList.add('overflow-hidden');
     })
   })
 
