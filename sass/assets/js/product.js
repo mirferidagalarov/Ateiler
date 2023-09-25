@@ -16,33 +16,11 @@ minus.addEventListener("click", function () {
 
 // mouseover
 
-// let mainImg=document.querySelectorAll(".mainSwiper img");
-
-// mainImg.forEach(img =>{
-//   img.addEventListener("mouseover", (e) => {
-//     e.target.style.transform = "scale(2)";
-//   });
-
-//   img.addEventListener("mouseout", (e) => {
-//     e.target.style.transform = "scale(1)";
-//   });
-
-//   img.addEventListener("mousemove", (e) => {
-//     const rect = img.getBoundingClientRect();
-//     const X = (e.pageX - rect.left) / rect.width;
-//     const Y = (e.pageY - rect.top) / rect.height;
-//     const transformOrigin = X * 100 + '% ' + Y * 100 + '%';
-//     img.style.transformOrigin = transformOrigin;
-//   });
-// })  
-
 
 let swiperSlide = document.querySelectorAll(".first-swiper .swiper-slide ");
 
 swiperSlide.forEach(el => {
   let mainImg = el.lastElementChild
-  // console.log(mainImg);
-  //
   mainImg.addEventListener("mouseover", e => {
     e.target.style.transform = "scale(1.5)"
     e.target.style.transformOrigin = "center center"

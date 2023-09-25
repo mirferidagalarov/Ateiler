@@ -31,11 +31,31 @@ function mobMenuOpen() {
 
 }
 
+function delay() {
+  const items = document.querySelectorAll(".item");
+
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        setTimeout(function () {
+          entry.target.style.transform = "translateY(0)";
+          entry.target.style.opacity = 1;
+          observer.unobserve(entry.target);
+        }, 300);
+      }
+    });
+  });
+
+  items.forEach(item => {
+    observer.observe(item);
+  });
+}
 
 
 function pageInit() {
   accordion();
   mobMenuOpen();
+  delay();
 }
 
 window.onload = pageInit;
