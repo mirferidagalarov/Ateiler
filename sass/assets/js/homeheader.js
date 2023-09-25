@@ -51,11 +51,21 @@ function delay() {
   });
 }
 
+function cartCount() {
+  let prodArray = JSON.parse(localStorage.getItem('products')) || [];
+  const cartCount = document.querySelector('.cart-count');
+  let itemCount = 0;
+  prodArray.forEach(item => {
+    itemCount = itemCount + parseInt(item.count);
+  })
+  cartCount.textContent = itemCount;
+}
 
 function pageInit() {
   accordion();
   mobMenuOpen();
   delay();
+  cartCount();
 }
 
 window.onload = pageInit;

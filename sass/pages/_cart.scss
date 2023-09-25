@@ -74,39 +74,6 @@
         margin: 15px 0;
     }
 
-    // table {
-    //     thead {
-    //         th{
-    //             text-align: center;
-    //         }
-    //         .head-img{
-    //             width: 10%;
-    //         }
-    //         .head-name{
-    //             width: 30%;
-    //         }
-    //         .head-price{
-    //             width: 30%;
-    //         }
-    //         .head-icon{
-    //             width: 10%;
-    //         }
-    //     }
-    //     tbody{
-    //         td{
-    //             text-align: center;
-    //             vertical-align: middle;
-    //             font-size: 14px;
-    //             font-weight: 600;
-    //             color: #333;
-    //             a{
-    //                 color: #333;
-    //             }
-    //         }
-    //     }
-
-    // }
-
     table {
         thead {
             th{
@@ -249,4 +216,11 @@
         top: -50%;
         right: 0;
     }
+}
+
+.cart-count{
+    position: absolute;
+    top: -80%;
+    right: -25%;
+    font-weight: 600;   
 }

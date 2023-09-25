@@ -23743,6 +23743,13 @@ header {
   right: 0;
 }
 
+.cart-count {
+  position: absolute;
+  top: -80%;
+  right: -25%;
+  font-weight: 600;
+}
+
 .shop-header {
   height: 200px;
   background-image: url(https://atelier.swiftideas.com/wp-content/uploads/2014/03/winter_walk.jpg);

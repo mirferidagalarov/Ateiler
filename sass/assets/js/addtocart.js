@@ -90,7 +90,17 @@ function counter() {
     plus.forEach(p => {
         p.addEventListener("click", function () {
             let count = p.parentElement.parentElement.querySelector(".count");
+            let countWillBeChanged = p.parentElement.parentElement.parentElement.parentElement.querySelector(".prod-name");
             count.textContent++;
+
+            prodArray.forEach(item =>{
+                if(item.name === countWillBeChanged.textContent){
+                    item.count++;
+                }
+            })
+            localStorage.setItem('products', JSON.stringify(prodArray));
+
+
             totalPrice();
         })
     })
@@ -98,10 +108,18 @@ function counter() {
     minus.forEach(m => {
         m.addEventListener("click", function () {
             let count = m.parentElement.parentElement.querySelector(".count");
+            let countWillBeChanged = m.parentElement.parentElement.parentElement.parentElement.querySelector(".prod-name");
             if (count.textContent > 1) {
                 count.textContent--;
+                prodArray.forEach(item =>{
+                    if(item.name === countWillBeChanged.textContent){
+                        item.count--;
+                    }
+                })
+                localStorage.setItem('products', JSON.stringify(prodArray));
+                totalPrice();
             }
-            totalPrice();
+
         })
     })
 
@@ -116,6 +134,31 @@ function totalPrice() {
         totalPrice.textContent = price * count;
     })
 
+    finalPrice(totalPrices);
+}
+
+function finalPrice(totalPrices) {
+    const finalBox = document.querySelector('.price');
+    let price = 0;
+    totalPrices.forEach(singlePrice => {
+
+        price = price + parseInt(singlePrice.textContent);
+    })
+
+    finalBox.textContent = '$' + price;
+}
+
+function containers() {
+    const nonEmpty = document.querySelector('.non-empty-cart');
+    const empty = document.querySelector('.empty-cart');
+    if (prodArray.length > 0) {
+        nonEmpty.classList.remove('d-none');
+        empty.classList.add('d-none');
+    }
+    else {
+        nonEmpty.classList.add('d-none');
+        empty.classList.remove('d-none');
+    }
 }
 
 const deleteProd = (e) => {
@@ -125,19 +168,6 @@ const deleteProd = (e) => {
     prodArray = prodArray.filter(prod => prod.name !== prodName.textContent);
     localStorage.setItem('products', JSON.stringify(prodArray));
     location.reload();
-}
-
-function containers(){
-    const nonEmpty = document.querySelector('.non-empty-cart');
-    const empty = document.querySelector('.empty-cart');
-    if(prodArray.length > 0){
-        nonEmpty.classList.remove('d-none');
-        empty.classList.add('d-none');
-    }
-    else{
-        nonEmpty.classList.add('d-none');
-        empty.classList.remove('d-none');
-    }
 }
 
 const pageLoad = () => {
@@ -154,31 +184,3 @@ const pageLoad = () => {
 
 pageLoad();
 
-
-
-
-
-
-
-// const imgs = document.querySelectorAll(".first-img");
-// const secondImg = document.getElementById("second-img");
-// const imgAlt = document.getElementById("img-alt");
-// const hid = document.getElementById("hid-main-page");
-
-// const mainPageIniter = () => {
-//   imgs.forEach((img) => {
-//     img.addEventListener("click", () => {
-//       let altText = img.getAttribute('alt');
-//       let object = JSON.stringify({src:img.src, alt:altText});
-//       localStorage.setItem("selectedImg", object);
-//       window.location.href = "second.html";
-//     });
-//   });
-// };
-
-// const secondPageIniter = () =>{
-//     let selectedImg = JSON.parse(localStorage.getItem('selectedImg'));
-
-//     secondImg.src = selectedImg.src;
-//     imgAlt.textContent = selectedImg.alt;
-// }
