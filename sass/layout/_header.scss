@@ -1,3 +1,11 @@
+header{
+  background-color: #fff;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 5;
+}
+
 .containers {
   display: flex;
   justify-content: center;
@@ -108,20 +116,22 @@
     border-left: 1px solid lightgrey;
     padding: 22px;
 
-    i{
+    i {
       transition: all 0.5s;
     }
 
     &:hover {
-      i{
+      i {
         color: #eabe12;
       }
-      div{
+
+      div {
         visibility: visible;
         opacity: 1;
       }
     }
-    div{
+
+    div {
       position: absolute;
       top: 100%;
       right: 0;
@@ -131,18 +141,18 @@
       visibility: hidden;
       transition: all 0.5s;
 
-      span{
+      span {
         padding: 15px 20px;
         min-width: max-content;
         border-bottom: 1px solid #222;
         color: #252525;
         transition: all 0.5s;
 
-        &:hover{
+        &:hover {
           color: #eabe12;
         }
 
-        &:last-child{
+        &:last-child {
           border: 0;
         }
       }
@@ -155,19 +165,22 @@
     color: #333;
     transition: all 0.5s;
 
-    i{
+    i {
       transition: all 0.5s;
     }
+
     &:hover {
-      i{
+      i {
         color: #eabe12;
       }
-      span{
+
+      span {
         opacity: 1;
         visibility: visible;
       }
     }
-    span{
+
+    span {
       position: absolute;
       right: 0;
       top: 100%;
@@ -410,13 +423,13 @@
   background-color: #222;
   z-index: 2000;
   overflow-y: auto;
-  
+
   transform: translateX(-100%);
   transition: all 0.4s;
-  
-  
+
+
   .mobile-menu-inner {
-    
+
     .mob-menu-search {
       position: relative;
 
@@ -430,7 +443,8 @@
         outline: none;
         width: 100%;
       }
-      i{
+
+      i {
         position: absolute;
         top: 50%;
         right: 10%;
@@ -439,22 +453,27 @@
       }
     }
 
-    ul{
-      li{
+    .mob-menu-pages {
+      li {
         border-bottom: 1px solid #444;
-        a{
+
+        a {
           display: block;
           padding: 15px 20px;
           color: #fff;
           font-weight: 600;
           transition: all 0.5s;
-        }
+          cursor: pointer;
 
-        &:hover{
-          a{
+          &:hover {
             color: #eabe12;
           }
         }
+
+        i {
+          transition: all 0.5s;
+        }
+
       }
 
     }
@@ -462,29 +481,31 @@
 }
 
 
-.sub-menu{
+.sub-menu {
   max-height: 0;
   transition: all 0.5s;
   overflow: hidden;
 
-  li{
-    color: #fff;
-    padding: 15px 25px;
+  li {
+    border-top: 1px solid #444;
+
+    a {
+      padding: 15px 20px 15px 30px;
+      font-size: 13px;
+      color: #fff;
+    }
   }
 }
 
-.active{
-  max-height: 1000px;
+.active {
+  max-height: 500px;
 }
 
-.turn{
+.turn {
   rotate: 180deg;
-  transition: all 1s ease;
 }
 
-.opened{
- transform: translateX(0);
- 
+.opened {
+  transform: translateX(0);
+
 }
-
-

@@ -1,19 +1,18 @@
-html,
-body {
-    position: relative;
-    height: 100%;
-}
 
 .fullscreenSwiper {
     width: 100%;
-    height: 650px;
+    height: 100vh;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 6;
 
+    .swiper-button-next,
+    .swiper-button-prev {
+        color: white;
+    }
     .swiper-wrapper {
 
-        .swiper-button-next,
-        .swiper-button-prev {
-            color: white;
-        }
 
         .swiper-slide {
             text-align: center;
@@ -119,6 +118,7 @@ body {
                             background-color: white;
                             right: 2.5%;
                             top: 2%;
+                            cursor: pointer;
 
                             @media(width<=375px) {
                                 padding: 1.5% 2.5% 1%;
@@ -660,6 +660,7 @@ body {
                         top: 0;
                         left: 0;
                         visibility: hidden;
+                        opacity: 0;
                         transition: all 0.5s linear;
                     }
 

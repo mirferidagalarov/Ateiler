@@ -20,7 +20,7 @@
         <div class="containers row mx-0 w-100">
           <div class="col-2 d-flex">
             <div class="baricon me-4">
-              <a href="#"><i class="fa-solid fa-bars fa-lg"></i></a>
+              <a><i class="fa-solid fa-bars fa-lg"></i></a>
             </div>
 
             <div class="d-none d-lg-flex magnifyingicon">
@@ -34,7 +34,7 @@
               class="d-none d-lg-flex d-flex justify-content-between align-items-center gap-4"
             >
               <li class="homehover">
-                <a href="home.html" class="hover-link">Home</a>
+                <a href="index.html" class="hover-link">Home</a>
 
                 <ul class="homehoverin">
                   <li class="d-flex gap-5">
@@ -356,8 +356,9 @@
           </div>
           <div class="col-2 d-flex justify-content-evenly">
             <div class="shopicon d-flex gap-2 align-items-center">
-              <a href="#" class="position-relative">
+              <a href="cart.html" class="position-relative">
                 <i class="fa-solid fa-cart-shopping fa-xl"></i>
+                <p class="cart-count">0</p>
                 <span>Your cart is empty</span>
               </a>
               <a href="#" class="position-relative d-none d-sm-block">
@@ -377,24 +378,24 @@
           </div>
         </div>
 
-        <div class="infohead row w-100 m-0 justify-content-evenly">
-          <div class="col-12 col-md-3">
-            <i class="fa-solid fa-truck"></i>
-            <span><strong>Free Shipping</strong> on all orders over $100.</span>
-          </div>
-          <div class="col-12 col-md-3">
-            <i class="fa-solid fa-check"></i>
-            <span
-              ><strong> Worldwide Delivery</strong> and same day dispatch.
-            </span>
-          </div>
-          <div class="col-12 col-md-3">
-            <span><strong>Receive Gifts</strong> when you subscribe.</span>
-          </div>
-        </div>
       </header>
+      <div class="infohead row w-100 m-0 justify-content-evenly">
+        <div class="col-12 col-md-3">
+          <i class="fa-solid fa-truck"></i>
+          <span><strong>Free Shipping</strong> on all orders over $100.</span>
+        </div>
+        <div class="col-12 col-md-3">
+          <i class="fa-solid fa-check"></i>
+          <span
+            ><strong> Worldwide Delivery</strong> and same day dispatch.
+          </span>
+        </div>
+        <div class="col-12 col-md-3">
+          <span><strong>Receive Gifts</strong> when you subscribe.</span>
+        </div>
+      </div>
 
-      <div class="mobile-menu-wrap position-absolute">
+      <div class="mobile-menu-wrap position-fixed">
         <div class="mobile-menu-inner">
           <div class="mob-menu-search">
             <input type="text" placeholder="Search" />
@@ -402,26 +403,26 @@
           </div>
           <ul class="mob-menu-pages">
             <li>
-              <a href="home.html"><span>Home</span></a>
+              <a href="index.html"><span>Home</span></a>
             </li>
-            <li class="accardion-open">
-              <a class="d-flex align-items-center justify-content-between">
+            <li>
+              <a class="d-flex align-items-center justify-content-between accardion-open">
                 <span>Shop</span>
                 <i class="fa-solid fa-chevron-down"></i>
               </a>
               <ul class="sub-menu">
-                <li>Shop All Products</li>
-                <li>Shop with Sidebar</li>
-                <li>Shop: 2 Columns</li>
-                <li>Shop: 4 Columns</li>
-                <li>Shop: Multi-Masonry</li>
-                <li>Shop: Category Page</li>
-                <li>Standard Product Page</li>
-                <li>Extended Product Page</li>
+                <li><a href="shop.html">Shop All Products</a></li>
+                <li><a>Shop with Sidebar</a></li>
+                <li><a>Shop: 2 Columns</a></li>
+                <li><a>Shop: 4 Columns</a></li>
+                <li><a>Shop: Multi-Masonry</a></li>
+                <li><a>Shop: Category Page</a></li>
+                <li><a>Standard Product Page</a></li>
+                <li><a>Extended Product Page</a></li>
               </ul>
             </li>
             <li>
-              <a href="#">
+              <a href="features.html">
                 <span>Features</span>
               </a>
             </li>
@@ -430,46 +431,46 @@
                 <span>Portfolio</span>
               </a>
             </li>
-            <li class="accardion-open">
-              <a class="d-flex align-items-center justify-content-between">
+            <li>
+              <a class="d-flex align-items-center justify-content-between accardion-open">
                 <span>Blog</span>
                 <i class="fa-solid fa-chevron-down"></i>
               </a>
               <ul class="sub-menu">
-                <li>Standard Alt</li>
-                <li>Masonry Style</li>
-                <li>Mini + sidebar</li>
-                <li>Text Only Style</li>
+                <li><a>Standard Alt</a></li>
+                <li><a>Masonry Style</a></li>
+                <li><a>Mini + sidebar</a></li>
+                <li><a>Text Only Style</a></li>
               </ul>
             </li>
-            <li class="accardion-open">
-              <a class="d-flex align-items-center justify-content-between">
+            <li>
+              <a class="d-flex align-items-center justify-content-between accardion-open">
                 <span>Pages</span>
                 <i class="fa-solid fa-chevron-down"></i>
               </a>
               <ul class="sub-menu">
-                <li>About Us</li>
-                <li>Contact</li>
-                <li>F.A.Q.’s</li>
-                <li>Meet the Team</li>
-                <li>Size and Fit</li>
+                <li><a>About Us</a></li>
+                <li><a>Contact</a></li>
+                <li><a>F.A.Q.’s</a></li>
+                <li><a>Meet the Team</a></li>
+                <li><a>Size and Fit</a></li>
               </ul>
             </li>
-            <li class="accardion-open">
-              <a class="d-flex align-items-center justify-content-between">
+            <li>
+              <a class="d-flex align-items-center justify-content-between accardion-open">
                 <span>Demos</span>
                 <i class="fa-solid fa-chevron-down"></i>
               </a>
               <ul class="sub-menu">
-                <li>Form: Coffee</li>
-                <li>Union: Cosmetics</li>
-                <li>Convoy: Accessories</li>
-                <li>Lab: Wine Shop</li>
-                <li>Tilt: Art Prints</li>
+                <li><a>Form: Coffee</a></li>
+                <li><a>Union: Cosmetics</a></li>
+                <li><a>Convoy: Accessories</a></li>
+                <li><a>Lab: Wine Shop</a></li>
+                <li><a>Tilt: Art Prints</a></li>
               </ul>
             </li>
           </ul>
-          <ul class="mob-menu-actions">
+          <ul class="mob-menu-pages">
             <li>
               <a
                 href="#"
@@ -497,7 +498,7 @@
         </div>
       </div>
 
-      <div class="swiper-area">
+      <div class="swiper-area item">
         <div class="swiper">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
@@ -544,7 +545,7 @@
             </div>
             <div class="swiper-slide">
               <div class="slider slider-workshop">
-                <img src="sass/assets/img/swiper-img.png" />
+                <img src="sass/assets/img/swiper-img.png"/>
               </div>
             </div>
           </div>
@@ -555,7 +556,7 @@
         </div>
       </div>
 
-      <div class="shop-content-area">
+      <div class="shop-content-area item">
         <div class="container">
           <div class="row">
             <div class="col-12 col-md-3">
@@ -610,7 +611,7 @@
         </div>
       </div>
 
-      <div class="trending-area">
+      <div class="trending-area item">
         <div class="container">
           <div
             class="area-title d-flex align-items-center justify-content-center justify-content-sm-between"
@@ -757,7 +758,7 @@
         </div>
       </div>
 
-      <div class="wavy-area d-flex align-items-center justify-content-center">
+      <div class="wavy-area item d-flex align-items-center justify-content-center">
         <div class="opac"></div>
         <div class="wavy-inner-area">
           <img
@@ -772,7 +773,7 @@
         </div>
       </div>
 
-      <div class="brief-area">
+      <div class="brief-area item">
         <div class="container">
           <div class="row">
             <div class="col-12 col-md-4 mb-5 mb-md-0">
@@ -812,7 +813,7 @@
         </div>
       </div>
 
-      <div class="feature-area">
+      <div class="feature-area item">
         <div class="container">
           <div
             class="area-title d-flex align-items-center justify-content-center justify-content-sm-between"
@@ -955,7 +956,7 @@
         </div>
       </div>
 
-      <div class="news-area">
+      <div class="news-area item">
         <div class="container">
           <div
             class="area-title d-flex align-items-center justify-content-between"
@@ -1075,7 +1076,7 @@
         </div>
       </div>
 
-      <div class="banner-area">
+      <div class="banner-area item">
         <div class="row w-100 p-0 m-0">
           <div class="col-12 col-md-6 p-0 m-0">
             <div class="banner">
